@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336230933479",
+    "project_id": "mara-dictionary-4bce8",
+    "storage_bucket": "mara-dictionary-4bce8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336230933479:android:5eb3391b495bcb23cf1342",
+        "android_client_info": {
+          "package_name": "com.example.mara_dictionary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336230933479-ojfdqmu9rfm8p9sftmikd4d7o6l6pp4j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7ozif-hpTLcTCVuft-gQWr9EZs-roaTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336230933479-ojfdqmu9rfm8p9sftmikd4d7o6l6pp4j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
