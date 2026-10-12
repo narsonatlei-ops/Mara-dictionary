@@ -287,7 +287,7 @@ class _HomeScreenState extends State<HomeScreen>
                     );
                   } else if (value == 'web') {
                     final Uri url = Uri.parse(
-                      'https://zawtha.github.io/mara-dictionary/',
+                      'https://narsonatlei-ops.github.io/Mara-dictionary/',
                     );
                     if (!await launchUrl(
                       url,
