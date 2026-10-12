@@ -86,7 +86,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
             child: Row(
               children: [
-                // User thlalak neih chuan entir la, an neih loh emaw error a awm chuan offline Icon mawi deuh hman tur
                 _currentUser != null && _currentUser!.photoUrl != null
                     ? ClipRRect(
                         borderRadius: BorderRadius.circular(20),
@@ -105,8 +104,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         ),
                       )
                     : Icon(
-                        Icons
-                            .account_circle, // Internet mamawh lo Material Icon kan hmang ta zawk e
+                        Icons.account_circle,
                         size: 40,
                         color: isDarkMode
                             ? Colors.white30

@@ -11,25 +11,21 @@ class ThemeProvider with ChangeNotifier {
   double get speechRate => _speechRate;
   Color get primaryColor => _primaryColor;
 
-  // Dark mode switch-na
   void toggleTheme() {
     _isDarkMode = !_isDarkMode;
     notifyListeners();
   }
 
-  // Font size thlakna
   void setFontSize(double size) {
     _fontSize = size;
     notifyListeners();
   }
 
-  // Pronunciation speed thlakna
   void setSpeechRate(double rate) {
     _speechRate = rate;
     notifyListeners();
   }
 
-  // Theme Rawng thlakna
   void setPrimaryColor(Color color) {
     _primaryColor = color;
     notifyListeners();

@@ -44,42 +44,100 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
+
+    const navyPrimary = Color(0xFF13263B);
+    const goldAccent = Color(0xFFDFBA7B);
+
+    final cardBgColor = isDarkMode ? const Color(0xFF1E1E1E) : Colors.white;
+    final textColor = isDarkMode ? Colors.white : const Color(0xFF2C2C2C);
+    final subtitleColor = isDarkMode ? Colors.white60 : Colors.black54;
+
     return Scaffold(
+      backgroundColor: isDarkMode
+          ? const Color(0xFF121212)
+          : const Color(0xFFF8F9FA),
       appBar: AppBar(
-        title: const Text('My Favorites'),
-        backgroundColor: const Color(0xFF1976D2),
+        title: const Text(
+          'My Favorites',
+          style: TextStyle(color: goldAccent, fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: navyPrimary,
+        iconTheme: const IconThemeData(color: goldAccent),
+        elevation: 0,
       ),
       body: _isLoading
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator(color: goldAccent))
           : _favoriteWords.isEmpty
-          ? const Center(
-              child: Text(
-                'Favorite mohchho y mah vei.',
-                style: TextStyle(fontSize: 16, color: Colors.grey),
+          ? Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.favorite_border,
+                    size: 64,
+                    color: goldAccent.withValues(alpha: 0.5),
+                  ),
+                  const SizedBox(height: 16),
+                  const Text(
+                    'Favorite mohchho y mah vei.',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ],
               ),
             )
           : ListView.builder(
-              padding: const EdgeInsets.symmetric(vertical: 8),
+              padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 12),
               itemCount: _favoriteWords.length,
               itemBuilder: (context, index) {
                 final word = _favoriteWords[index];
-                return Card(
-                  margin: const EdgeInsets.symmetric(
-                    horizontal: 10,
-                    vertical: 5,
+                return Container(
+                  margin: const EdgeInsets.symmetric(vertical: 6),
+                  decoration: BoxDecoration(
+                    color: cardBgColor,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(
+                      color: goldAccent.withValues(alpha: 0.2),
+                      width: 1,
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(
+                          alpha: isDarkMode ? 0.2 : 0.04,
+                        ),
+                        blurRadius: 6,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
                   ),
                   child: ListTile(
+                    contentPadding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                      vertical: 4,
+                    ),
                     title: Text(
                       word.word,
-                      style: const TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        color: textColor,
+                      ),
                     ),
-                    subtitle: Text(
-                      word.definition,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 4),
+                      child: Text(
+                        word.definition,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(fontSize: 14, color: subtitleColor),
+                      ),
                     ),
                     trailing: IconButton(
-                      icon: const Icon(Icons.favorite, color: Colors.red),
+                      icon: const Icon(Icons.favorite, color: Colors.redAccent),
                       onPressed: () => _removeFromFavorites(word),
                       tooltip: 'Remove from Favorites',
                     ),

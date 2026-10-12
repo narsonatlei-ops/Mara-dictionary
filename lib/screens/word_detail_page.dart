@@ -85,7 +85,6 @@ class _WordDetailPageState extends State<WordDetailPage> {
           );
         }
 
-        // User-in back button a lo hmeh hman palh pawha a crash loh nan 'if (mounted)' kan check ang
         if (mounted) {
           setState(() {
             synonyms = synList;
@@ -114,10 +113,7 @@ class _WordDetailPageState extends State<WordDetailPage> {
   void _toggleFavorite() async {
     if (widget.word.id != null) {
       bool newStatus = !isFavorite;
-      int statusInt = newStatus
-          ? 1
-          : 0; // SQLite-in 1 leh 0 chiah a hriatthiam avangin
-
+      int statusInt = newStatus ? 1 : 0;
       // updateFavoriteStatus kan ko tawh ang
       await DatabaseHelper.instance.updateFavoriteStatus(
         widget.word.id!,
@@ -220,8 +216,6 @@ class _WordDetailPageState extends State<WordDetailPage> {
                     height: 1.5,
                   ),
                 ),
-
-                // Internet atanga a la dawt lai chuan helai bîk hi lo berpui rawh se
                 if (isLoadingApi) ...[
                   const SizedBox(height: 25),
                   const Center(child: CircularProgressIndicator()),
@@ -255,7 +249,6 @@ class _WordDetailPageState extends State<WordDetailPage> {
                   ),
                 ],
 
-                // 4. ANTONYMS (A lo thlen tawh chuan mawi deuhin a rawn tlar ang)
                 if (!isLoadingApi && antonyms.isNotEmpty) ...[
                   const Divider(height: 40, thickness: 1),
                   Row(

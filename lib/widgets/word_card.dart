@@ -3,7 +3,6 @@ import 'package:flutter_tts/flutter_tts.dart';
 import 'package:share_plus/share_plus.dart';
 import '../models/word_model.dart';
 
-
 class WordCard extends StatefulWidget {
   final WordModel word;
 
@@ -14,21 +13,18 @@ class WordCard extends StatefulWidget {
 }
 
 class _WordCardState extends State<WordCard> {
-  // FlutterTTS hmanrua kan din thar e
+  // FlutterTTS hmanrua
   final FlutterTts _flutterTts = FlutterTts();
-
-  // Favorite thlan leh thlan loh chhinchhiahna variable
   bool _isFavorited = false;
 
   @override
   void dispose() {
-    _flutterTts.stop(); // App kan tih hlum rualin voice kan ti hlum ve ang
+    _flutterTts.stop();
     super.dispose();
   }
 
-  // A taka thumal lam rikna function
   void _speak(String text) async {
-    await _flutterTts.setSpeechRate(0.5); // Muang deuh zawk hlek turin
+    await _flutterTts.setSpeechRate(0.5);
     await _flutterTts.setVolume(1.0);
     await _flutterTts.setPitch(1.0);
 
@@ -47,7 +43,6 @@ class _WordCardState extends State<WordCard> {
     Share.share(shareText);
   }
 
-  // Part of Speech lo thla hrang a, Orange Box-a khungna function
   Widget _buildDefinitionText(
     String word,
     String definitionText,
@@ -68,8 +63,6 @@ class _WordCardState extends State<WordCard> {
 
     List<String> tokens = definitionText.split(' ');
     List<InlineSpan> spans = [];
-
-    // 1. Thumal hming (Word) - Bold in
     spans.add(
       TextSpan(
         text: word,
@@ -80,8 +73,6 @@ class _WordCardState extends State<WordCard> {
         ),
       ),
     );
-
-    // 2. A laia Colon mawi taka dahna
     spans.add(
       TextSpan(
         text: ' : ',
@@ -92,8 +83,6 @@ class _WordCardState extends State<WordCard> {
         ),
       ),
     );
-
-    // 3. Fiahna (Definition) ho kha mal te tein kan rual chhuak ang
     for (String token in tokens) {
       if (token.isEmpty) continue;
 
@@ -106,18 +95,18 @@ class _WordCardState extends State<WordCard> {
           WidgetSpan(
             alignment: PlaceholderAlignment.middle,
             child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+              padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
               margin: const EdgeInsets.symmetric(horizontal: 4),
               decoration: BoxDecoration(
-                color: Colors.orange,
-                borderRadius: BorderRadius.circular(4),
+                color: const Color(0xFFD97706), // Warm Amber / Gold badge
+                borderRadius: BorderRadius.circular(6),
               ),
               child: Text(
                 cleanToken,
                 style: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize: 14,
+                  fontSize: 13,
                 ),
               ),
             ),
@@ -151,11 +140,11 @@ class _WordCardState extends State<WordCard> {
   Widget build(BuildContext context) {
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
 
-    final primaryColor = isDarkMode
-        ? const Color.fromARGB(255, 140, 15, 180)
-        : const Color(0xFF1976D2);
+    const navyButtonColor = Color(0xFF13263B);
+    const goldAccent = Color(0xFFDFBA7B);
 
-    final textColor = isDarkMode ? Colors.white : Colors.black87;
+    final cardBgColor = isDarkMode ? const Color(0xFF1E1E1E) : Colors.white;
+    final textColor = isDarkMode ? Colors.white : const Color(0xFF2C2C2C);
     final subtitleColor = isDarkMode ? Colors.white60 : Colors.black54;
 
     return Column(
@@ -164,14 +153,18 @@ class _WordCardState extends State<WordCard> {
         // Thumal fiahna bawm
         Container(
           width: double.infinity,
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(18.0),
           decoration: BoxDecoration(
-            color: isDarkMode ? const Color(0xFF1E1E1E) : Colors.white,
-            borderRadius: BorderRadius.circular(12),
+            color: cardBgColor,
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(
+              color: goldAccent.withValues(alpha: 0.3),
+              width: 1,
+            ),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withValues(alpha: 0.05),
-                blurRadius: 8,
+                color: Colors.black.withValues(alpha: isDarkMode ? 0.3 : 0.06),
+                blurRadius: 10,
                 offset: const Offset(0, 4),
               ),
             ],
@@ -191,12 +184,11 @@ class _WordCardState extends State<WordCard> {
                   ),
                   const SizedBox(width: 8),
 
-                  // Star aiah LOVE (Heart) Icon function nei tawh thap kan dah ta e
+                  // LOVE (Heart) Icon
                   IconButton(
                     onPressed: () {
                       setState(() {
-                        _isFavorited =
-                            !_isFavorited; // Hmet la a in-toggle pap pap ang
+                        _isFavorited = !_isFavorited;
                       });
 
                       ScaffoldMessenger.of(context).showSnackBar(
@@ -212,18 +204,21 @@ class _WordCardState extends State<WordCard> {
                     },
                     icon: Icon(
                       _isFavorited ? Icons.favorite : Icons.favorite_border,
-                      color: _isFavorited
-                          ? Colors
-                                .red // Favorite tawh chu a sen mawi takin a rawn lang ang
-                          : (isDarkMode
-                                ? Colors.white60
-                                : Colors.grey.shade400),
+                      color: _isFavorited ? Colors.redAccent : goldAccent,
                       size: 28,
                     ),
                   ),
                 ],
               ),
-              const SizedBox(height: 16),
+              if (widget.word.synonyms.isNotEmpty ||
+                  widget.word.antonyms.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  child: Divider(
+                    height: 1,
+                    color: isDarkMode ? Colors.white12 : Colors.black12,
+                  ),
+                ),
               if (widget.word.synonyms.isNotEmpty)
                 Text(
                   'Synonyms: ${widget.word.synonyms}',
@@ -249,46 +244,60 @@ class _WordCardState extends State<WordCard> {
           ),
         ),
         const SizedBox(height: 20),
-
-        // Button te
         Row(
           children: [
             // VOICE
             Expanded(
               child: ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: primaryColor,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  backgroundColor: navyButtonColor,
+                  foregroundColor: goldAccent,
+                  elevation: 3,
+                  padding: const EdgeInsets.symmetric(vertical: 14),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
+                    side: BorderSide(
+                      color: goldAccent.withValues(alpha: 0.4),
+                      width: 1,
+                    ),
                   ),
                 ),
-                icon: const Icon(Icons.volume_up, size: 20),
+                icon: const Icon(Icons.volume_up, size: 22, color: goldAccent),
                 label: const Text(
                   'VOICE',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15,
+                    letterSpacing: 0.5,
+                  ),
                 ),
                 onPressed: () => _speak(widget.word.word),
               ),
             ),
             const SizedBox(width: 16),
-
-            // SHARE
             Expanded(
               child: ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: primaryColor,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  backgroundColor: navyButtonColor,
+                  foregroundColor: goldAccent,
+                  elevation: 3,
+                  padding: const EdgeInsets.symmetric(vertical: 14),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
+                    side: BorderSide(
+                      color: goldAccent.withValues(alpha: 0.4),
+                      width: 1,
+                    ),
                   ),
                 ),
-                icon: const Icon(Icons.share, size: 20),
+                icon: const Icon(Icons.share, size: 22, color: goldAccent),
                 label: const Text(
                   'SHARE',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15,
+                    letterSpacing: 0.5,
+                  ),
                 ),
                 onPressed: _shareWord,
               ),

@@ -54,14 +54,11 @@ class AboutDeveloperScreen extends StatelessWidget {
                   letterSpacing: 0.5,
                 ),
               ),
-              const SizedBox(
-                height: 16,
-              ), // Subtitle langsar kha paih a ni a, spacing kan dah tha deuh e
+              const SizedBox(height: 16),
 
               const Divider(thickness: 1),
               const SizedBox(height: 16),
 
-              // Location Info Tile
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -83,9 +80,8 @@ class AboutDeveloperScreen extends StatelessWidget {
               ),
               const SizedBox(height: 24),
 
-              // 2. ABOUT DESCRIPTION (NIELIT Aizawl Center BCA Degree dah luh a ni ta)
               Text(
-                'He Mara Dictionary App hi NIELIT Aizawl Center-ah BCA degree ka neih hnuah,mipuite tana awlsam leh tlingtlak taka hman theih tura ka build a ni. Mara ṭawng thumal zozai te professional zawka zawn zung zung a nih theih nan, clean UI leh database rintlak tak hmanga duan a ni.',
+                'He Mara Dictionary App hi Nielit Aizawl Center lia Bca degree ei hnei tawhta zawpi hma thei awpa ta Ei build va chata, Mara reih a sia viata charô lyma thei nawpa chata a cha. UI nata database hmâtlah awhpa ta taopa a cha.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 15,
@@ -97,7 +93,7 @@ class AboutDeveloperScreen extends StatelessWidget {
 
               // Footer Note
               Text(
-                '© 2026 Z Hrotlo. All Rights Reserved.',
+                '© 2026 Narson. All Rights Reserved.',
                 style: const TextStyle(fontSize: 12, color: Colors.grey),
               ),
             ],

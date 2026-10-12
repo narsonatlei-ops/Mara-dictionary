@@ -25,10 +25,8 @@ class MyApp extends StatelessWidget {
       title: 'Mara Dictionary',
       debugShowCheckedModeBanner: false,
 
-      // Hei hian Dark Mode leh Light Mode in-switch dan a thunun thlap ang
       themeMode: themeProvider.isDarkMode ? ThemeMode.dark : ThemeMode.light,
 
-      // 1. LIGHT MODE THEME (Theme Palette-a rawng i thlan apiang khan a in-change tawh ang)
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: themeProvider
@@ -38,7 +36,6 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      // 2. DARK MODE THEME
       darkTheme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: themeProvider

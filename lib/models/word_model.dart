@@ -14,8 +14,6 @@ class WordModel {
     this.synonyms = '',
     this.antonyms = '',
   });
-
-  // Database-a thun luh dawn a Map-a thlakna
   Map<String, dynamic> toMap() {
     return {
       if (id != null) 'id': id,
@@ -27,7 +25,6 @@ class WordModel {
     };
   }
 
-  // Database atanga rawn chhuak Map kha WordModel-a thlakna
   factory WordModel.fromMap(Map<String, dynamic> map) {
     return WordModel(
       id: map['id'],

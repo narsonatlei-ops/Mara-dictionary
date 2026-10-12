@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
@@ -22,51 +23,48 @@ class DatabaseHelper {
   }
 
   Future<Database> _initDatabase() async {
-    // Standard Sqflite database path hman a him ber
     String databasesPath = await getDatabasesPath();
     String path = join(databasesPath, _databaseName);
 
     bool exists = await databaseExists(path);
 
     if (!exists) {
-      print("Database thar a ni a, assets aṭangin kan copy lût rih dawn...");
+      if (kDebugMode) {
+        print("Database thar a ni a, assets aṭangin kan copy lût rih dawn...");
+      }
       try {
         await Directory(dirname(path)).create(recursive: true);
 
-        // Assets folder aṭangin .db file kan chhiar ang (Slash '/' ngei hman tur)
         ByteData data = await rootBundle.load('assets/$_databaseName');
         List<int> bytes = data.buffer.asUint8List(
           data.offsetInBytes,
           data.lengthInBytes,
         );
 
-        // Phone chhung hmun himah kan va dah (write) dawn a ni
         await File(path).writeAsBytes(bytes, flush: true);
-        print("Database copy luh a hlawhtling ta!");
+        if (kDebugMode) print("Database copy luh a hlawhtling ta!");
       } catch (e) {
-        print("Database copy luhah buaina a awm: $e");
-        // Copy a fail chuan DB ruak in-create lo nan file awm hman kha delete leh rawh
+        if (kDebugMode) print("Database copy luhah buaina a awm: $e");
         if (await File(path).exists()) {
           await File(path).delete();
         }
         rethrow;
       }
     } else {
-      print("Database a awm sa tawh e.");
+      if (kDebugMode) print("Database a awm sa tawh e.");
     }
 
-    // Database kan hawng ang
     final db = await openDatabase(path, version: _databaseVersion);
 
-    // History leh column mamawh dangte kan va chei fel ang
+    // History leh column mamawh dangte va chei fel
     await _setupTablesAndColumns(db);
 
     return db;
   }
 
-  // --- HISTORY LEH COLUMN NALH SAWNNA ---
+  // --- HISTORY LEH COLUMN FIX ---
   Future<void> _setupTablesAndColumns(Database db) async {
-    // 1. History Table a la awm loh chuan kan siam chawp ang
+    // 1. History Table
     await db.execute('''
       CREATE TABLE IF NOT EXISTS history (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -77,7 +75,7 @@ class DatabaseHelper {
       )
     ''');
 
-    // 2. word table-ah khan favorite leh custom column te kan va belh chawp ang
+    // 2. Column belh tur ho
     List<String> alterQueries = [
       'ALTER TABLE "$_tableName" ADD COLUMN is_favorite INTEGER NOT NULL DEFAULT 0',
       'ALTER TABLE "$_tableName" ADD COLUMN synonyms TEXT',
@@ -88,16 +86,25 @@ class DatabaseHelper {
       try {
         await db.execute(query);
       } catch (_) {
-        // Column a awm sa chuan ngaihthah (ignore) mai tur
+        // Column a awm sa chuan a pass mai ang
       }
+    }
+
+    // 3. FIX: NULL data ho zawng zawng 0-ah siam chhuah leh nan
+    try {
+      await db.execute(
+        'UPDATE "$_tableName" SET is_favorite = 0 WHERE is_favorite IS NULL',
+      );
+    } catch (e) {
+      if (kDebugMode) print("Error normalizing favorites: $e");
     }
   }
 
   // ==========================================================
-  // APP BROWSE, SEARCH LEH FUNCTIONS DANG HO ZAWNG ZAWNG
+  // APP FUNCTIONS
   // ==========================================================
 
-  // 1. Browse Screen atan (A bîka Hawrawp thlîrna)
+  // 1. Browse Screen (Hawrawp thlîrna)
   Future<List<WordModel>> getWordsByLetter(String letter) async {
     final db = await instance.database;
     final result = await db.rawQuery(
@@ -107,7 +114,7 @@ class DatabaseHelper {
     return result.map((json) => WordModel.fromMap(json)).toList();
   }
 
-  // 2. Search Screen atan (Thumal zawnna)
+  // 2. Search Screen
   Future<List<WordModel>> searchWords(String query) async {
     final db = await instance.database;
     final result = await db.rawQuery(
@@ -117,7 +124,7 @@ class DatabaseHelper {
     return result.map((json) => WordModel.fromMap(json)).toList();
   }
 
-  // 3. Random Word (Home Screen vel atan)
+  // 3. Random Word
   Future<WordModel?> getRandomWord() async {
     final db = await instance.database;
     final List<Map<String, dynamic>> maps = await db.rawQuery(
@@ -133,28 +140,37 @@ class DatabaseHelper {
     final List<Map<String, dynamic>> maps = await db.rawQuery(
       'SELECT rowid AS id, word, definition, is_favorite, synonyms, antonyms FROM "$_tableName" WHERE is_favorite = 1 ORDER BY word ASC',
     );
+    if (kDebugMode) print("Favorites fetched count: ${maps.length}");
     return maps.map((json) => WordModel.fromMap(json)).toList();
   }
 
   Future<int> updateFavoriteStatus(int id, int isFavorite) async {
     final db = await instance.database;
-    return await db.update(
-      _tableName,
-      {'is_favorite': isFavorite},
-      where: 'rowid = ?',
-      whereArgs: [id],
+
+    // rowid leh id column awm palh pawha match ve ve thei turin rawUpdate kan hmang
+    int count = await db.rawUpdate(
+      'UPDATE "$_tableName" SET is_favorite = ? WHERE rowid = ? OR id = ?',
+      [isFavorite, id, id],
     );
+
+    if (kDebugMode) {
+      print(
+        "Favorite status updated. Row ID: $id, New Status: $isFavorite, Rows Affected: $count",
+      );
+    }
+    return count;
   }
 
   Future<bool> isWordFavorited(int id) async {
     final db = await instance.database;
-    final maps = await db.query(
-      _tableName,
-      where: 'rowid = ?',
-      whereArgs: [id],
-      columns: ['is_favorite'],
+    final maps = await db.rawQuery(
+      'SELECT is_favorite FROM "$_tableName" WHERE rowid = ? OR id = ? LIMIT 1',
+      [id, id],
     );
-    return maps.isNotEmpty && maps.first['is_favorite'] == 1;
+    if (maps.isNotEmpty) {
+      return (maps.first['is_favorite'] ?? 0) == 1;
+    }
+    return false;
   }
 
   // 5. HISTORY FUNCTIONS
@@ -178,18 +194,29 @@ class DatabaseHelper {
     await db.delete('history');
   }
 
-  // 6. Synonyms & Antonyms update-na
+  // 6. Synonyms & Antonyms
   Future<int> updateWordSynAnt(int id, String synonyms, String antonyms) async {
     final db = await instance.database;
-    return await db.update(
-      _tableName,
-      {'synonyms': synonyms, 'antonyms': antonyms},
-      where: 'rowid = ?',
-      whereArgs: [id],
+    return await db.rawUpdate(
+      'UPDATE "$_tableName" SET synonyms = ?, antonyms = ? WHERE rowid = ? OR id = ?',
+      [synonyms, antonyms, id, id],
     );
   }
 
-  // 7. Database kharna
+  // 7. GET WORD DETAILS
+  Future<WordModel?> getWordDetails(String wordText) async {
+    final db = await instance.database;
+    final List<Map<String, dynamic>> maps = await db.rawQuery(
+      'SELECT rowid AS id, word, definition, is_favorite, synonyms, antonyms FROM "$_tableName" WHERE word = ? LIMIT 1',
+      [wordText],
+    );
+    if (maps.isNotEmpty) {
+      return WordModel.fromMap(maps.first);
+    }
+    return null;
+  }
+
+  // 8. Database kharna
   Future<void> close() async {
     final db = await instance.database;
     db.close();

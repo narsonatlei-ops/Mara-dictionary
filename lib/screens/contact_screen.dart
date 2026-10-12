@@ -12,12 +12,9 @@ class _ContactScreenState extends State<ContactScreen> {
   final _subjectController = TextEditingController();
   final _messageController = TextEditingController();
 
-  // !!! HETA HI I EMAIL LEH WHATSAPP NUMBER DIK TAK KHA VA DAH RAWH U !!!
   final String _myEmail = 'atleihrotlo@gmail.com';
-  final String _myWhatsAppNumber =
-      '+919362624860'; // Country code (+91) telh ngei ngei tur aw
+  final String _myWhatsAppNumber = '+919362624860';
 
-  // 1. EMAIL THAWNNA (URL_LAUNCHER NEW VERSION DIK TAK)
   Future<void> _sendEmail() async {
     final subject = _subjectController.text.trim();
     final message = _messageController.text.trim();
@@ -26,8 +23,6 @@ class _ContactScreenState extends State<ContactScreen> {
       _showSnackBar('Subject nata Message hi pabie khai tua tyh.');
       return;
     }
-
-    // Email Uri felfai takin
     final Uri emailUri = Uri(
       scheme: 'mailto',
       path: _myEmail,
@@ -35,14 +30,12 @@ class _ContactScreenState extends State<ContactScreen> {
     );
 
     try {
-      // url_launcher thar bera an hman dan a ni e:
       await launchUrl(emailUri);
     } catch (e) {
       _showSnackBar('Email app apahy thei vei! $e');
     }
   }
 
-  // 2. WHATSAPP VIAU LUHNA (URL_LAUNCHER NEW VERSION DIK TAK)
   Future<void> _sendWhatsApp() async {
     final subject = _subjectController.text.trim();
     final message = _messageController.text.trim();
@@ -55,17 +48,12 @@ class _ContactScreenState extends State<ContactScreen> {
     final fullText = "Subject: $subject\n\nMessage: $message";
     final cleanNumber = _myWhatsAppNumber.replaceAll('+', '');
 
-    // External application a hawn tlat angai hrim hrim a nia whatsapp hi chu
     final Uri whatsappUri = Uri.parse(
       "https://wa.me/$cleanNumber?text=${Uri.encodeComponent(fullText)}",
     );
 
     try {
-      await launchUrl(
-        whatsappUri,
-        mode: LaunchMode
-            .externalApplication, // Phone-a WhatsApp app tak tak a hawn nan
-      );
+      await launchUrl(whatsappUri, mode: LaunchMode.externalApplication);
     } catch (e) {
       _showSnackBar('WhatsApp apahy thei vei! $e');
     }
@@ -89,12 +77,7 @@ class _ContactScreenState extends State<ContactScreen> {
         0xFFFFFDF6,
       ), // I app background rawng ngai bawk kha
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(
-          255,
-          12,
-          38,
-          236,
-        ), // I AppBar rawng mawi tak kha
+        backgroundColor: const Color.fromARGB(255, 12, 38, 236),
         title: const Text(
           'Report Error/Contact',
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
@@ -115,8 +98,6 @@ class _ContactScreenState extends State<ContactScreen> {
               ),
             ),
             const SizedBox(height: 24),
-
-            // SUBJECT INPUT
             TextField(
               controller: _subjectController,
               decoration: const InputDecoration(
@@ -128,8 +109,6 @@ class _ContactScreenState extends State<ContactScreen> {
               ),
             ),
             const SizedBox(height: 16),
-
-            // MESSAGE INPUT (A hmun a len deuh nan maxLines kan pe ang)
             TextField(
               controller: _messageController,
               maxLines: 6,
@@ -143,10 +122,8 @@ class _ContactScreenState extends State<ContactScreen> {
             ),
             const SizedBox(height: 24),
 
-            // BUTTONS ROW (I thlalak rawn thawn ang chiah khan)
             Row(
               children: [
-                // EMAIL BUTTON
                 Expanded(
                   child: ElevatedButton.icon(
                     onPressed: _sendEmail,
@@ -159,9 +136,7 @@ class _ContactScreenState extends State<ContactScreen> {
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(
-                        0xFF1E88E5,
-                      ), // Blue rawng mawi tak kha
+                      backgroundColor: const Color(0xFF1E88E5),
                       padding: const EdgeInsets.symmetric(vertical: 14),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(24),
@@ -170,8 +145,6 @@ class _ContactScreenState extends State<ContactScreen> {
                   ),
                 ),
                 const SizedBox(width: 12),
-
-                // WHATSAPP BUTTON
                 Expanded(
                   child: ElevatedButton.icon(
                     onPressed: _sendWhatsApp,
