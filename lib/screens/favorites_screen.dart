@@ -20,54 +20,38 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
     _loadFavorites();
   }
 
-  // Database aṭanga favorite thumalte rawn sawk chhuahna
-  void _loadFavorites() async {
-    setState(() {
-      _isLoading = true;
-    });
-
+  // Read the favorite words from the database
+  Future<void> _loadFavorites() async {
+    setState(() => _isLoading = true);
     final data = await DatabaseHelper.instance.getFavoriteWords();
-
+    if (!mounted) return;
     setState(() {
       _favoriteWords = data;
       _isLoading = false;
     });
   }
 
-  // Heart Icon hmeh laia favorite aṭanga va paih (remove) na
+  // Heart button: remove the word from the favorites
   Future<void> _removeFromFavorites(WordModel word) async {
-    if (word.id != null) {
-      await DatabaseHelper.instance.updateFavoriteStatus(word.id!, 0);
-      _loadFavorites(); // Database update hnuah screen a refresh nghal ang
-    }
+    if (word.id == null) return;
+    await DatabaseHelper.instance.updateFavoriteStatus(word.id!, 0);
+    await _loadFavorites();
   }
 
   @override
   Widget build(BuildContext context) {
-    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
-
-    const navyPrimary = Color(0xFF13263B);
+    final theme = Theme.of(context);
+    final isDarkMode = theme.brightness == Brightness.dark;
     const goldAccent = Color(0xFFDFBA7B);
 
     final cardBgColor = isDarkMode ? const Color(0xFF1E1E1E) : Colors.white;
-    final textColor = isDarkMode ? Colors.white : const Color(0xFF2C2C2C);
+    final textColor = theme.colorScheme.onSurface;
     final subtitleColor = isDarkMode ? Colors.white60 : Colors.black54;
 
     return Scaffold(
-      backgroundColor: isDarkMode
-          ? const Color(0xFF121212)
-          : const Color(0xFFF8F9FA),
-      appBar: AppBar(
-        title: const Text(
-          'My Favorites',
-          style: TextStyle(color: goldAccent, fontWeight: FontWeight.bold),
-        ),
-        backgroundColor: navyPrimary,
-        iconTheme: const IconThemeData(color: goldAccent),
-        elevation: 0,
-      ),
+      appBar: AppBar(title: const Text('My Favorites')),
       body: _isLoading
-          ? const Center(child: CircularProgressIndicator(color: goldAccent))
+          ? const Center(child: CircularProgressIndicator())
           : _favoriteWords.isEmpty
           ? Center(
               child: Column(
@@ -142,14 +126,13 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                       tooltip: 'Remove from Favorites',
                     ),
                     onTap: () async {
-                      // Detail Page-ah a va kal ang
                       await Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => WordDetailPage(word: word),
+                          builder: (_) => WordDetailPage(word: word),
                         ),
                       );
-                      // Detail Page aṭanga i kir leh tikah favorites list hi a rawn refresh nawn nghal ang
+                      // The heart may have changed on the detail page
                       _loadFavorites();
                     },
                   ),

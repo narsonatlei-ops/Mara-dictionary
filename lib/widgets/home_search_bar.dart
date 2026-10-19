@@ -5,11 +5,10 @@ class HomeSearchBar extends StatelessWidget {
   final Function(String) onChanged;
   final VoidCallback onClear;
   final bool isListening;
-  final AnimationController? animationController;
+  final AnimationController animationController;
   final VoidCallback onListen;
   final bool isDarkMode;
-  final Color textColor;
-  final Color hintColor;
+  final Color headerColor;
 
   const HomeSearchBar({
     super.key,
@@ -20,32 +19,33 @@ class HomeSearchBar extends StatelessWidget {
     required this.animationController,
     required this.onListen,
     required this.isDarkMode,
-    required this.textColor,
-    required this.hintColor,
+    required this.headerColor,
   });
 
   @override
   Widget build(BuildContext context) {
-    // Design Colors
-    const navyHeaderGradient = [Color(0xFF13263B), Color(0xFF0B1724)];
     const goldAccent = Color(0xFF9E7A42);
-    const searchBoxColorLight = Color(0xFFEFE5CE);
-    const searchBoxColorDark = Color(0xFF2A2A2A);
 
-    final searchBoxBg = isDarkMode ? searchBoxColorDark : searchBoxColorLight;
+    final searchBoxBg = isDarkMode
+        ? const Color(0xFF2A2A2A)
+        : const Color(0xFFEFE5CE);
     final inputTextColor = isDarkMode ? Colors.white : const Color(0xFF2C2C2C);
     final hintTextColor = isDarkMode
         ? Colors.white.withValues(alpha: 0.5)
         : const Color(0xFF7A6E5D);
 
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
+        // Continues the app bar gradient: starts with the shade where it ended
         gradient: LinearGradient(
-          colors: navyHeaderGradient,
+          colors: [
+            Color.lerp(headerColor, Colors.black, 0.17)!,
+            Color.lerp(headerColor, Colors.black, 0.35)!,
+          ],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
         ),
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(20),
           bottomRight: Radius.circular(20),
         ),
@@ -94,17 +94,18 @@ class HomeSearchBar extends StatelessWidget {
                 Stack(
                   alignment: Alignment.center,
                   children: [
-                    if (isListening && animationController != null)
+                    if (isListening)
                       AnimatedBuilder(
-                        animation: animationController!,
+                        animation: animationController,
                         builder: (context, child) {
+                          final v = animationController.value;
                           return Container(
-                            width: 28 + (20 * animationController!.value),
-                            height: 28 + (20 * animationController!.value),
+                            width: 28 + (20 * v),
+                            height: 28 + (20 * v),
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color: Colors.redAccent.withValues(
-                                alpha: 0.4 * (1 - animationController!.value),
+                                alpha: 0.4 * (1 - v),
                               ),
                             ),
                           );

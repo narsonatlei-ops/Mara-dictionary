@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import '../models/word_model.dart';
+import '../providers/theme_provider.dart';
+import '../utils/database_helper.dart';
 
 class WordCard extends StatefulWidget {
   final WordModel word;
@@ -13,9 +16,34 @@ class WordCard extends StatefulWidget {
 }
 
 class _WordCardState extends State<WordCard> {
-  // FlutterTTS hmanrua
   final FlutterTts _flutterTts = FlutterTts();
   bool _isFavorited = false;
+
+  // Part-of-speech labels shown as badges
+  static const List<String> _posList = [
+    'v.t.',
+    'v.i.',
+    'adj.',
+    'n.',
+    'adv.',
+    'v.',
+    'prep.',
+    'conj.',
+    'pron.',
+    'interj.',
+  ];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadFavorite();
+  }
+
+  @override
+  void didUpdateWidget(covariant WordCard oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.word.id != widget.word.id) _loadFavorite();
+  }
 
   @override
   void dispose() {
@@ -23,74 +51,75 @@ class _WordCardState extends State<WordCard> {
     super.dispose();
   }
 
-  void _speak(String text) async {
-    await _flutterTts.setSpeechRate(0.5);
-    await _flutterTts.setVolume(1.0);
-    await _flutterTts.setPitch(1.0);
+  // Read the saved favorite status from the database
+  Future<void> _loadFavorite() async {
+    final id = widget.word.id;
+    if (id == null) return;
+    final fav = await DatabaseHelper.instance.isWordFavorited(id);
+    if (mounted) setState(() => _isFavorited = fav);
+  }
 
-    if (text.isNotEmpty) {
-      await _flutterTts.speak(text);
+  // Heart button: save or remove the favorite in the database
+  Future<void> _toggleFavorite() async {
+    final id = widget.word.id;
+    if (id == null) return;
+    final newStatus = !_isFavorited;
+    await DatabaseHelper.instance.updateFavoriteStatus(id, newStatus ? 1 : 0);
+    if (!mounted) return;
+    setState(() => _isFavorited = newStatus);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          newStatus ? 'Added to Favorites!' : 'Removed from Favorites!',
+        ),
+        duration: const Duration(seconds: 1),
+      ),
+    );
+  }
+
+  // VOICE button: pronounce the English word at the speed chosen in Settings
+  Future<void> _speak(String text) async {
+    final rate = Provider.of<ThemeProvider>(context, listen: false).speechRate;
+    try {
+      await _flutterTts.setLanguage('en-US');
+      await _flutterTts.setSpeechRate(rate);
+      await _flutterTts.setVolume(1.0);
+      await _flutterTts.setPitch(1.0);
+      if (text.isNotEmpty) await _flutterTts.speak(text);
+    } catch (e) {
+      debugPrint('Speech error: $e');
     }
   }
 
-  // A taka share-na function
   void _shareWord() {
-    final String shareText =
-        "Mara Dictionary:\n\n"
-        "📖 Word: ${widget.word.word}\n"
-        "💡 Meaning: ${widget.word.definition}";
-
-    Share.share(shareText);
+    Share.share(
+      "Mara Dictionary:\n\n"
+      "Word: ${widget.word.word}\n"
+      "Meaning: ${widget.word.definition}",
+    );
   }
 
-  Widget _buildDefinitionText(
-    String word,
-    String definitionText,
-    Color textColor,
-  ) {
-    final List<String> posList = [
-      'v.t.',
-      'v.i.',
-      'adj.',
-      'n.',
-      'adv.',
-      'v.',
-      'prep.',
-      'conj.',
-      'pron.',
-      'interj.',
+  Widget _buildDefinitionText(Color textColor) {
+    final spans = <InlineSpan>[
+      TextSpan(
+        text: '${widget.word.word} : ',
+        style: TextStyle(
+          fontSize: 22,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+        ),
+      ),
     ];
 
-    List<String> tokens = definitionText.split(' ');
-    List<InlineSpan> spans = [];
-    spans.add(
-      TextSpan(
-        text: word,
-        style: TextStyle(
-          fontSize: 22,
-          fontWeight: FontWeight.bold,
-          color: textColor,
-        ),
-      ),
-    );
-    spans.add(
-      TextSpan(
-        text: ' : ',
-        style: TextStyle(
-          fontSize: 22,
-          fontWeight: FontWeight.bold,
-          color: textColor,
-        ),
-      ),
-    );
-    for (String token in tokens) {
+    for (final token in widget.word.definition.split(' ')) {
       if (token.isEmpty) continue;
 
-      String cleanToken = token.endsWith(',')
+      final hasComma = token.endsWith(',');
+      final cleanToken = hasComma
           ? token.substring(0, token.length - 1).trim()
           : token.trim();
 
-      if (posList.contains(cleanToken)) {
+      if (_posList.contains(cleanToken)) {
         spans.add(
           WidgetSpan(
             alignment: PlaceholderAlignment.middle,
@@ -98,7 +127,7 @@ class _WordCardState extends State<WordCard> {
               padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
               margin: const EdgeInsets.symmetric(horizontal: 4),
               decoration: BoxDecoration(
-                color: const Color(0xFFD97706), // Warm Amber / Gold badge
+                color: const Color(0xFFD97706),
                 borderRadius: BorderRadius.circular(6),
               ),
               child: Text(
@@ -112,17 +141,7 @@ class _WordCardState extends State<WordCard> {
             ),
           ),
         );
-
-        if (token.endsWith(',')) {
-          spans.add(
-            TextSpan(
-              text: ', ',
-              style: TextStyle(fontSize: 18, color: textColor),
-            ),
-          );
-        } else {
-          spans.add(const TextSpan(text: ' '));
-        }
+        spans.add(TextSpan(text: hasComma ? ', ' : ' '));
       } else {
         spans.add(
           TextSpan(
@@ -133,24 +152,39 @@ class _WordCardState extends State<WordCard> {
       }
     }
 
-    return RichText(text: TextSpan(children: spans));
+    // Text.rich follows the font size chosen in Settings
+    return Text.rich(TextSpan(children: spans));
   }
 
   @override
   Widget build(BuildContext context) {
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
-
-    const navyButtonColor = Color(0xFF13263B);
+    final buttonColor = Provider.of<ThemeProvider>(context).headerColor;
     const goldAccent = Color(0xFFDFBA7B);
 
     final cardBgColor = isDarkMode ? const Color(0xFF1E1E1E) : Colors.white;
     final textColor = isDarkMode ? Colors.white : const Color(0xFF2C2C2C);
     final subtitleColor = isDarkMode ? Colors.white60 : Colors.black54;
 
+    final buttonStyle = ElevatedButton.styleFrom(
+      backgroundColor: buttonColor,
+      foregroundColor: goldAccent,
+      elevation: 3,
+      padding: const EdgeInsets.symmetric(vertical: 14),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(30),
+        side: BorderSide(color: goldAccent.withValues(alpha: 0.4), width: 1),
+      ),
+    );
+    const labelStyle = TextStyle(
+      fontWeight: FontWeight.bold,
+      fontSize: 15,
+      letterSpacing: 0.5,
+    );
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Thumal fiahna bawm
         Container(
           width: double.infinity,
           padding: const EdgeInsets.all(18.0),
@@ -175,33 +209,10 @@ class _WordCardState extends State<WordCard> {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Expanded(
-                    child: _buildDefinitionText(
-                      widget.word.word,
-                      widget.word.definition,
-                      textColor,
-                    ),
-                  ),
+                  Expanded(child: _buildDefinitionText(textColor)),
                   const SizedBox(width: 8),
-
-                  // LOVE (Heart) Icon
                   IconButton(
-                    onPressed: () {
-                      setState(() {
-                        _isFavorited = !_isFavorited;
-                      });
-
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(
-                            _isFavorited
-                                ? 'Added to Favorites!'
-                                : 'Removed from Favorites!',
-                          ),
-                          duration: const Duration(seconds: 1),
-                        ),
-                      );
-                    },
+                    onPressed: _toggleFavorite,
                     icon: Icon(
                       _isFavorited ? Icons.favorite : Icons.favorite_border,
                       color: _isFavorited ? Colors.redAccent : goldAccent,
@@ -228,7 +239,6 @@ class _WordCardState extends State<WordCard> {
                     color: subtitleColor,
                   ),
                 ),
-
               if (widget.word.antonyms.isNotEmpty) ...[
                 const SizedBox(height: 4),
                 Text(
@@ -246,59 +256,20 @@ class _WordCardState extends State<WordCard> {
         const SizedBox(height: 20),
         Row(
           children: [
-            // VOICE
             Expanded(
               child: ElevatedButton.icon(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: navyButtonColor,
-                  foregroundColor: goldAccent,
-                  elevation: 3,
-                  padding: const EdgeInsets.symmetric(vertical: 14),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    side: BorderSide(
-                      color: goldAccent.withValues(alpha: 0.4),
-                      width: 1,
-                    ),
-                  ),
-                ),
-                icon: const Icon(Icons.volume_up, size: 22, color: goldAccent),
-                label: const Text(
-                  'VOICE',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                    letterSpacing: 0.5,
-                  ),
-                ),
+                style: buttonStyle,
+                icon: const Icon(Icons.volume_up, size: 22),
+                label: const Text('VOICE', style: labelStyle),
                 onPressed: () => _speak(widget.word.word),
               ),
             ),
             const SizedBox(width: 16),
             Expanded(
               child: ElevatedButton.icon(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: navyButtonColor,
-                  foregroundColor: goldAccent,
-                  elevation: 3,
-                  padding: const EdgeInsets.symmetric(vertical: 14),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    side: BorderSide(
-                      color: goldAccent.withValues(alpha: 0.4),
-                      width: 1,
-                    ),
-                  ),
-                ),
-                icon: const Icon(Icons.share, size: 22, color: goldAccent),
-                label: const Text(
-                  'SHARE',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                    letterSpacing: 0.5,
-                  ),
-                ),
+                style: buttonStyle,
+                icon: const Icon(Icons.share, size: 22),
+                label: const Text('SHARE', style: labelStyle),
                 onPressed: _shareWord,
               ),
             ),

@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -9,13 +10,32 @@ class DatabaseHelper {
   static const _databaseName = "word.db";
   static const int _databaseVersion = 1;
   static const _tableName = "word";
+  static const _columns =
+      'rowid AS id, word, definition, is_favorite, synonyms, antonyms';
 
-  // Singleton Instance
+  // Singleton: only one connection in the whole app
   DatabaseHelper._privateConstructor();
   static final DatabaseHelper instance = DatabaseHelper._privateConstructor();
-
   static Database? _database;
 
+  // ---------- Web version: word list kept in memory ----------
+  static List<WordModel>? _webWords;
+
+  Future<List<WordModel>> _loadWebWords() async {
+    if (_webWords != null) return _webWords!;
+    final jsonStr = await rootBundle.loadString('assets/dictionary.json');
+    final List<dynamic> data = json.decode(jsonStr);
+    _webWords = [
+      for (int i = 0; i < data.length; i++)
+        WordModel.fromMap({
+          ...Map<String, dynamic>.from(data[i] as Map),
+          'id': i + 1,
+        }),
+    ];
+    return _webWords!;
+  }
+
+  // ---------- Android version: SQLite ----------
   Future<Database> get database async {
     if (_database != null) return _database!;
     _database = await _initDatabase();
@@ -23,48 +43,31 @@ class DatabaseHelper {
   }
 
   Future<Database> _initDatabase() async {
-    String databasesPath = await getDatabasesPath();
-    String path = join(databasesPath, _databaseName);
+    final databasesPath = await getDatabasesPath();
+    final path = join(databasesPath, _databaseName);
 
-    bool exists = await databaseExists(path);
-
-    if (!exists) {
-      if (kDebugMode) {
-        print("Database thar a ni a, assets aṭangin kan copy lût rih dawn...");
-      }
+    // First launch: copy the ready-made word.db from the assets
+    if (!await databaseExists(path)) {
       try {
         await Directory(dirname(path)).create(recursive: true);
-
-        ByteData data = await rootBundle.load('assets/$_databaseName');
-        List<int> bytes = data.buffer.asUint8List(
+        final data = await rootBundle.load('assets/$_databaseName');
+        final bytes = data.buffer.asUint8List(
           data.offsetInBytes,
           data.lengthInBytes,
         );
-
         await File(path).writeAsBytes(bytes, flush: true);
-        if (kDebugMode) print("Database copy luh a hlawhtling ta!");
       } catch (e) {
-        if (kDebugMode) print("Database copy luhah buaina a awm: $e");
-        if (await File(path).exists()) {
-          await File(path).delete();
-        }
+        if (await File(path).exists()) await File(path).delete();
         rethrow;
       }
-    } else {
-      if (kDebugMode) print("Database a awm sa tawh e.");
     }
 
     final db = await openDatabase(path, version: _databaseVersion);
-
-    // History leh column mamawh dangte va chei fel
     await _setupTablesAndColumns(db);
-
     return db;
   }
 
-  // --- HISTORY LEH COLUMN FIX ---
   Future<void> _setupTablesAndColumns(Database db) async {
-    // 1. History Table
     await db.execute('''
       CREATE TABLE IF NOT EXISTS history (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -75,106 +78,125 @@ class DatabaseHelper {
       )
     ''');
 
-    // 2. Column belh tur ho
-    List<String> alterQueries = [
+    // Add the extra columns; an error means the column already exists
+    for (final query in [
       'ALTER TABLE "$_tableName" ADD COLUMN is_favorite INTEGER NOT NULL DEFAULT 0',
       'ALTER TABLE "$_tableName" ADD COLUMN synonyms TEXT',
       'ALTER TABLE "$_tableName" ADD COLUMN antonyms TEXT',
-    ];
-
-    for (String query in alterQueries) {
+    ]) {
       try {
         await db.execute(query);
-      } catch (_) {
-        // Column a awm sa chuan a pass mai ang
-      }
+      } catch (_) {}
     }
 
-    // 3. FIX: NULL data ho zawng zawng 0-ah siam chhuah leh nan
-    try {
-      await db.execute(
-        'UPDATE "$_tableName" SET is_favorite = 0 WHERE is_favorite IS NULL',
-      );
-    } catch (e) {
-      if (kDebugMode) print("Error normalizing favorites: $e");
-    }
+    await db.execute(
+      'UPDATE "$_tableName" SET is_favorite = 0 WHERE is_favorite IS NULL',
+    );
   }
 
   // ==========================================================
-  // APP FUNCTIONS
+  // WORD QUERIES
   // ==========================================================
 
-  // 1. Browse Screen (Hawrawp thlîrna)
   Future<List<WordModel>> getWordsByLetter(String letter) async {
+    if (kIsWeb) {
+      final all = await _loadWebWords();
+      final l = letter.toLowerCase();
+      final list = all
+          .where((w) => w.word.toLowerCase().startsWith(l))
+          .toList();
+      list.sort((a, b) => a.word.toLowerCase().compareTo(b.word.toLowerCase()));
+      return list;
+    }
     final db = await instance.database;
     final result = await db.rawQuery(
-      'SELECT rowid AS id, word, definition, is_favorite, synonyms, antonyms FROM "$_tableName" WHERE word LIKE ? ORDER BY word ASC',
+      'SELECT $_columns FROM "$_tableName" WHERE word LIKE ? ORDER BY word ASC',
       ['$letter%'],
     );
     return result.map((json) => WordModel.fromMap(json)).toList();
   }
 
-  // 2. Search Screen
   Future<List<WordModel>> searchWords(String query) async {
+    if (kIsWeb) {
+      final all = await _loadWebWords();
+      final q = query.toLowerCase();
+      return all.where((w) => w.word.toLowerCase().startsWith(q)).toList();
+    }
     final db = await instance.database;
     final result = await db.rawQuery(
-      'SELECT rowid AS id, word, definition, is_favorite, synonyms, antonyms FROM "$_tableName" WHERE word LIKE ?',
+      'SELECT $_columns FROM "$_tableName" WHERE word LIKE ?',
       ['$query%'],
     );
     return result.map((json) => WordModel.fromMap(json)).toList();
   }
 
-  // 3. Random Word
   Future<WordModel?> getRandomWord() async {
+    if (kIsWeb) {
+      final all = await _loadWebWords();
+      if (all.isEmpty) return null;
+      return (all.toList()..shuffle()).first;
+    }
     final db = await instance.database;
-    final List<Map<String, dynamic>> maps = await db.rawQuery(
-      'SELECT rowid AS id, word, definition, is_favorite, synonyms, antonyms FROM "$_tableName" ORDER BY RANDOM() LIMIT 1',
+    final maps = await db.rawQuery(
+      'SELECT $_columns FROM "$_tableName" ORDER BY RANDOM() LIMIT 1',
     );
-    if (maps.isNotEmpty) return WordModel.fromMap(maps.first);
-    return null;
+    return maps.isNotEmpty ? WordModel.fromMap(maps.first) : null;
   }
 
-  // 4. FAVORITE FUNCTIONS
-  Future<List<WordModel>> getFavoriteWords() async {
+  Future<WordModel?> getWordDetails(String wordText) async {
+    if (kIsWeb) {
+      final all = await _loadWebWords();
+      for (final w in all) {
+        if (w.word == wordText) return w;
+      }
+      return null;
+    }
     final db = await instance.database;
-    final List<Map<String, dynamic>> maps = await db.rawQuery(
-      'SELECT rowid AS id, word, definition, is_favorite, synonyms, antonyms FROM "$_tableName" WHERE is_favorite = 1 ORDER BY word ASC',
+    final maps = await db.rawQuery(
+      'SELECT $_columns FROM "$_tableName" WHERE word = ? LIMIT 1',
+      [wordText],
     );
-    if (kDebugMode) print("Favorites fetched count: ${maps.length}");
+    return maps.isNotEmpty ? WordModel.fromMap(maps.first) : null;
+  }
+
+  // ==========================================================
+  // FAVORITES (Android only)
+  // ==========================================================
+
+  Future<List<WordModel>> getFavoriteWords() async {
+    if (kIsWeb) return [];
+    final db = await instance.database;
+    final maps = await db.rawQuery(
+      'SELECT $_columns FROM "$_tableName" WHERE is_favorite = 1 ORDER BY word ASC',
+    );
     return maps.map((json) => WordModel.fromMap(json)).toList();
   }
 
   Future<int> updateFavoriteStatus(int id, int isFavorite) async {
+    if (kIsWeb) return 0;
     final db = await instance.database;
-
-    // rowid leh id column awm palh pawha match ve ve thei turin rawUpdate kan hmang
-    int count = await db.rawUpdate(
-      'UPDATE "$_tableName" SET is_favorite = ? WHERE rowid = ? OR id = ?',
-      [isFavorite, id, id],
+    return await db.rawUpdate(
+      'UPDATE "$_tableName" SET is_favorite = ? WHERE rowid = ?',
+      [isFavorite, id],
     );
-
-    if (kDebugMode) {
-      print(
-        "Favorite status updated. Row ID: $id, New Status: $isFavorite, Rows Affected: $count",
-      );
-    }
-    return count;
   }
 
   Future<bool> isWordFavorited(int id) async {
+    if (kIsWeb) return false;
     final db = await instance.database;
     final maps = await db.rawQuery(
-      'SELECT is_favorite FROM "$_tableName" WHERE rowid = ? OR id = ? LIMIT 1',
-      [id, id],
+      'SELECT is_favorite FROM "$_tableName" WHERE rowid = ? LIMIT 1',
+      [id],
     );
-    if (maps.isNotEmpty) {
-      return (maps.first['is_favorite'] ?? 0) == 1;
-    }
-    return false;
+    return maps.isNotEmpty && (maps.first['is_favorite'] ?? 0) == 1;
   }
 
-  // 5. HISTORY FUNCTIONS
+  // ==========================================================
+  // HISTORY (Android only)
+  // ==========================================================
+
   Future<void> addToHistory(int wordId, String word, String meaning) async {
+    if (kIsWeb) return;
     final db = await instance.database;
     await db.delete('history', where: 'word_id = ?', whereArgs: [wordId]);
     await db.insert('history', {
@@ -185,41 +207,27 @@ class DatabaseHelper {
   }
 
   Future<List<Map<String, dynamic>>> getHistory() async {
+    if (kIsWeb) return [];
     final db = await instance.database;
     return await db.query('history', orderBy: 'id DESC');
   }
 
   Future<void> clearHistory() async {
+    if (kIsWeb) return;
     final db = await instance.database;
     await db.delete('history');
   }
 
-  // 6. Synonyms & Antonyms
+  // ==========================================================
+  // SYNONYMS AND ANTONYMS CACHE (Android only)
+  // ==========================================================
+
   Future<int> updateWordSynAnt(int id, String synonyms, String antonyms) async {
+    if (kIsWeb) return 0;
     final db = await instance.database;
     return await db.rawUpdate(
-      'UPDATE "$_tableName" SET synonyms = ?, antonyms = ? WHERE rowid = ? OR id = ?',
-      [synonyms, antonyms, id, id],
+      'UPDATE "$_tableName" SET synonyms = ?, antonyms = ? WHERE rowid = ?',
+      [synonyms, antonyms, id],
     );
-  }
-
-  // 7. GET WORD DETAILS
-  Future<WordModel?> getWordDetails(String wordText) async {
-    final db = await instance.database;
-    final List<Map<String, dynamic>> maps = await db.rawQuery(
-      'SELECT rowid AS id, word, definition, is_favorite, synonyms, antonyms FROM "$_tableName" WHERE word = ? LIMIT 1',
-      [wordText],
-    );
-    if (maps.isNotEmpty) {
-      return WordModel.fromMap(maps.first);
-    }
-    return null;
-  }
-
-  // 8. Database kharna
-  Future<void> close() async {
-    final db = await instance.database;
-    db.close();
-    _database = null;
   }
 }

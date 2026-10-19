@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../utils/database_helper.dart';
 import '../models/word_model.dart';
-import '../widgets/word_card.dart';
+import '../utils/database_helper.dart';
+import 'word_detail_page.dart';
 
 class BrowseScreen extends StatefulWidget {
   const BrowseScreen({super.key});
@@ -11,46 +11,23 @@ class BrowseScreen extends StatefulWidget {
 }
 
 class _BrowseScreenState extends State<BrowseScreen> {
-  final List<String> _alphabets = [
-    'A',
-    'B',
-    'C',
-    'D',
-    'E',
-    'F',
-    'G',
-    'H',
-    'I',
-    'J',
-    'K',
-    'L',
-    'M',
-    'N',
-    'O',
-    'P',
-    'Q',
-    'R',
-    'S',
-    'T',
-    'U',
-    'V',
-    'W',
-    'X',
-    'Y',
-    'Z',
-  ];
+  final List<String> _alphabets = List.generate(
+    26,
+    (i) => String.fromCharCode(65 + i),
+  );
 
   String? _selectedLetter;
   List<WordModel> _wordsByLetter = [];
   bool _isLoading = false;
 
-  void _fetchWords(String letter) async {
+  Future<void> _fetchWords(String letter) async {
     setState(() {
       _selectedLetter = letter;
       _isLoading = true;
     });
 
     final words = await DatabaseHelper.instance.getWordsByLetter(letter);
+    if (!mounted) return;
 
     setState(() {
       _wordsByLetter = words;
@@ -61,23 +38,16 @@ class _BrowseScreenState extends State<BrowseScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFFFDF6),
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 192, 21, 239),
         title: Text(
           _selectedLetter == null
               ? 'Browse Words'
               : 'Words starting with "$_selectedLetter"',
-          style: const TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-          ),
         ),
-        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            // 'onPressed' kan hmang tawh e, error a bo ang
+            // Word list -> letter grid -> leave the screen
             if (_selectedLetter != null) {
               setState(() {
                 _selectedLetter = null;
@@ -94,16 +64,19 @@ class _BrowseScreenState extends State<BrowseScreen> {
   }
 
   Widget _buildAlphabetGrid() {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
     return Column(
       children: [
-        const Padding(
-          padding: EdgeInsets.all(16.0),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
           child: Text(
             'Category a tlyh ty:',
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
-              color: Colors.black87,
+              color: theme.colorScheme.onSurface,
             ),
           ),
         ),
@@ -123,7 +96,7 @@ class _BrowseScreenState extends State<BrowseScreen> {
                 borderRadius: BorderRadius.circular(8),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: isDark ? const Color(0xFF1E1E1E) : Colors.white,
                     borderRadius: BorderRadius.circular(8),
                     boxShadow: [
                       BoxShadow(
@@ -135,10 +108,10 @@ class _BrowseScreenState extends State<BrowseScreen> {
                   alignment: Alignment.center,
                   child: Text(
                     letter,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 192, 21, 239),
+                      color: theme.colorScheme.primary,
                     ),
                   ),
                 ),
@@ -152,11 +125,7 @@ class _BrowseScreenState extends State<BrowseScreen> {
 
   Widget _buildWordsList() {
     if (_isLoading) {
-      return const Center(
-        child: CircularProgressIndicator(
-          color: Color.fromARGB(255, 192, 21, 239),
-        ),
-      );
+      return const Center(child: CircularProgressIndicator());
     }
 
     if (_wordsByLetter.isEmpty) {
@@ -185,19 +154,7 @@ class _BrowseScreenState extends State<BrowseScreen> {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(
-                builder: (context) => Scaffold(
-                  backgroundColor: const Color(0xFFFFFDF6),
-                  appBar: AppBar(
-                    backgroundColor: const Color.fromARGB(255, 192, 21, 239),
-                    title: Text(wordData.word),
-                  ),
-                  body: SingleChildScrollView(
-                    padding: const EdgeInsets.all(12.0),
-                    child: WordCard(word: wordData),
-                  ),
-                ),
-              ),
+              MaterialPageRoute(builder: (_) => WordDetailPage(word: wordData)),
             );
           },
         );

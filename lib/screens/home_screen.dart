@@ -1,6 +1,4 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
@@ -8,13 +6,18 @@ import 'package:url_launcher/url_launcher.dart';
 import '../models/word_model.dart';
 import '../providers/theme_provider.dart';
 import '../utils/database_helper.dart';
+import '../utils/synonym_service.dart';
 import '../widgets/home_drawer.dart';
 import '../widgets/home_search_bar.dart';
 import '../widgets/word_card.dart';
 import 'favorites_screen.dart';
 import 'history_screen.dart';
-import 'info_screen.dart';
 import 'settings_screen.dart';
+
+const _webUrl = 'https://narsonatlei-ops.github.io/Mara-dictionary/';
+const _privacyUrl = 'https://mara-dictionary-web.com/privacy-policy';
+const _apkUrl =
+    'https://drive.google.com/file/d/11HMC56cwS6aqTOH49EyhW2ZPWwE9R7w6/view?usp=sharing';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -27,13 +30,13 @@ class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
   List<WordModel> _suggestions = [];
   WordModel? _selectedWord;
+  int _cardVersion = 0; // changes when the card must reload (e.g. favorites)
   final TextEditingController _searchController = TextEditingController();
 
   final stt.SpeechToText _speech = stt.SpeechToText();
   bool _isListening = false;
-  int _currentBottomIndex = 0;
 
-  AnimationController? _animationController;
+  late final AnimationController _animationController;
 
   @override
   void initState() {
@@ -41,153 +44,78 @@ class _HomeScreenState extends State<HomeScreen>
     _animationController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 1200),
-    )..repeat();
+    );
   }
 
-  // Free Dictionary API hmanga Synonyms & Antonyms la chhuaktu
-  Future<WordModel> _checkAndFetchData(WordModel word) async {
-    if (word.synonyms.isEmpty && word.antonyms.isEmpty) {
-      try {
-        final response = await http.get(
-          Uri.parse(
-            'https://api.dictionaryapi.dev/api/v2/entries/en/${word.word}',
-          ),
-        );
-
-        if (response.statusCode == 200) {
-          final List<dynamic> data = json.decode(response.body);
-          Set<String> synonymsSet = {};
-          Set<String> antonymsSet = {};
-
-          for (var entry in data) {
-            if (entry['meanings'] != null) {
-              for (var meaning in entry['meanings']) {
-                if (meaning['synonyms'] != null) {
-                  synonymsSet.addAll(List<String>.from(meaning['synonyms']));
-                }
-                if (meaning['antonyms'] != null) {
-                  antonymsSet.addAll(List<String>.from(meaning['antonyms']));
-                }
-                if (meaning['definitions'] != null) {
-                  for (var def in meaning['definitions']) {
-                    if (def['synonyms'] != null) {
-                      synonymsSet.addAll(List<String>.from(def['synonyms']));
-                    }
-                    if (def['antonyms'] != null) {
-                      antonymsSet.addAll(List<String>.from(def['antonyms']));
-                    }
-                  }
-                }
-              }
-            }
-          }
-
-          String synonymsList = synonymsSet.take(4).join(', ');
-          String antonymsList = antonymsSet.take(4).join(', ');
-
-          if (synonymsList.isNotEmpty || antonymsList.isNotEmpty) {
-            if (word.id != null) {
-              await DatabaseHelper.instance.updateWordSynAnt(
-                word.id!,
-                synonymsList,
-                antonymsList,
-              );
-            }
-            return WordModel(
-              id: word.id,
-              word: word.word,
-              definition: word.definition,
-              isFavorite: word.isFavorite,
-              synonyms: synonymsList,
-              antonyms: antonymsList,
-            );
-          }
-        }
-      } catch (e) {
-        debugPrint("API fetch error: $e");
-      }
-    }
-    return word;
+  @override
+  void dispose() {
+    _speech.stop();
+    _searchController.dispose();
+    _animationController.dispose();
+    super.dispose();
   }
 
-  void _selectWord(WordModel word) async {
-    WordModel updatedWord = await _checkAndFetchData(word);
+  // ---------------- word selection ----------------
 
-    if (!mounted) return;
+  void _selectWord(WordModel word) {
     setState(() {
-      _selectedWord = updatedWord;
-      _searchController.text = updatedWord.word;
+      _selectedWord = word;
+      _searchController.text = word.word;
       _suggestions = [];
     });
     FocusScope.of(context).unfocus();
 
-    if (updatedWord.id != null) {
-      await DatabaseHelper.instance.addToHistory(
-        updatedWord.id!,
-        updatedWord.word,
-        updatedWord.definition,
+    if (word.id != null) {
+      DatabaseHelper.instance.addToHistory(
+        word.id!,
+        word.word,
+        word.definition,
       );
     }
+    _loadSynonymsAndAntonyms(word);
   }
 
-  void _getRandomWord() async {
-    try {
-      final suggestions = await DatabaseHelper.instance.searchWords('');
-      if (suggestions.isNotEmpty) {
-        suggestions.shuffle();
-        _selectWord(suggestions.first);
-      }
-    } catch (e) {
-      debugPrint("Random word fetch error: $e");
+  // The word is shown at once; synonyms and antonyms are added when ready
+  Future<void> _loadSynonymsAndAntonyms(WordModel word) async {
+    if (word.synonyms.isNotEmpty || word.antonyms.isNotEmpty) return;
+
+    final result = await SynonymService.fetch(word.word);
+    if (result == null ||
+        (result.synonyms.isEmpty && result.antonyms.isEmpty)) {
+      return;
     }
-  }
 
-  void _listen() async {
-    if (!_isListening) {
-      bool available = await _speech.initialize(
-        onStatus: (status) {
-          if (status == 'notListening' || status == 'done') {
-            if (mounted) setState(() => _isListening = false);
-          }
-        },
-        onError: (error) {
-          if (mounted) setState(() => _isListening = false);
-        },
+    if (word.id != null) {
+      await DatabaseHelper.instance.updateWordSynAnt(
+        word.id!,
+        result.synonyms,
+        result.antonyms,
       );
-      if (available) {
-        setState(() => _isListening = true);
-        _speech.listen(
-          onResult: (result) async {
-            if (!mounted) return;
-            setState(() {
-              _searchController.text = result.recognizedWords;
-            });
-
-            final suggestions = await DatabaseHelper.instance.searchWords(
-              result.recognizedWords,
-            );
-
-            setState(() {
-              _suggestions = suggestions;
-              _selectedWord = null;
-            });
-
-            if (result.finalResult && suggestions.isNotEmpty) {
-              _selectWord(suggestions.first);
-              if (mounted) setState(() => _isListening = false);
-              _speech.stop();
-            }
-          },
-        );
-      }
-    } else {
-      setState(() => _isListening = false);
-      _speech.stop();
     }
+
+    // Show them only if the user is still looking at the same word
+    if (!mounted || _selectedWord?.id != word.id) return;
+    setState(() {
+      _selectedWord = WordModel(
+        id: word.id,
+        word: word.word,
+        definition: word.definition,
+        isFavorite: word.isFavorite,
+        synonyms: result.synonyms,
+        antonyms: result.antonyms,
+      );
+    });
   }
 
-  void _onSearchChanged(String query) async {
-    if (query.isEmpty) {
+  Future<void> _getRandomWord() async {
+    final word = await DatabaseHelper.instance.getRandomWord();
+    if (word != null && mounted) _selectWord(word);
+  }
+
+  // ---------------- search ----------------
+
+  Future<void> _onSearchChanged(String query) async {
+    if (query.trim().isEmpty) {
       setState(() {
         _suggestions = [];
         _selectedWord = null;
@@ -195,63 +123,190 @@ class _HomeScreenState extends State<HomeScreen>
       return;
     }
 
-    final suggestions = await DatabaseHelper.instance.searchWords(query);
-
+    final suggestions = await DatabaseHelper.instance.searchWords(query.trim());
+    if (!mounted) return;
     setState(() {
       _suggestions = suggestions;
       _selectedWord = null;
     });
   }
 
-  @override
-  void dispose() {
-    _searchController.dispose();
-    _animationController?.dispose();
-    super.dispose();
+  // ---------------- voice search ----------------
+
+  void _setListening(bool value) {
+    if (!mounted) return;
+    setState(() => _isListening = value);
+    if (value) {
+      _animationController.repeat();
+    } else {
+      _animationController.stop();
+      _animationController.reset();
+    }
   }
+
+  Future<void> _listen() async {
+    if (_isListening) {
+      _speech.stop();
+      _setListening(false);
+      return;
+    }
+
+    final available = await _speech.initialize(
+      onStatus: (status) {
+        if (status == 'notListening' || status == 'done') {
+          _setListening(false);
+        }
+      },
+      onError: (error) => _setListening(false),
+    );
+
+    if (!available) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Voice search is not available on this device.'),
+          ),
+        );
+      }
+      return;
+    }
+
+    _setListening(true);
+    _speech.listen(
+      onResult: (result) async {
+        if (!mounted) return;
+        _searchController.text = result.recognizedWords;
+
+        final suggestions = await DatabaseHelper.instance.searchWords(
+          result.recognizedWords.trim(),
+        );
+        if (!mounted) return;
+        setState(() {
+          _suggestions = suggestions;
+          _selectedWord = null;
+        });
+
+        if (result.finalResult && suggestions.isNotEmpty) {
+          _selectWord(suggestions.first);
+          _speech.stop();
+          _setListening(false);
+        }
+      },
+    );
+  }
+
+  // ---------------- menu ----------------
+
+  Future<void> _openLink(String url) async {
+    final ok = await launchUrl(
+      Uri.parse(url),
+      mode: LaunchMode.externalApplication,
+    );
+    if (!ok && mounted) {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('Could not open the link.')));
+    }
+  }
+
+  void _onMenuSelected(String value) {
+    switch (value) {
+      case 'theme':
+        Provider.of<ThemeProvider>(context, listen: false).toggleTheme();
+        break;
+      case 'settings':
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const SettingsScreen()),
+        );
+        break;
+      case 'share':
+        Share.share(
+          'Mara Dictionary\n\nWeb version: $_webUrl\n\nDirect apk download: $_apkUrl',
+        );
+        break;
+      case 'web':
+        _openLink(_webUrl);
+        break;
+      case 'privacy':
+        _openLink(_privacyUrl);
+        break;
+    }
+  }
+
+  PopupMenuItem<String> _menuItem(String value, IconData icon, String text) {
+    return PopupMenuItem(
+      value: value,
+      child: Row(
+        children: [
+          Icon(icon, color: Colors.white),
+          const SizedBox(width: 10),
+          Text(text, style: const TextStyle(color: Colors.white)),
+        ],
+      ),
+    );
+  }
+
+  // ---------------- bottom bar ----------------
+
+  Future<void> _onBottomTap(int index) async {
+    if (index == 0) {
+      _getRandomWord();
+      return;
+    }
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) =>
+            index == 1 ? const HistoryScreen() : const FavoritesScreen(),
+      ),
+    );
+    // The favorite status may have changed: reload the card
+    if (mounted) setState(() => _cardVersion++);
+  }
+
+  // ---------------- build ----------------
 
   @override
   Widget build(BuildContext context) {
-    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
+    final theme = Theme.of(context);
+    final isDarkMode = theme.brightness == Brightness.dark;
+    final headerColor = Provider.of<ThemeProvider>(context).headerColor;
+    final headerDark = Color.lerp(headerColor, Colors.black, 0.35)!;
 
-    const navyHeaderGradient = [Color(0xFF13263B), Color(0xFF0B1724)];
+    // One gradient is shared by the app bar and the search bar:
+    // the app bar ends at the middle shade, the search bar continues from it.
+    final headerMid = Color.lerp(headerColor, Colors.black, 0.17)!;
+    final appBarGradient = LinearGradient(
+      colors: [headerColor, headerMid],
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+    );
+    final bottomGradient = LinearGradient(
+      colors: [headerColor, headerDark],
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+    );
     const goldAccent = Color(0xFFDFBA7B);
 
-    final primaryColor = isDarkMode
-        ? const Color(0xFF13263B)
-        : const Color(0xFF13263B);
-
-    final textColor = isDarkMode ? Colors.white : const Color(0xFF2C2C2C);
+    final textColor = theme.colorScheme.onSurface;
     final hintColor = isDarkMode ? Colors.white60 : Colors.black45;
 
     return Scaffold(
-      backgroundColor: isDarkMode
-          ? const Color(0xFF121212)
-          : const Color(0xFFF5EFEB),
-      drawer: HomeDrawer(
-        primaryColor: primaryColor,
-        textColor: textColor,
-        onWordSelected: (word) async {
-          final updated = await _checkAndFetchData(word);
-          _selectWord(updated);
-        },
-      ),
+      drawer: HomeDrawer(onWordSelected: _selectWord),
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(60.0),
         child: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: navyHeaderGradient,
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-          ),
+          decoration: BoxDecoration(gradient: appBarGradient),
           child: AppBar(
             backgroundColor: Colors.transparent,
             elevation: 0,
             centerTitle: true,
             title: const Text(
               'English - Mara Dictionary',
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              textScaler: TextScaler.noScaling,
               style: TextStyle(
                 color: Color.fromARGB(255, 244, 242, 239),
                 fontWeight: FontWeight.bold,
@@ -262,120 +317,16 @@ class _HomeScreenState extends State<HomeScreen>
             iconTheme: const IconThemeData(color: goldAccent),
             actions: [
               PopupMenuButton<String>(
-                color: isDarkMode
-                    ? const Color(0xFF2C2C2C)
-                    : const Color(0xFF13263B),
+                color: headerDark,
                 icon: const Icon(Icons.more_vert, color: goldAccent),
-                onSelected: (value) async {
-                  if (value == 'theme') {
-                    Provider.of<ThemeProvider>(
-                      context,
-                      listen: false,
-                    ).toggleTheme();
-                  } else if (value == 'settings') {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const SettingsScreen(),
-                      ),
-                    );
-                  } else if (value == 'share') {
-                    await Share.share(
-                      'Download Mara Dictionary from Play Store:\n'
-                      'https://play.google.com/store/apps/details?id=com.example.mara_dictionary\n\n'
-                      'Direct apk download: https://drive.google.com/file/d/1f2QlM_mn7H83Sz5xp2nxR0OXWdiV_rJ-/view?usp=drive_link',
-                    );
-                  } else if (value == 'web') {
-                    final Uri url = Uri.parse(
-                      'https://narsonatlei-ops.github.io/Mara-dictionary/',
-                    );
-                    if (!await launchUrl(
-                      url,
-                      mode: LaunchMode.externalApplication,
-                    )) {
-                      debugPrint('Could not launch $url');
-                    }
-                  } else if (value == 'privacy') {
-                    final Uri url = Uri.parse(
-                      'https://mara-dictionary-web.com/privacy-policy',
-                    );
-                    if (!await launchUrl(
-                      url,
-                      mode: LaunchMode.externalApplication,
-                    )) {
-                      debugPrint('Could not launch $url');
-                    }
-                  }
-                },
-                itemBuilder: (BuildContext context) {
-                  return [
-                    const PopupMenuItem(
-                      value: 'theme',
-                      child: Row(
-                        children: [
-                          Icon(Icons.dark_mode, color: Colors.white),
-                          SizedBox(width: 10),
-                          Text(
-                            'Dark Mode',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ],
-                      ),
-                    ),
-                    const PopupMenuItem(
-                      value: 'settings',
-                      child: Row(
-                        children: [
-                          Icon(Icons.settings, color: Colors.white),
-                          SizedBox(width: 10),
-                          Text(
-                            'Settings',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ],
-                      ),
-                    ),
-                    const PopupMenuItem(
-                      value: 'share',
-                      child: Row(
-                        children: [
-                          Icon(Icons.share, color: Colors.white),
-                          SizedBox(width: 10),
-                          Text(
-                            'Share App Link',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ],
-                      ),
-                    ),
-                    const PopupMenuItem(
-                      value: 'web',
-                      child: Row(
-                        children: [
-                          Icon(Icons.language, color: Colors.white),
-                          SizedBox(width: 10),
-                          Text(
-                            'Web Version',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ],
-                      ),
-                    ),
-                    const PopupMenuItem(
-                      value: 'privacy',
-                      child: Row(
-                        children: [
-                          Icon(Icons.security, color: Colors.white),
-                          SizedBox(width: 10),
-                          Text(
-                            'Privacy Policy',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ];
-                },
+                onSelected: _onMenuSelected,
+                itemBuilder: (context) => [
+                  _menuItem('theme', Icons.dark_mode, 'Dark Mode'),
+                  _menuItem('settings', Icons.settings, 'Settings'),
+                  _menuItem('share', Icons.share, 'Share App Link'),
+                  _menuItem('web', Icons.language, 'Web Version'),
+                  _menuItem('privacy', Icons.security, 'Privacy Policy'),
+                ],
               ),
             ],
           ),
@@ -394,8 +345,7 @@ class _HomeScreenState extends State<HomeScreen>
             animationController: _animationController,
             onListen: _listen,
             isDarkMode: isDarkMode,
-            textColor: textColor,
-            hintColor: hintColor,
+            headerColor: headerColor,
           ),
           Expanded(
             child: Stack(
@@ -425,7 +375,10 @@ class _HomeScreenState extends State<HomeScreen>
                 if (_selectedWord != null)
                   SingleChildScrollView(
                     padding: const EdgeInsets.all(12.0),
-                    child: WordCard(word: _selectedWord!),
+                    child: WordCard(
+                      key: ValueKey('${_selectedWord!.id}_$_cardVersion'),
+                      word: _selectedWord!,
+                    ),
                   ),
                 if (_suggestions.isNotEmpty)
                   Positioned(
@@ -480,13 +433,9 @@ class _HomeScreenState extends State<HomeScreen>
         ],
       ),
       bottomNavigationBar: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: navyHeaderGradient,
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-          boxShadow: [
+        decoration: BoxDecoration(
+          gradient: bottomGradient,
+          boxShadow: const [
             BoxShadow(
               color: Colors.black38,
               blurRadius: 8,
@@ -495,30 +444,8 @@ class _HomeScreenState extends State<HomeScreen>
           ],
         ),
         child: BottomNavigationBar(
-          currentIndex: _currentBottomIndex,
-          onTap: (index) {
-            setState(() => _currentBottomIndex = index);
-            if (index == 0) {
-              _getRandomWord();
-            } else if (index == 1) {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const HistoryScreen()),
-              );
-            } else if (index == 2) {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const FavoritesScreen(),
-                ),
-              );
-            } else if (index == 3) {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const InfoScreen()),
-              );
-            }
-          },
+          currentIndex: 0,
+          onTap: _onBottomTap,
           type: BottomNavigationBarType.fixed,
           backgroundColor: Colors.transparent,
           elevation: 0,
@@ -531,7 +458,7 @@ class _HomeScreenState extends State<HomeScreen>
           unselectedLabelStyle: const TextStyle(fontSize: 11),
           items: const [
             BottomNavigationBarItem(
-              icon: Icon(Icons.search),
+              icon: Icon(Icons.casino_outlined),
               label: 'Random word',
             ),
             BottomNavigationBarItem(
@@ -539,7 +466,7 @@ class _HomeScreenState extends State<HomeScreen>
               label: 'History',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.star_border),
+              icon: Icon(Icons.favorite_border),
               label: 'Favorites',
             ),
           ],

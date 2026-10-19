@@ -20,17 +20,16 @@ class _HistoryScreenState extends State<HistoryScreen> {
     _loadHistory();
   }
 
-  // Database aṭanga history lak chhuahna
   Future<void> _loadHistory() async {
     setState(() => _isLoading = true);
     final data = await DatabaseHelper.instance.getHistory();
+    if (!mounted) return;
     setState(() {
       _historyList = data;
       _isLoading = false;
     });
   }
 
-  // History zawng zawng thiahna
   Future<void> _clearAllHistory() async {
     showDialog(
       context: context,
@@ -47,8 +46,9 @@ class _HistoryScreenState extends State<HistoryScreen> {
           TextButton(
             onPressed: () async {
               await DatabaseHelper.instance.clearHistory();
+              if (!context.mounted) return;
               Navigator.pop(context);
-              _loadHistory(); // A tharin rawn thian fai rawh
+              _loadHistory();
             },
             child: const Text('Ok', style: TextStyle(color: Colors.redAccent)),
           ),
@@ -57,29 +57,34 @@ class _HistoryScreenState extends State<HistoryScreen> {
     );
   }
 
+  Future<void> _openWord(Map<String, dynamic> item) async {
+    final wordStr = item['word'];
+    if (wordStr == null) return;
+    final WordModel? foundWord = await DatabaseHelper.instance.getWordDetails(
+      wordStr,
+    );
+    if (foundWord == null || !mounted) return;
+    await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => WordDetailPage(word: foundWord)),
+    );
+    // Opening a word moves it to the top of the history
+    _loadHistory();
+  }
+
   @override
   Widget build(BuildContext context) {
-    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
-
-    const navyPrimary = Color(0xFF13263B);
+    final theme = Theme.of(context);
+    final isDarkMode = theme.brightness == Brightness.dark;
     const goldAccent = Color(0xFFDFBA7B);
 
     final cardBgColor = isDarkMode ? const Color(0xFF1E1E1E) : Colors.white;
-    final textColor = isDarkMode ? Colors.white : const Color(0xFF2C2C2C);
+    final textColor = theme.colorScheme.onSurface;
     final subtitleColor = isDarkMode ? Colors.white60 : Colors.black54;
 
     return Scaffold(
-      backgroundColor: isDarkMode
-          ? const Color(0xFF121212)
-          : const Color(0xFFF8F9FA),
       appBar: AppBar(
-        backgroundColor: navyPrimary,
-        title: const Text(
-          'Search History',
-          style: TextStyle(color: goldAccent, fontWeight: FontWeight.bold),
-        ),
-        iconTheme: const IconThemeData(color: goldAccent),
-        elevation: 0,
+        title: const Text('Search History'),
         actions: [
           if (_historyList.isNotEmpty)
             IconButton(
@@ -90,7 +95,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
         ],
       ),
       body: _isLoading
-          ? const Center(child: CircularProgressIndicator(color: goldAccent))
+          ? const Center(child: CircularProgressIndicator())
           : _historyList.isEmpty
           ? Center(
               child: Column(
@@ -118,7 +123,6 @@ class _HistoryScreenState extends State<HistoryScreen> {
               itemCount: _historyList.length,
               itemBuilder: (context, index) {
                 final item = _historyList[index];
-
                 return Container(
                   margin: const EdgeInsets.symmetric(vertical: 6),
                   decoration: BoxDecoration(
@@ -161,23 +165,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                         style: TextStyle(fontSize: 14, color: subtitleColor),
                       ),
                     ),
-                    onTap: () async {
-                      // History item aṭang hian WordModel pawrh chhuakin WordDetailPage-ah a lut ang
-                      final wordStr = item['word'];
-                      if (wordStr != null) {
-                        WordModel? foundWord = await DatabaseHelper.instance
-                            .getWordDetails(wordStr);
-                        if (foundWord != null && context.mounted) {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) =>
-                                  WordDetailPage(word: foundWord),
-                            ),
-                          );
-                        }
-                      }
-                    },
+                    onTap: () => _openWord(item),
                   ),
                 );
               },

@@ -1,36 +1,46 @@
 import 'package:flutter/material.dart';
-import '../screens/about_screen.dart';
-import '../screens/about_developer_screen.dart';
-import '../screens/contact_screen.dart';
-import '../screens/browse_screen.dart';
-import '../screens/history_screen.dart';
-import '../screens/favorites_screen.dart';
-import '../screens/info_screen.dart';
+import 'package:provider/provider.dart';
 import '../models/word_model.dart';
+import '../providers/theme_provider.dart';
+import '../screens/about_developer_screen.dart';
+import '../screens/about_screen.dart';
+import '../screens/browse_screen.dart';
+import '../screens/contact_screen.dart';
+import '../screens/favorites_screen.dart';
+import '../screens/history_screen.dart';
+import '../screens/info_screen.dart';
 import '../utils/database_helper.dart';
 
 class HomeDrawer extends StatelessWidget {
-  final Color primaryColor;
-  final Color textColor;
   final Function(WordModel) onWordSelected;
 
-  const HomeDrawer({
-    super.key,
-    required this.primaryColor,
-    required this.textColor,
-    required this.onWordSelected,
-  });
+  const HomeDrawer({super.key, required this.onWordSelected});
+
+  // Close the drawer, then open a screen
+  void _open(BuildContext context, Widget screen) {
+    Navigator.pop(context);
+    Navigator.push(context, MaterialPageRoute(builder: (_) => screen));
+  }
 
   @override
   Widget build(BuildContext context) {
-    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
+    final theme = Theme.of(context);
+    final isDarkMode = theme.brightness == Brightness.dark;
+    final headerColor = Provider.of<ThemeProvider>(context).headerColor;
 
-    // Design Colors
     final drawerBgColor = isDarkMode
         ? const Color(0xFF121212)
         : const Color(0xFFF5EFEB);
+    final textColor = theme.colorScheme.onSurface;
     const goldAccent = Color(0xFFDFBA7B);
-    const navyHeaderGradient = [Color(0xFF13263B), Color(0xFF0B1724)];
+
+    Widget item(IconData icon, String title, VoidCallback onTap) {
+      return ListTile(
+        leading: Icon(icon, color: goldAccent),
+        title: Text(title, style: TextStyle(color: textColor)),
+        onTap: onTap,
+      );
+    }
 
     return Drawer(
       backgroundColor: drawerBgColor,
@@ -38,9 +48,12 @@ class HomeDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           UserAccountsDrawerHeader(
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: navyHeaderGradient,
+                colors: [
+                  headerColor,
+                  Color.lerp(headerColor, Colors.black, 0.35)!,
+                ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
               ),
@@ -76,121 +89,68 @@ class HomeDrawer extends StatelessWidget {
             ),
             selected: true,
             selectedTileColor: goldAccent.withValues(alpha: 0.1),
-            onTap: () {
-              Navigator.pop(context);
-            },
+            onTap: () => Navigator.pop(context),
           ),
-          ListTile(
-            leading: const Icon(Icons.person_outline, color: goldAccent),
-            title: Text('P.T Hlychho', style: TextStyle(color: textColor)),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const AboutScreen()),
-              );
-            },
+          item(
+            Icons.person_outline,
+            'P.T Hlychho',
+            () => _open(context, const AboutScreen()),
           ),
-          ListTile(
-            leading: const Icon(Icons.code, color: goldAccent),
-            title: Text('About Developer', style: TextStyle(color: textColor)),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const AboutDeveloperScreen(),
+          item(
+            Icons.code,
+            'About Developer',
+            () => _open(context, const AboutDeveloperScreen()),
+          ),
+          item(
+            Icons.bug_report_outlined,
+            'Report Error/Contact',
+            () => _open(context, const ContactScreen()),
+          ),
+          item(
+            Icons.search,
+            'Browse Words',
+            () => _open(context, const BrowseScreen()),
+          ),
+          item(
+            Icons.history,
+            'Search History',
+            () => _open(context, const HistoryScreen()),
+          ),
+          item(
+            Icons.favorite_border,
+            'Favorites',
+            () => _open(context, const FavoritesScreen()),
+          ),
+          item(
+            Icons.info_outline,
+            'Info',
+            () => _open(context, const InfoScreen()),
+          ),
+          item(Icons.casino_outlined, 'Random Word', () async {
+            final messenger = ScaffoldMessenger.of(context);
+            Navigator.pop(context);
+            final randomWord = await DatabaseHelper.instance.getRandomWord();
+            if (randomWord != null) {
+              onWordSelected(randomWord);
+            } else {
+              messenger.showSnackBar(
+                const SnackBar(
+                  content: Text('No words found in the database.'),
                 ),
               );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.bug_report_outlined, color: goldAccent),
-            title: Text(
-              'Report Error/Contact',
-              style: TextStyle(color: textColor),
-            ),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const ContactScreen()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.search, color: goldAccent),
-            title: Text('Browse Words', style: TextStyle(color: textColor)),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const BrowseScreen()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.history, color: goldAccent),
-            title: Text('Search History', style: TextStyle(color: textColor)),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const HistoryScreen()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.favorite_border, color: goldAccent),
-            title: Text('Favorites', style: TextStyle(color: textColor)),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const FavoritesScreen(),
-                ),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.info_outline, color: goldAccent),
-            title: Text('Info', style: TextStyle(color: textColor)),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const InfoScreen()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.casino_outlined, color: goldAccent),
-            title: Text('Random Word', style: TextStyle(color: textColor)),
-            onTap: () async {
-              Navigator.pop(context);
-              final randomWord = await DatabaseHelper.instance.getRandomWord();
-
-              if (randomWord != null) {
-                onWordSelected(randomWord);
-              } else {
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Database-lia mohchho y tlâ mah vei!'),
-                    ),
-                  );
-                }
-              }
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.thumb_up_alt_outlined, color: goldAccent),
-            title: Text('Rate Me', style: TextStyle(color: textColor)),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
+            }
+          }),
+          item(Icons.thumb_up_alt_outlined, 'Rate Me', () {
+            final messenger = ScaffoldMessenger.of(context);
+            Navigator.pop(context);
+            // The app is not on the Play Store yet.
+            // After publishing, open the store page here with url_launcher.
+            messenger.showSnackBar(
+              const SnackBar(
+                content: Text('Rating will be available on the Play Store.'),
+              ),
+            );
+          }),
         ],
       ),
     );

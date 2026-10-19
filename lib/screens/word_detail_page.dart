@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'dart:convert'; // JSON decoding nan kan mamawh
-import 'package:http/http.dart' as http; // API dawt nan kan mamawh
 import '../models/word_model.dart';
 import '../utils/database_helper.dart';
-import '../providers/theme_provider.dart';
+import '../utils/synonym_service.dart';
 
 class WordDetailPage extends StatefulWidget {
   final WordModel word;
@@ -18,155 +15,140 @@ class _WordDetailPageState extends State<WordDetailPage> {
   bool isFavorite = false;
   String synonyms = '';
   String antonyms = '';
-  bool isLoadingApi = false; // Internet atanga a dawt laia loading hmuhna tur
+  bool isLoadingApi = false;
 
   @override
   void initState() {
     super.initState();
-    // Database tharah hian column thar an nih avangin NULL an lo nih palh pawhin ruak (empty) angin kan pawm hram ang
     synonyms = widget.word.synonyms;
     antonyms = widget.word.antonyms;
 
     _checkFavoriteStatus();
+    _addToHistory();
 
-    // Synonyms leh Antonyms a lo la ruak vek a nih chuan API kan dawt nghal ang
+    // Call the API only when nothing is saved for this word yet
     if (synonyms.trim().isEmpty && antonyms.trim().isEmpty) {
       _fetchSynonymsAndAntonyms();
     }
   }
 
-  void _checkFavoriteStatus() async {
-    if (widget.word.id != null) {
-      bool status = await DatabaseHelper.instance.isWordFavorited(
-        widget.word.id!,
+  // Every way of opening a word (Browse, Favorites, History) is recorded
+  void _addToHistory() {
+    final id = widget.word.id;
+    if (id != null) {
+      DatabaseHelper.instance.addToHistory(
+        id,
+        widget.word.word,
+        widget.word.definition,
       );
-      if (mounted) {
-        setState(() {
-          isFavorite = status;
-        });
-      }
     }
   }
 
-  // Hemi hian internet atangin synonyms leh antonyms a va dawt tawh ang
-  void _fetchSynonymsAndAntonyms() async {
+  Future<void> _checkFavoriteStatus() async {
+    final id = widget.word.id;
+    if (id == null) return;
+    final status = await DatabaseHelper.instance.isWordFavorited(id);
+    if (mounted) setState(() => isFavorite = status);
+  }
+
+  Future<void> _fetchSynonymsAndAntonyms() async {
+    setState(() => isLoadingApi = true);
+
+    final result = await SynonymService.fetch(widget.word.word);
+
+    // Save in SQLite so the next visit works offline
+    if (result != null &&
+        (result.synonyms.isNotEmpty || result.antonyms.isNotEmpty) &&
+        widget.word.id != null) {
+      await DatabaseHelper.instance.updateWordSynAnt(
+        widget.word.id!,
+        result.synonyms,
+        result.antonyms,
+      );
+    }
+
+    if (!mounted) return;
     setState(() {
-      isLoadingApi = true;
+      synonyms = result?.synonyms ?? '';
+      antonyms = result?.antonyms ?? '';
+      isLoadingApi = false;
     });
-
-    try {
-      final String cleanWord = widget.word.word.trim();
-
-      // Uri.parse aiah space leh special character awm thut pawha him zawk turin Uri.https kan hmang ang
-      final synUri = Uri.https('api.datamuse.com', '/words', {
-        'rel_syn': cleanWord,
-      });
-      final antUri = Uri.https('api.datamuse.com', '/words', {
-        'rel_ant': cleanWord,
-      });
-
-      final synRes = await http.get(synUri);
-      final antRes = await http.get(antUri);
-
-      if (synRes.statusCode == 200 && antRes.statusCode == 200) {
-        List synData = json.decode(synRes.body);
-        List antData = json.decode(antRes.body);
-
-        // Thumal hmasa 5 chauh comma-in kan thlung khawm ang
-        String synList = synData.map((e) => e['word']).take(5).join(', ');
-        String antList = antData.map((e) => e['word']).take(5).join(', ');
-
-        // Offline-a hman zui theih nan database-ah kan va save (update) hlen nghal ang
-        if (widget.word.id != null) {
-          await DatabaseHelper.instance.updateWordSynAnt(
-            widget.word.id!,
-            synList,
-            antList,
-          );
-        }
-
-        if (mounted) {
-          setState(() {
-            synonyms = synList;
-            antonyms = antList;
-            isLoadingApi = false;
-          });
-        }
-      } else {
-        if (mounted) {
-          setState(() {
-            isLoadingApi = false;
-          });
-        }
-      }
-    } catch (e) {
-      if (mounted) {
-        setState(() {
-          isLoadingApi = false;
-        });
-      }
-      print("API Fetch Error: $e");
-    }
   }
 
-  // HETAH HIAN KAN THLAK E
-  void _toggleFavorite() async {
-    if (widget.word.id != null) {
-      bool newStatus = !isFavorite;
-      int statusInt = newStatus ? 1 : 0;
-      // updateFavoriteStatus kan ko tawh ang
-      await DatabaseHelper.instance.updateFavoriteStatus(
-        widget.word.id!,
-        statusInt,
-      );
+  Future<void> _toggleFavorite() async {
+    final id = widget.word.id;
+    if (id == null) return;
 
-      setState(() {
-        isFavorite = newStatus;
-      });
+    final newStatus = !isFavorite;
+    await DatabaseHelper.instance.updateFavoriteStatus(id, newStatus ? 1 : 0);
 
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            newStatus
-                ? 'Favorites-lia ei soh ha!'
-                : 'Favorites tawhta ei thy ha!',
-          ),
-          duration: const Duration(seconds: 1),
+    if (!mounted) return;
+    setState(() => isFavorite = newStatus);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          newStatus ? 'Added to Favorites!' : 'Removed from Favorites!',
         ),
-      );
-    }
+        duration: const Duration(seconds: 1),
+      ),
+    );
+  }
+
+  Widget _relatedWords(
+    IconData icon,
+    Color color,
+    String title,
+    String words,
+    Color textColor,
+  ) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Divider(height: 40, thickness: 1),
+        Row(
+          children: [
+            Icon(icon, color: color, size: 20),
+            const SizedBox(width: 8),
+            Text(
+              title,
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+                color: color,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+        Text(
+          words,
+          style: TextStyle(
+            fontSize: 16,
+            color: textColor,
+            fontStyle: FontStyle.italic,
+          ),
+        ),
+      ],
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    final themeProvider = Provider.of<ThemeProvider>(context);
-    final isDarkMode = themeProvider.isDarkMode;
-
-    final textColor = isDarkMode ? Colors.white : Colors.black87;
-    final cardColor = isDarkMode ? const Color(0xFF1E1E1E) : Colors.white;
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+    final textColor = theme.colorScheme.onSurface;
+    final cardColor = isDark ? const Color(0xFF1E1E1E) : Colors.white;
 
     return Scaffold(
-      backgroundColor: isDarkMode
-          ? const Color(0xFF121212)
-          : const Color(0xFFFFFDF6),
+      // App bar and background colours come from the app theme (main.dart);
+      // the font size follows Settings through the text scaler in main.dart.
       appBar: AppBar(
-        title: Text(
-          widget.word.word,
-          style: const TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        backgroundColor: isDarkMode
-            ? const Color.fromARGB(255, 140, 15, 180)
-            : themeProvider.primaryColor,
-        iconTheme: const IconThemeData(color: Colors.white),
+        title: Text(widget.word.word),
         actions: [
           IconButton(
             icon: Icon(
               isFavorite ? Icons.favorite : Icons.favorite_border,
-              color: isFavorite ? Colors.red : Colors.white,
+              color: isFavorite ? Colors.redAccent : Colors.white,
             ),
             onPressed: _toggleFavorite,
           ),
@@ -185,24 +167,19 @@ class _WordDetailPageState extends State<WordDetailPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // 1. THUMAL HMING
                 Text(
                   widget.word.word,
                   style: TextStyle(
-                    fontSize: themeProvider.fontSize + 8,
+                    fontSize: 24,
                     fontWeight: FontWeight.bold,
-                    color: isDarkMode
-                        ? Colors.purpleAccent
-                        : themeProvider.primaryColor,
+                    color: theme.colorScheme.primary,
                   ),
                 ),
                 const Divider(height: 30, thickness: 1.5),
-
-                // 2. THUMAL HRIHFIAHNA
                 Text(
                   'Meaning:',
                   style: TextStyle(
-                    fontSize: themeProvider.fontSize - 2,
+                    fontSize: 14,
                     fontWeight: FontWeight.bold,
                     color: textColor.withValues(alpha: 0.6),
                   ),
@@ -210,75 +187,28 @@ class _WordDetailPageState extends State<WordDetailPage> {
                 const SizedBox(height: 8),
                 Text(
                   widget.word.definition,
-                  style: TextStyle(
-                    fontSize: themeProvider.fontSize,
-                    color: textColor,
-                    height: 1.5,
-                  ),
+                  style: TextStyle(fontSize: 16, color: textColor, height: 1.5),
                 ),
                 if (isLoadingApi) ...[
                   const SizedBox(height: 25),
                   const Center(child: CircularProgressIndicator()),
                 ],
-
-                // 3. SYNONYMS (A lo thlen tawh chuan mawi deuhin a rawn tlar ang)
-                if (!isLoadingApi && synonyms.isNotEmpty) ...[
-                  const Divider(height: 40, thickness: 1),
-                  Row(
-                    children: [
-                      const Icon(Icons.link, color: Colors.green, size: 20),
-                      const SizedBox(width: 8),
-                      Text(
-                        'Synonyms:',
-                        style: TextStyle(
-                          fontSize: themeProvider.fontSize - 2,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.green,
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
+                if (!isLoadingApi && synonyms.isNotEmpty)
+                  _relatedWords(
+                    Icons.link,
+                    Colors.green,
+                    'Synonyms:',
                     synonyms,
-                    style: TextStyle(
-                      fontSize: themeProvider.fontSize,
-                      color: textColor,
-                      fontStyle: FontStyle.italic,
-                    ),
+                    textColor,
                   ),
-                ],
-
-                if (!isLoadingApi && antonyms.isNotEmpty) ...[
-                  const Divider(height: 40, thickness: 1),
-                  Row(
-                    children: [
-                      const Icon(
-                        Icons.compare_arrows,
-                        color: Colors.red,
-                        size: 20,
-                      ),
-                      const SizedBox(width: 8),
-                      Text(
-                        'Antonyms:',
-                        style: TextStyle(
-                          fontSize: themeProvider.fontSize - 2,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red,
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
+                if (!isLoadingApi && antonyms.isNotEmpty)
+                  _relatedWords(
+                    Icons.compare_arrows,
+                    Colors.red,
+                    'Antonyms:',
                     antonyms,
-                    style: TextStyle(
-                      fontSize: themeProvider.fontSize,
-                      color: textColor,
-                      fontStyle: FontStyle.italic,
-                    ),
+                    textColor,
                   ),
-                ],
               ],
             ),
           ),
