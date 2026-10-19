@@ -301,12 +301,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       ),
                     ],
                   ),
-                  // Preview with the size that is being chosen
-                  Text(
-                    'Preview: accept (aksept) v. âpyh, zyh, âla',
-                    textScaler: TextScaler.linear(_fontDraft / 16.0),
-                    style: TextStyle(fontSize: 16, color: textColor),
-                  ),
                 ],
               ),
             ),
