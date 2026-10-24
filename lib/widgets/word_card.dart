@@ -156,6 +156,30 @@ class _WordCardState extends State<WordCard> {
     return Text.rich(TextSpan(children: spans));
   }
 
+  // One line for synonyms or antonyms: the label is italic, the words are bold
+  Widget _relatedWords(
+    String label,
+    String words,
+    Color labelColor,
+    Color wordsColor,
+  ) {
+    return Text.rich(
+      TextSpan(
+        children: [
+          TextSpan(
+            text: '$label ',
+            style: TextStyle(fontStyle: FontStyle.italic, color: labelColor),
+          ),
+          TextSpan(
+            text: words,
+            style: TextStyle(fontWeight: FontWeight.bold, color: wordsColor),
+          ),
+        ],
+      ),
+      style: const TextStyle(fontSize: 17, height: 1.4),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
@@ -224,30 +248,26 @@ class _WordCardState extends State<WordCard> {
               if (widget.word.synonyms.isNotEmpty ||
                   widget.word.antonyms.isNotEmpty)
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  padding: const EdgeInsets.symmetric(vertical: 12),
                   child: Divider(
                     height: 1,
                     color: isDarkMode ? Colors.white12 : Colors.black12,
                   ),
                 ),
               if (widget.word.synonyms.isNotEmpty)
-                Text(
-                  'Synonyms: ${widget.word.synonyms}',
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontStyle: FontStyle.italic,
-                    color: subtitleColor,
-                  ),
+                _relatedWords(
+                  'Synonyms:',
+                  widget.word.synonyms,
+                  subtitleColor,
+                  textColor,
                 ),
               if (widget.word.antonyms.isNotEmpty) ...[
-                const SizedBox(height: 4),
-                Text(
-                  'Antonyms: ${widget.word.antonyms}',
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontStyle: FontStyle.italic,
-                    color: subtitleColor,
-                  ),
+                const SizedBox(height: 10),
+                _relatedWords(
+                  'Antonyms:',
+                  widget.word.antonyms,
+                  subtitleColor,
+                  textColor,
                 ),
               ],
             ],
