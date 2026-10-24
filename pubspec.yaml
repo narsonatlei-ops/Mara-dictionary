@@ -21,7 +21,6 @@ dependencies:
   share_plus: ^7.2.1
   http: ^1.6.0
   speech_to_text: ^7.4.0
-  google_sign_in: ^6.2.1
   shared_preferences: ^2.2.3
 
 dev_dependencies:
@@ -42,6 +41,6 @@ flutter:
   assets:
     - assets/app_icon.png
     - assets/profile.jpeg
-    - assets/Hrotlo.jpeg
+    - assets/logo.jpeg
     - assets/dictionary.json
     - assets/word.db
