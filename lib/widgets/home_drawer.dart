@@ -22,7 +22,6 @@ class HomeDrawer extends StatelessWidget {
 
   // Close the drawer, then open a screen
   void _open(BuildContext context, Widget screen) {
-    Navigator.pop(context);
     Navigator.push(context, MaterialPageRoute(builder: (_) => screen));
   }
 
@@ -338,7 +337,7 @@ class _DrawerItem extends StatelessWidget {
                     ),
                   ),
                 ),
-                if (trailing != null) trailing!,
+                ?trailing,
               ],
             ),
           ),

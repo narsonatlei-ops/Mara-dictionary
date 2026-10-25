@@ -39,7 +39,7 @@ class AboutDeveloperScreen extends StatelessWidget {
                 child: CircleAvatar(
                   radius: 50,
                   backgroundColor: primaryColor,
-                  backgroundImage: const AssetImage('assets/Hrotlo.jpeg'),
+                  backgroundImage: const AssetImage('assets/developer.png'),
                 ),
               ),
               const SizedBox(height: 24),
