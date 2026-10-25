@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tts/flutter_tts.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import '../models/word_model.dart';
 import '../providers/theme_provider.dart';
 import '../utils/database_helper.dart';
+import '../utils/speech_service.dart';
 
 class WordCard extends StatefulWidget {
   final WordModel word;
@@ -16,7 +16,6 @@ class WordCard extends StatefulWidget {
 }
 
 class _WordCardState extends State<WordCard> {
-  final FlutterTts _flutterTts = FlutterTts();
   bool _isFavorited = false;
 
   // Part-of-speech labels shown as badges
@@ -47,7 +46,7 @@ class _WordCardState extends State<WordCard> {
 
   @override
   void dispose() {
-    _flutterTts.stop();
+    SpeechService.instance.stop();
     super.dispose();
   }
 
@@ -78,17 +77,9 @@ class _WordCardState extends State<WordCard> {
   }
 
   // VOICE button: pronounce the English word at the speed chosen in Settings
-  Future<void> _speak(String text) async {
+  void _speak() {
     final rate = Provider.of<ThemeProvider>(context, listen: false).speechRate;
-    try {
-      await _flutterTts.setLanguage('en-US');
-      await _flutterTts.setSpeechRate(rate);
-      await _flutterTts.setVolume(1.0);
-      await _flutterTts.setPitch(1.0);
-      if (text.isNotEmpty) await _flutterTts.speak(text);
-    } catch (e) {
-      debugPrint('Speech error: $e');
-    }
+    SpeechService.instance.speak(widget.word.word, rate);
   }
 
   void _shareWord() {
@@ -281,7 +272,7 @@ class _WordCardState extends State<WordCard> {
                 style: buttonStyle,
                 icon: const Icon(Icons.volume_up, size: 22),
                 label: const Text('VOICE', style: labelStyle),
-                onPressed: () => _speak(widget.word.word),
+                onPressed: _speak,
               ),
             ),
             const SizedBox(width: 16),

@@ -31,10 +31,37 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
     });
   }
 
-  // Heart button: remove the word from the favorites
+  // Heart button: remove one word from the favorites
   Future<void> _removeFromFavorites(WordModel word) async {
     if (word.id == null) return;
     await DatabaseHelper.instance.updateFavoriteStatus(word.id!, 0);
+    await _loadFavorites();
+  }
+
+  // App bar button: remove all words after the user confirms
+  Future<void> _clearAll() async {
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Clear all favorites'),
+        content: const Text('Na favorite words nah na thy kho hmeisei?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text(
+              'Clear all',
+              style: TextStyle(color: Colors.redAccent),
+            ),
+          ),
+        ],
+      ),
+    );
+    if (ok != true) return;
+    await DatabaseHelper.instance.clearFavorites();
     await _loadFavorites();
   }
 
@@ -49,7 +76,17 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
     final subtitleColor = isDarkMode ? Colors.white60 : Colors.black54;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('My Favorites')),
+      appBar: AppBar(
+        title: const Text('My Favorites'),
+        actions: [
+          if (_favoriteWords.isNotEmpty)
+            IconButton(
+              icon: const Icon(Icons.delete_sweep, color: goldAccent),
+              tooltip: 'Clear all',
+              onPressed: _clearAll,
+            ),
+        ],
+      ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
           : _favoriteWords.isEmpty

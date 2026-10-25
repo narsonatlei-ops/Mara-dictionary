@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tts/flutter_tts.dart';
 import 'package:provider/provider.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:mara_dictionary/providers/theme_provider.dart';
+import '../utils/app_info.dart';
+import '../utils/speech_service.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
@@ -11,8 +14,6 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
-  final FlutterTts _tts = FlutterTts();
-
   // Font size shown while the slider is moving
   late double _fontDraft;
 
@@ -30,22 +31,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   @override
   void dispose() {
-    _tts.stop();
+    SpeechService.instance.stop();
     super.dispose();
   }
 
   // Plays a sample so the user can hear the chosen speed
-  Future<void> _testVoice(double rate) async {
-    try {
-      await _tts.stop();
-      await _tts.setLanguage('en-US');
-      await _tts.setSpeechRate(rate);
-      await _tts.setVolume(1.0);
-      await _tts.setPitch(1.0);
-      await _tts.speak('Hello, this is a sample pronunciation.');
-    } catch (e) {
-      debugPrint('Speech error: $e');
-    }
+  void _testVoice(double rate) {
+    SpeechService.instance.speak(
+      'Hello, this is a sample pronunciation.',
+      rate,
+    );
   }
 
   String _rateLabel(double r) {
@@ -61,7 +56,64 @@ class _SettingsScreenState extends State<SettingsScreen> {
     p.setFontSize(value);
   }
 
-  Widget _section(Color bg, Color divider, Widget child) {
+  Future<void> _openLink(String url) async {
+    final ok = await launchUrl(
+      Uri.parse(url),
+      mode: LaunchMode.externalApplication,
+    );
+    if (!ok && mounted) {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('Could not open the link.')));
+    }
+  }
+
+  Future<void> _confirmReset(ThemeProvider p) async {
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Reset to default'),
+        content: const Text(
+          'All settings will return to their default values. '
+          'Your favorites and history are not removed.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text('Reset'),
+          ),
+        ],
+      ),
+    );
+    if (ok != true || !mounted) return;
+    p.resetToDefaults();
+    setState(() => _fontDraft = 16);
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(const SnackBar(content: Text('Settings were reset.')));
+  }
+
+  // A heading for a group of settings
+  Widget _header(String text, Color color) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 22, 16, 8),
+      child: Text(
+        text,
+        style: TextStyle(
+          fontSize: 14,
+          fontWeight: FontWeight.bold,
+          color: color,
+        ),
+      ),
+    );
+  }
+
+  // A white (or dark) block with a divider under it
+  Widget _block(Color bg, Color divider, Widget child) {
     return Column(
       children: [
         Container(color: bg, width: double.infinity, child: child),
@@ -80,6 +132,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final textColor = theme.colorScheme.onSurface;
     final subColor = textColor.withValues(alpha: 0.6);
     final divider = isDark ? Colors.white12 : Colors.grey.shade300;
+    final headerColor = isDark ? const Color(0xFFDFBA7B) : p.primaryColor;
 
     final titleStyle = TextStyle(
       fontSize: 16,
@@ -88,38 +141,70 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
     final subStyle = TextStyle(fontSize: 13, color: subColor);
 
+    Widget switchTile(
+      String title,
+      String subtitle,
+      bool value,
+      ValueChanged<bool> onChanged,
+    ) {
+      return _block(
+        bg,
+        divider,
+        SwitchListTile(
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 6,
+          ),
+          title: Text(title, style: titleStyle),
+          subtitle: Text(subtitle, style: subStyle),
+          value: value,
+          onChanged: onChanged,
+        ),
+      );
+    }
+
+    Widget linkTile(
+      IconData icon,
+      String title,
+      String subtitle,
+      VoidCallback onTap,
+    ) {
+      return _block(
+        bg,
+        divider,
+        ListTile(
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 4,
+          ),
+          leading: Icon(icon, color: subColor),
+          title: Text(title, style: titleStyle),
+          subtitle: subtitle.isEmpty ? null : Text(subtitle, style: subStyle),
+          onTap: onTap,
+        ),
+      );
+    }
+
     return Scaffold(
       appBar: AppBar(title: const Text('Settings')),
       body: ListView(
-        padding: EdgeInsets.zero,
+        padding: const EdgeInsets.only(bottom: 24),
         children: [
-          // 1. DARK THEME
-          _section(
-            bg,
-            divider,
-            SwitchListTile(
-              contentPadding: const EdgeInsets.symmetric(
-                horizontal: 16,
-                vertical: 8,
-              ),
-              title: Text('Dark Theme', style: titleStyle),
-              subtitle: Text(
-                'Switch between light and dark mode.',
-                style: subStyle,
-              ),
-              value: p.isDarkMode,
-              onChanged: (_) => p.toggleTheme(),
-            ),
+          // ---------------- Appearance ----------------
+          _header('Appearance', headerColor),
+          switchTile(
+            'Dark Theme',
+            'Switch between light and dark mode.',
+            p.isDarkMode,
+            (_) => p.toggleTheme(),
           ),
-
-          // 2. THEME PALETTE (any colour)
-          _section(
+          _block(
             bg,
             divider,
             ListTile(
               contentPadding: const EdgeInsets.symmetric(
                 horizontal: 16,
-                vertical: 12,
+                vertical: 8,
               ),
               title: Text('Theme Palette', style: titleStyle),
               subtitle: Text(
@@ -133,46 +218,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
               onTap: () => _showColorPicker(p),
             ),
           ),
-
-          // 3. PRONUNCIATION
-          _section(
+          _block(
             bg,
             divider,
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('Pronunciation speed', style: titleStyle),
-                  Text('Speed: ${_rateLabel(p.speechRate)}', style: subStyle),
-                  Slider(
-                    value: p.speechRate.clamp(0.25, 1.0).toDouble(),
-                    min: 0.25,
-                    max: 1.0,
-                    divisions: 3,
-                    label: _rateLabel(p.speechRate),
-                    onChanged: (v) => p.setSpeechRate(v),
-                    onChangeEnd: (v) => _testVoice(v), // hear the new speed
-                  ),
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: TextButton.icon(
-                      onPressed: () => _testVoice(p.speechRate),
-                      icon: const Icon(Icons.volume_up),
-                      label: const Text('Test voice'),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-
-          // 4. FONT SIZE (number)
-          _section(
-            bg,
-            divider,
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -208,6 +258,98 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                 ],
               ),
+            ),
+          ),
+
+          // ---------------- Pronunciation ----------------
+          _header('Pronunciation', headerColor),
+          _block(
+            bg,
+            divider,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Pronunciation speed', style: titleStyle),
+                  Text('Speed: ${_rateLabel(p.speechRate)}', style: subStyle),
+                  Slider(
+                    value: p.speechRate.clamp(0.25, 1.0).toDouble(),
+                    min: 0.25,
+                    max: 1.0,
+                    divisions: 3,
+                    label: _rateLabel(p.speechRate),
+                    onChanged: (v) => p.setSpeechRate(v),
+                    onChangeEnd: (v) => _testVoice(v), // hear the new speed
+                  ),
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton.icon(
+                      onPressed: () => _testVoice(p.speechRate),
+                      icon: const Icon(Icons.volume_up),
+                      label: const Text('Test voice'),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          switchTile(
+            'Speak the word automatically',
+            'The English word is pronounced when you open it on the home screen.',
+            p.autoSpeak,
+            p.setAutoSpeak,
+          ),
+
+          // ---------------- Search ----------------
+          _header('Search', headerColor),
+          switchTile(
+            'Search inside words',
+            'Off: words that start with your text. On: words that contain it.',
+            p.searchContains,
+            p.setSearchContains,
+          ),
+
+          // ---------------- Data ----------------
+          _header('Data', headerColor),
+          switchTile(
+            'Get synonyms and antonyms online',
+            'Off: no internet is used; only the ones already saved are shown.',
+            p.fetchOnline,
+            p.setFetchOnline,
+          ),
+          linkTile(
+            Icons.restore,
+            'Reset to default',
+            'Settings only. Favorites and history are kept.',
+            () => _confirmReset(p),
+          ),
+
+          // ---------------- About ----------------
+          _header('About', headerColor),
+          linkTile(Icons.info_outline, 'Version', AppInfo.version, () {}),
+          linkTile(
+            Icons.security,
+            'Privacy Policy',
+            '',
+            () => _openLink(AppInfo.privacyUrl),
+          ),
+          linkTile(
+            Icons.share,
+            'Share the app',
+            '',
+            () => Share.share(
+              '${AppInfo.name}\n\nWeb version: ${AppInfo.webUrl}\n\nDirect apk download: ${AppInfo.apkUrl}',
+            ),
+          ),
+          linkTile(
+            Icons.description_outlined,
+            'Open-source licenses',
+            '',
+            () => showLicensePage(
+              context: context,
+              applicationName: AppInfo.name,
+              applicationVersion: AppInfo.version,
             ),
           ),
         ],
@@ -247,7 +389,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     HSVColor hsv = limit(HSVColor.fromColor(p.primaryColor));
 
     final presets = <Color>[
-      const Color(0xFF13263B), // Navy
+      const Color(0xFF13263B),
       Colors.blue,
       Colors.purple,
       Colors.teal,

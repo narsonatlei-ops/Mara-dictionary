@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
@@ -5,19 +6,18 @@ import 'package:speech_to_text/speech_to_text.dart' as stt;
 import 'package:url_launcher/url_launcher.dart';
 import '../models/word_model.dart';
 import '../providers/theme_provider.dart';
+import '../utils/app_info.dart';
 import '../utils/database_helper.dart';
+import '../utils/news_service.dart';
+import '../utils/speech_service.dart';
 import '../utils/synonym_service.dart';
 import '../widgets/home_drawer.dart';
 import '../widgets/home_search_bar.dart';
 import '../widgets/word_card.dart';
 import 'favorites_screen.dart';
 import 'history_screen.dart';
+import 'news_screen.dart';
 import 'settings_screen.dart';
-
-const _webUrl = 'https://narsonatlei-ops.github.io/Mara-dictionary/';
-const _privacyUrl = 'https://mara-dictionary-web.com/privacy-policy';
-const _apkUrl =
-    'https://drive.google.com/file/d/11HMC56cwS6aqTOH49EyhW2ZPWwE9R7w6/view?usp=sharing';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -45,6 +45,7 @@ class _HomeScreenState extends State<HomeScreen>
       vsync: this,
       duration: const Duration(milliseconds: 1200),
     );
+    _checkNews();
   }
 
   @override
@@ -53,6 +54,45 @@ class _HomeScreenState extends State<HomeScreen>
     _searchController.dispose();
     _animationController.dispose();
     super.dispose();
+  }
+
+  // ---------------- news and updates ----------------
+
+  // Runs in the background each time the app starts
+  Future<void> _checkNews() async {
+    await NewsService.check();
+    if (!mounted || kIsWeb) return; // the web page is always the latest
+    if (!await NewsService.shouldPromptUpdate()) return;
+
+    final data = NewsService.current!;
+    await NewsService.markUpdatePrompted();
+    if (!mounted) return;
+
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Update available'),
+        content: Text(
+          'Version ${data.latestVersion} is available. '
+          'You have version ${AppInfo.version}.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Later'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+              _openLink(
+                data.updateUrl.isNotEmpty ? data.updateUrl : AppInfo.apkUrl,
+              );
+            },
+            child: const Text('Update'),
+          ),
+        ],
+      ),
+    );
   }
 
   // ---------------- word selection ----------------
@@ -72,6 +112,13 @@ class _HomeScreenState extends State<HomeScreen>
         word.definition,
       );
     }
+
+    // Settings: speak the word as soon as it is opened
+    final settings = Provider.of<ThemeProvider>(context, listen: false);
+    if (settings.autoSpeak) {
+      SpeechService.instance.speak(word.word, settings.speechRate);
+    }
+
     _loadSynonymsAndAntonyms(word);
   }
 
@@ -114,6 +161,18 @@ class _HomeScreenState extends State<HomeScreen>
 
   // ---------------- search ----------------
 
+  // Starts-with or contains search, as chosen in Settings
+  Future<List<WordModel>> _search(String query) {
+    final contains = Provider.of<ThemeProvider>(
+      context,
+      listen: false,
+    ).searchContains;
+    return DatabaseHelper.instance.searchWords(
+      query.trim(),
+      contains: contains,
+    );
+  }
+
   Future<void> _onSearchChanged(String query) async {
     if (query.trim().isEmpty) {
       setState(() {
@@ -123,7 +182,7 @@ class _HomeScreenState extends State<HomeScreen>
       return;
     }
 
-    final suggestions = await DatabaseHelper.instance.searchWords(query.trim());
+    final suggestions = await _search(query);
     if (!mounted) return;
     setState(() {
       _suggestions = suggestions;
@@ -177,9 +236,7 @@ class _HomeScreenState extends State<HomeScreen>
         if (!mounted) return;
         _searchController.text = result.recognizedWords;
 
-        final suggestions = await DatabaseHelper.instance.searchWords(
-          result.recognizedWords.trim(),
-        );
+        final suggestions = await _search(result.recognizedWords);
         if (!mounted) return;
         setState(() {
           _suggestions = suggestions;
@@ -222,14 +279,14 @@ class _HomeScreenState extends State<HomeScreen>
         break;
       case 'share':
         Share.share(
-          'Mara Dictionary\n\nWeb version: $_webUrl\n\nDirect apk download: $_apkUrl',
+          '${AppInfo.name}\n\nWeb version: ${AppInfo.webUrl}\n\nDirect apk download: ${AppInfo.apkUrl}',
         );
         break;
       case 'web':
-        _openLink(_webUrl);
+        _openLink(AppInfo.webUrl);
         break;
       case 'privacy':
-        _openLink(_privacyUrl);
+        _openLink(AppInfo.privacyUrl);
         break;
     }
   }
@@ -303,7 +360,7 @@ class _HomeScreenState extends State<HomeScreen>
             elevation: 0,
             centerTitle: true,
             title: const Text(
-              'English - Mara Dictionary',
+              'Mara Dictionary',
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               textScaler: TextScaler.noScaling,
@@ -316,6 +373,25 @@ class _HomeScreenState extends State<HomeScreen>
             ),
             iconTheme: const IconThemeData(color: goldAccent),
             actions: [
+              // News: the badge shows how many items are not opened yet
+              ValueListenableBuilder<int>(
+                valueListenable: NewsService.unread,
+                builder: (context, count, _) => IconButton(
+                  tooltip: 'News',
+                  icon: Badge(
+                    isLabelVisible: count > 0,
+                    label: Text('$count'),
+                    child: const Icon(
+                      Icons.notifications_none,
+                      color: goldAccent,
+                    ),
+                  ),
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const NewsScreen()),
+                  ),
+                ),
+              ),
               PopupMenuButton<String>(
                 color: headerDark,
                 icon: const Icon(Icons.more_vert, color: goldAccent),
@@ -323,7 +399,7 @@ class _HomeScreenState extends State<HomeScreen>
                 itemBuilder: (context) => [
                   _menuItem('theme', Icons.dark_mode, 'Dark Mode'),
                   _menuItem('settings', Icons.settings, 'Settings'),
-                  _menuItem('share', Icons.share, 'Share App Link'),
+                  _menuItem('share', Icons.share, 'Share App'),
                   _menuItem('web', Icons.language, 'Web Version'),
                   _menuItem('privacy', Icons.security, 'Privacy Policy'),
                 ],
@@ -459,7 +535,7 @@ class _HomeScreenState extends State<HomeScreen>
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.casino_outlined),
-              label: 'Random word',
+              label: 'Random Word',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.access_time),

@@ -3,11 +3,16 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
 /// Gets synonyms and antonyms of an English word from the Datamuse API.
-/// Returns null when the request fails (offline, slow, server error).
+/// Returns null when the request fails (offline, slow, server error)
+/// or when the user turned the online lookup off in Settings.
 class SynonymService {
+  // Set from Settings through ThemeProvider
+  static bool enabled = true;
+
   static Future<({String synonyms, String antonyms})?> fetch(
     String word,
   ) async {
+    if (!enabled) return null;
     try {
       final clean = word.trim();
       final res = await Future.wait([

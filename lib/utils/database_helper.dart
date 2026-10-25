@@ -116,17 +116,43 @@ class DatabaseHelper {
     return result.map((json) => WordModel.fromMap(json)).toList();
   }
 
-  Future<List<WordModel>> searchWords(String query) async {
+  // Search: words that start with the text, or (contains = true) that contain it
+  Future<List<WordModel>> searchWords(
+    String query, {
+    bool contains = false,
+  }) async {
     if (kIsWeb) {
       final all = await _loadWebWords();
       final q = query.toLowerCase();
-      return all.where((w) => w.word.toLowerCase().startsWith(q)).toList();
+      final list = all.where((w) {
+        final word = w.word.toLowerCase();
+        return contains ? word.contains(q) : word.startsWith(q);
+      }).toList();
+      if (contains) {
+        // words that start with the text come first
+        list.sort((a, b) {
+          final aw = a.word.toLowerCase();
+          final bw = b.word.toLowerCase();
+          final aStarts = aw.startsWith(q) ? 0 : 1;
+          final bStarts = bw.startsWith(q) ? 0 : 1;
+          return aStarts != bStarts ? aStarts - bStarts : aw.compareTo(bw);
+        });
+      }
+      return list.take(100).toList();
     }
+
     final db = await instance.database;
-    final result = await db.rawQuery(
-      'SELECT $_columns FROM "$_tableName" WHERE word LIKE ?',
-      ['$query%'],
-    );
+    final result = contains
+        ? await db.rawQuery(
+            'SELECT $_columns FROM "$_tableName" WHERE word LIKE ? '
+            'ORDER BY CASE WHEN word LIKE ? THEN 0 ELSE 1 END, word LIMIT 100',
+            ['%$query%', '$query%'],
+          )
+        : await db.rawQuery(
+            'SELECT $_columns FROM "$_tableName" WHERE word LIKE ? '
+            'ORDER BY word LIMIT 100',
+            ['$query%'],
+          );
     return result.map((json) => WordModel.fromMap(json)).toList();
   }
 
@@ -189,6 +215,15 @@ class DatabaseHelper {
       [id],
     );
     return maps.isNotEmpty && (maps.first['is_favorite'] ?? 0) == 1;
+  }
+
+  // Remove every word from the favorites (Favorites screen: Clear all)
+  Future<int> clearFavorites() async {
+    if (kIsWeb) return 0;
+    final db = await instance.database;
+    return await db.rawUpdate(
+      'UPDATE "$_tableName" SET is_favorite = 0 WHERE is_favorite = 1',
+    );
   }
 
   // ==========================================================

@@ -36,7 +36,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
       builder: (context) => AlertDialog(
         title: const Text('History Delete'),
         content: const Text(
-          'Na search history zydua ka thy pathlah kho hmeisei ma?',
+          'Na search history zydua na thy pathlah kho hmeisei ma?',
         ),
         actions: [
           TextButton(
