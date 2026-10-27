@@ -3,8 +3,15 @@
   "update_url": "",
   "items": [
     {
-      "id": "2026-11-02-new-words",
-      "date": "2 November 2026",
+      "id": "2026-10-27-new-annoucement",
+      "date": "27 October 2026",
+      "title": "App Structure patlô",
+      "message": "Abeipa ngiachhiena vata English-Mara Dictionary he May thla tawhta Hneithei awhpa ta theina rakha ta buakhei lymâ pa châta, Abeipa ngiachhiena vâta eima vaw patlô thei haw. A hmà tuhpa zydua English eima pahno na liata mia bao awpa nata khizaw thaina a so sâhna liata hma eima sie thei via nawpa ta, Nama vaw hmâ chyu awpa ta eimâ châ chaimâh."
+
+    },
+    {
+      "id": "2026-10-20-new-words",
+      "date": "20 November 2026",
       "title": "Mara-English Dictionary chhao so pa achâ haw",
       "message": "Mara Dictionary lia he te Features thiepa so achhuah lymâ pa cha hrata, Zawpi zy chhao nama pachana mia vaw chho lyma awhpa ta eima cha haw."
     },
