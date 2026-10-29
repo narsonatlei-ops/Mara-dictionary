@@ -41,6 +41,5 @@ flutter:
   assets:
     - assets/app_icon.png
     - assets/profile.jpeg
-    - assets/developer.png
     - assets/dictionary.json
     - assets/word.db

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/word_model.dart';
 import '../providers/theme_provider.dart';
-import '../screens/about_developer_screen.dart';
 import '../screens/about_screen.dart';
 import '../screens/browse_screen.dart';
 import '../screens/contact_screen.dart';
@@ -230,11 +229,6 @@ class HomeDrawer extends StatelessWidget {
                 ),
 
                 section('About'),
-                item(
-                  Icons.code,
-                  'About Developer',
-                  () => _open(context, const AboutDeveloperScreen()),
-                ),
                 item(
                   Icons.bug_report_outlined,
                   'Report Error/Contact',

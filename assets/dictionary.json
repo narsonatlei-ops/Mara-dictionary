@@ -1,19 +1,135 @@
 [
   {
+    "word": "A, a",
+    "definition": "(a, e) n. English alphabet hawrawh sâkhana. adj. sâkha, sâkhadei, pakhadei, a, consonant ta âthaopa moh thaby liata hmâpa. an, adj. vowel ta âthaopa moh thaby liata hmâpa, sâkha, pakha, (eg. a boy, an ant, etc)."
+  },
+  {
+    "word": "a/c.",
+    "definition": "abbrev. account."
+  },
+  {
+    "word": "aardvark",
+    "definition": "(ardvark) n. chavyh hmao seihpa hâh leipa nata hlo-ia niepa."
+  },
+  {
+    "word": "aback",
+    "definition": "(abek) adv. (taken aback) hnoh-lâ âsy, âpahlawpata hnoh-lâ âsy."
+  },
+  {
+    "word": "abacus",
+    "definition": "(abakas) n. tho lâhreipa tlâh pakyupa liata pachhih hmô a rita chathihpa hawti hisâhpa pachusana."
+  },
+  {
+    "word": "abaft",
+    "definition": "(abaft) adv., prep. balyh chao chhâna lâchhâh, balyh chao lâchhâh."
+  },
+  {
+    "word": "abalone",
+    "definition": "(abalon) n. taikuh."
+  },
+  {
+    "word": "abandon",
+    "definition": "(abandon) v. siesai, âheihsai, hny, hnôhchhy, bâhsai, thlei, thlua, pathliethlaw, thy, thypathlah. abandoned, adj. hny, siesai, hnôhchhy. abandonedly, adv. abandonment, n. hnyna, âheihsaina."
+  },
+  {
+    "word": "abase",
+    "definition": "(abeis) v. panawhsa, pahnaisa, panaisa, mohpachhie. abasement, n. panawhsana."
+  },
+  {
+    "word": "abash",
+    "definition": "(abas) v. zyupalâ, nopaza, tiana, maohpaphyuh, noza hmiachhieta soh. abashed, adj. tiana, nopaza."
+  },
+  {
+    "word": "abate",
+    "definition": "(abeit) v. (thlih, pasana) zie-y, âsy, pai, dia, diavia. abated, adj. zie-y. abatable, adj. zie-y thei, pai thei. abatement, n. diana, paina, zie-yna."
+  },
+  {
+    "word": "abattoir",
+    "definition": "(abatuair) n. sahroh thiena su, sathiena o."
+  },
+  {
+    "word": "abature",
+    "definition": "(abachiar) n. chhohhna hryhrih liata sasu hnie."
+  },
+  {
+    "word": "abaxial",
+    "definition": "(abaksial) adj. kôpipa tawhta âeichapheih."
+  },
+  {
+    "word": "abba",
+    "definition": "(aba) n. (hawti âtaosaohpa paw awna) ei paw, ei pâ."
+  },
+  {
+    "word": "abbacy",
+    "definition": "(abasi) n. theihthai beipa biehneina chhôh. abbatial, adj. theihthai beipa biehneina kyh."
+  },
+  {
+    "word": "abbe",
+    "definition": "(abe) n. French râh theihthaipa châna mohphapa."
+  },
+  {
+    "word": "abbess",
+    "definition": "(abes) n. zyhnakyh chakaopa chanô hyutuhpa."
+  },
+  {
+    "word": "abbey",
+    "definition": "(abi) n. zyhnakyh chakaotuhpa sahlao ypakhyna su dôhpachhôh."
+  },
+  {
+    "word": "abbot",
+    "definition": "(abat) n. theihthaipa sahlao pahrâna su (abbey) liata hyutuhchaipa. abbotship, n. abbot châna/duahmo."
+  },
+  {
+    "word": "abbrev.",
+    "definition": "short for abbreviation."
+  },
+  {
+    "word": "abbreviate",
+    "definition": "(abbrivieit) v. bie pachyusa, pachhohsa. abbreviation, n. biepachyusana. abbrevia-tory, adj. bie pachyusana kyh. abbreviator, n."
+  },
+  {
+    "word": "ABC",
+    "definition": "(abisi) n. A AW B CH, (fig) hmo thabypa, âthaona. A to Z, athaby tawhta achhâna taih."
+  },
+  {
+    "word": "abdicate",
+    "definition": "(abdikeit) v. bâh, (âbeina) bâhsai, thyusai. abdicable, adj. bâhsai thei. abdication, n. bâhna, bâhsaina."
+  },
+  {
+    "word": "abdomen",
+    "definition": "(abdomen) n. py, pypi, lôvâpa pypuahpa. abdominal, adj. pypuahpa hmo, py chôchâh. abdominous, adj. pythu, pypuah."
+  },
+  {
+    "word": "abducent",
+    "definition": "(abidiusent) n. hnoh-lâ âsy pakhuana, hnoh-lâ pasysana."
+  },
+  {
+    "word": "abduct",
+    "definition": "(abdakt) v. chyhsa paru, phusâ âhnawpata chyhsa paru. abduction, n. chyhsapa paruna. abductor, n. chyhsa parutuhpa."
+  },
+  {
+    "word": "abeam",
+    "definition": "(abim) adv. balyh doh lâta pahri pazihpata, pahri/palaih âpazihpata."
+  },
+  {
+    "word": "abele",
+    "definition": "(abil) n. meirâh taona meisah tho râhpa."
+  },
+  {
+    "word": "abelia",
+    "definition": "(abilia) n. pawpi chikha (arâhpa nata asaihdôpa rôh)."
+  },
+  {
+    "word": "aberrate",
+    "definition": "(abereit) v. siechahlô, chahrih, lâthlôh dopa pavia, siechhei. aberrance, -cy, nn. lâtlei, lâtleina, siechheina, paviana, chahrih-na, siepahkona. aberration, n. paviana."
+  },
+  {
     "word": "abet",
-    "definition": "(abet), v. (hmo phaleipa tao) pasyu, pasyupali, pasyuparu."
+    "definition": "(abet) v. (hmo phaleipa tao) pasyu, pasyupali, pasyuparu. abetment, n. abetter/abettor, n. pasyuparutuhpa."
   },
   {
-    "word": "abetment",
-    "definition": "n. pasyuparuna."
-  },
-  {
-    "word": "abetter",
-    "definition": "n. pasyuparutuhpa."
-  },
-  {
-    "word": "abeyance",
-    "definition": "n. nolâlaona, chhybâh-na, hmotao hmâ leina."
+    "word": "abeyance, -cy",
+    "definition": "(abeians, -si) n. nolâlaona, chhybâh-na, hmotao hmâ leina."
   },
   {
     "word": "abeyant",
@@ -21,143 +137,1815 @@
   },
   {
     "word": "abhor",
-    "definition": "(abhor), v. âhao, moka, pasipadao, ai, no, ngei, pasi."
-  },
-  {
-    "word": "abhorrence",
-    "definition": "n. noaina, mokana."
-  },
-  {
-    "word": "abhorrent",
-    "definition": "adj. pasichhih, âhaochhih."
+    "definition": "(abhor) v. âhao, moka, pasipadao, ai, no, ngei, pasi. abhorrence, n. noaina, mokana. abhorrent, adj. pasichhih, âhaochhih. abhorrently, adv."
   },
   {
     "word": "abide",
-    "definition": "(abaid), v. yhnâ, châh, châhpâ, pahrâlâh, âpabai, y, ythlâh ha."
-  },
-  {
-    "word": "abide by",
-    "definition": "v. (biepiepa) zyh, ângiah, âvao, hâhoh."
-  },
-  {
-    "word": "abidance",
-    "definition": "n. châhpâna, ylâhna, âpabaina."
-  },
-  {
-    "word": "abiding",
-    "definition": "adj. âhlô, sôhlôh, tlaitlaoh, yhnâ, ylâh, âpabai."
+    "definition": "(abaid) v. yhnâ, châh, châhpâ, pahrâlâh, ylâh, âpabai, y, ythlâh ha. abide by, v. (biepiepa) zyh, ângiah, âvao, hâhoh. abidance, n. châhpâna, ylâhna, âpabaina. abiding, adj. âhlô, sôhlôh, tlaitlaoh, yhnâ, ylâhna, âpabai. abidingly, adv. âpabai kawna chôta."
   },
   {
     "word": "abientot",
-    "definition": "(abiento), (Fr) thlaita ei châ hmô aw."
+    "definition": "(abiento) (Fr) thlaita ei châ hmô aw."
   },
   {
     "word": "abigail",
-    "definition": "(abigeil), n. chakaotuhpa chanô, seichanô."
+    "definition": "(abigeil) n. chakaotuhpa chanô, seichanô."
   },
   {
     "word": "ability",
-    "definition": "(abiliti), n. theina, taotheina, thaina, taotheikhipa."
+    "definition": "(abiliti) n. theina, taotheina, thaina, taotheikhipa. abilities, npl. theinazy."
   },
   {
     "word": "abiosis",
-    "definition": "(abiosis), n. hrona y leina."
-  },
-  {
-    "word": "abiotic",
-    "definition": "adj. hrona y leipa hmo."
-  },
-  {
-    "word": "abiogenesis",
-    "definition": "n. hrona hnei leipa tawhta hrona vaw pua theina."
+    "definition": "(abiosis) n. hrona y leina. abiotic, adj. hrona y leipa hmo. abiogenesis, n. hrona hnei leipa tawhta hrona vaw pua theina."
   },
   {
     "word": "abject",
-    "definition": "(abjekt), adj. (duahmo) ngiachhie âchhi, dyhchhie, mohnao âchhih, nozao âchhih, nawh."
-  },
-  {
-    "word": "abjection",
-    "definition": "n. mohnao chhihna."
+    "definition": "(abjekt) adj. (duahmo) ngiachhie âchhi, dyhchhie, (ydâh) mohnao âchhih, nohzao âchhih, nawh. abjectly, adv. abjection, n. mohnao chhihna. abjectness, n. mohnao âchhihzie."
   },
   {
     "word": "abjure",
-    "definition": "(abjiur), v. (pachâdâh, moleina) bâhsai awpata chhiesakhâh, pathleihsai."
-  },
-  {
-    "word": "abjuration",
-    "definition": "n. pathleihsaina."
+    "definition": "(abjiur) v. (pachâdâh, moleina) bâhsai awpata chhiesakhâh, chhiesakhâhna chôta pathleihsai. abjuration, n. pathleihsaina. abjurer, n."
   },
   {
     "word": "ablation",
-    "definition": "(ablashan), n. pôhpa pachiahpa cha-âna."
-  },
-  {
-    "word": "ablate",
-    "definition": "v. cha-â, hlaih."
+    "definition": "(ablashan) n. pôhpa pachiahpa cha-âna. ablate, v. cha-â, hlaih. ablative, adj. cha-â thei."
   },
   {
     "word": "ablaze",
-    "definition": "(ableiz), adj. kâ, ia, meipaleih âdua, thata kâ."
+    "definition": "(ableiz) adj. kâ, ia, meipaleih âdua, thata kâ. ablazed, adj. meipaleih âdua, mei thata kâ."
   },
   {
     "word": "able",
-    "definition": "(abl), adj. tah thei, taothei, thei, thai, tloh."
+    "definition": "(abl) adj. tah thei, taothei, thei, thai, tloh. ably, adv. (eatable, adj. nie thei, ânie thei)."
   },
   {
     "word": "ablution",
-    "definition": "(abliushan), n. âpasipathaina."
+    "definition": "(abliushan) n. âpasipathaina. ablutionary, adj. âpasipathaina kyh."
   },
   {
     "word": "abnegate",
-    "definition": "(abnigeit), v. âpaphasai, hny, pathliethlaw."
+    "definition": "(abnigeit) v. âpaphasai, hny, pathliethlaw. abnegation, n. hnyna. abnegator, n. hnytuhpa."
   },
   {
     "word": "abnormal",
-    "definition": "(abnormal), adj. khaihly vei, âdokyh vei, ychâhla."
-  },
-  {
-    "word": "abnormality",
-    "definition": "n. pihpasina, âkhaihly leina, ychâhlana."
+    "definition": "(abnormal) adj. khaihly vei, âdokyh vei, ychâhla. modality, n. pihpasina, âkhaihly leina, ychâhlana."
   },
   {
     "word": "aboard",
-    "definition": "(abord), adv., prep. (balyh/tlâhbalyh) kiah, zawtheina kiah."
+    "definition": "(abord) adv., prep. (balyh/tlâh-balyh) kiah, kiah awpata ângia, zawtheina kiah."
   },
   {
     "word": "abode",
-    "definition": "n. yna, tlaitlaohna, y zôzawna, pahrâna su."
+    "definition": "pp. of abide. n. yna, tlaitlaohna, y zôzawna, pahrâna su. of no fixed abode, pahrâna su sôhlôhpa y vei."
   },
   {
     "word": "abolish",
-    "definition": "(abolis), v. pachhâsa, parao, pahlei, bâhsai, pathleih."
+    "definition": "(abolis) v. pachhâsa, parao, pahlei, bâhsai, pathleih. abolition, n. pachhâsana. abolishment, n."
+  },
+  {
+    "word": "abomasum",
+    "definition": "(abomesam) n. sarihchie, athie. abomasal, adj. sarihchie hmo."
   },
   {
     "word": "abominable",
-    "definition": "adj. ai-âchhih, no-aichhih, pasichhih, ngei-âchhih."
+    "definition": "See abominate."
   },
   {
     "word": "abominate",
-    "definition": "(abomineit), v. ai, no, pasi, mohnao."
+    "definition": "(abomineit) v. ai, no, pasi, mohnao. abominable, adj. ai-âchhih, no-aichhih, pasichhih, ngei-âchhih. abominableness, n. abominably, adv. abomination, n. pasichhihna."
   },
   {
     "word": "aborigine",
-    "definition": "(aborijin), n. Australia râhty pahrâtuapa chyhsa."
+    "definition": "(aborijin) n. Australia râhty pahrâtuapa chyhsa. aborigines, npl. râhty pahrâtuapa sahlao. aboriginal, adj., n. ytuapa, râh pahrâtuapa, chyhsa hmiatuapa. aboriginally, adv. aboriginality, n. râhty pahrâtuapa châna."
   },
   {
     "word": "abort",
-    "definition": "(abort), v. nawh rao, nawhparao, nawhpathla, sawparao, âhnawh."
+    "definition": "(abort) v. nawh rao, nawhparao, nawhpathlah, sawparao, âhnawh, hlaochhhâ, pitloh vei, âthydyh. aborticide, n. saw pathlana/nawhparaona thohna. abortion, n. nawhparaona, sawpathlana. abortive, adj. hlaotloh thei vei, âthydyh thei."
+  },
+  {
+    "word": "abound",
+    "definition": "(abaund) v. (abound in/with) hnei hôlô, hnei hluh, pazai, âhôh, hluh, âzai, hluhkatô, hluh-lailô, pipiah-lei, y chheih. abounding, adj. hluh-lailô, hluhpi, rierao, panâ."
+  },
+  {
+    "word": "about",
+    "definition": "(abaut) adv., prep. rachhôh, chyta, kiapâh, âhniata, daihmâ, vâtasi, vivih, thâtih, chôchâh, kyh, lâchhâh hmo, thlâh ha rô. about-turn, hnoh-lâ âpalie pathlah, hnoh-lâ âheih. about to, just about to, thlâh ha rô, daihmâ, vâtasi, vivihta. turn about, padai, likah pathlah, thla veichâh."
+  },
+  {
+    "word": "above",
+    "definition": "(abav) prep. chô liata, okachhua, mahchhua, mahchhalâ, âsâh-lâ, chôlâ, vâlâ, âsâh vialâ. above-board, adj., adv. sia ryu, nyuthu vei. above all, pahchai. above-mentioned, a chô liata reih chiehpa."
+  },
+  {
+    "word": "abrachadabra",
+    "definition": "(abrakadabra) n. bie yzie hnei leipa, âchiachâ chakhyhpa."
+  },
+  {
+    "word": "abrade",
+    "definition": "(abreid) v. âhnao pahlia, chata pahliasa, hrupahlei, hrupasia, âhnao patlô. abrasion, n. âhnao patlôna, vo âhlaihpa, rôh pahleisana. abrasive, adj. chata patlôsa thei, pahliasa thei, chyhsa palôh pasasa thei."
+  },
+  {
+    "word": "abreast",
+    "definition": "(abrest) adv. âpatlâhpata, âraohpata, âchâhpata, âkhâh lâta."
+  },
+  {
+    "word": "abridge",
+    "definition": "(abrij) v. pachyu, pachyusa, bie pachhohsa, taibâ. abridger, n. pachhosatuhpa. abridgement, n. bie pachhohsana."
+  },
+  {
+    "word": "abroad",
+    "definition": "(abrod) adv. pahrâna râh khôtholâ, râh khôtholâ syulyu, tilaipi haosâ râh liata."
+  },
+  {
+    "word": "abrogate",
+    "definition": "(abrogeit) v. hru, phie, hrupathai, (dâh taopa) pachhâsa, parao lilaw, pahlei, pabâh, biepathlupa phie. abrogation, n. dâh taopa paraona. abrogative, adj. phie hmâh."
+  },
+  {
+    "word": "abrupt",
+    "definition": "(abrapt) adj. rakhuh, rawróh, rieruh, biepahchhu. abruptly, adv. abruptness, n. rawrôhna."
+  },
+  {
+    "word": "abscess",
+    "definition": "(abses) n. hniah, hniah pavôpa, hmahpa-upa, kheihluh. abscesses, pl."
+  },
+  {
+    "word": "abscind",
+    "definition": "(absind) v. pabo, tai, taipachhô, lawh. abscission, n. pabona, tai pachhôna, reihkah pahchhuna, bie pahchhhupa."
+  },
+  {
+    "word": "abscise",
+    "definition": "v. tai, pabo."
+  },
+  {
+    "word": "abscond",
+    "definition": "(abskond) v. aru lâta pua, âchhei, arâparu, ânyu, ârâ syulyu. abscondent, n. ârâparuna. absconder, n. ârâtuhpa."
+  },
+  {
+    "word": "abseil",
+    "definition": "(abseil) n. lôkâhkhua liata chaori âpathliahna. v. lôkâhkhua liata chaorita âpathliah. abseilling, n."
+  },
+  {
+    "word": "absent",
+    "definition": "(absent) adj. y vei, siku kiah vei, âhlao vei. v. y vei, âhlao vei, siku kiah vei. absence, n. y leina, âhlao leina. absent-minded, adj. maorih, vovâ, my thai, chamy, kamokamâ. absent-mindedness, n. maorihzie. absentee, n. a y leipa/âki leipa chyhsa."
+  },
+  {
+    "word": "absinth/absinthe",
+    "definition": "(absinth) n. sahhma khapa pathlôhsapa."
+  },
+  {
+    "word": "absolute",
+    "definition": "(absoliut) adj. liahsa, rakhapa hnei vei, paki, chhâpachie, âkirai, phapaki, tlokhuh, biki. The Absolute, n. Khazoh phapakipa. absolutely, adv. chaimâh, kathluh, liahsa. absoluteness, n. absolution, n. molei hriena tawhta papuana, molei ty thôna, theihthaipa ngiahthaina bie phuahpa. absolute majority, n. zawpi hluh via syulyu, âtlyhna vote hluh via syulyu. absolute zero, chasi ngaita."
+  },
+  {
+    "word": "absolution",
+    "definition": "See absolute."
+  },
+  {
+    "word": "absolve",
+    "definition": "(absolv) v. thaipachâsa, zua pabohsa, pachâthai, ângiahthai. absolution, n. thaipachâsana, ngiahthaina. absolver, n. pachâthaituhpa."
+  },
+  {
+    "word": "absorb",
+    "definition": "(abzorb) v. (ti) sy, sypahi, pahâ, sypakua, palâ khai, pazy pahi. absorbable, adj. sypahi thei, sypakua thei, pahâ thei. absorbing, adj. vâ-âchhih. absorbent, adj. pahâtuhpa. absorbingly, adv. absorber, n. sypahituhpa, pahâtuhpa. absorptive, adj. sypahi hmâh. absorption, n. sypahina, pahâna. absorbency, n. pahâ theina, sypahi theina."
+  },
+  {
+    "word": "abstain",
+    "definition": "(abstein) v. âhneisai, âkâsai, ysai, âhlaohli vei, (niedo) âtaih. He has been advised to abstain from alcohol. abstained, adj. âtaih-lyuh. abstenious, adj. âtaih-lyuh kaw. abstention, n. âhlaohli leina. abstainer, n. âhlaohli leituhpa."
+  },
+  {
+    "word": "abstemious",
+    "definition": "(abstimias) adj. (niedo) âtaihthei, aohkô, (âpalysana lia) âsohsi thei. abstemiously, adv. abstemiousness, n. aohkôzie."
+  },
+  {
+    "word": "abstention",
+    "definition": "See abstain."
+  },
+  {
+    "word": "absterge",
+    "definition": "(abstarj) v. chachhao pathai, pathaisa. abstergent, adj. chachhao pathai thei. n. chhôh pathaina thohna."
+  },
+  {
+    "word": "abstinent",
+    "definition": "(abstinent) adj. âtaih thei, aohkô, âsohsi thei, âhlaohli khoh vei, (niedopa) âtaih-lyuh. abstinence, n. abstinently, adv."
+  },
+  {
+    "word": "abstract",
+    "definition": "(abstrakt) adj. pachâna ngâlâh liata y, palôh lia deita hnei, hmeiseihvei. v. labâ, pachhaihbâ, lapapua, pahrua, parubâ, biepachhohsa, pachyusa. n. bie tlâhpipa pachyusana, pahruapa. abstracted, adj. abstraction, n."
+  },
+  {
+    "word": "abstruse",
+    "definition": "(abstruz) adj. pahnothai ru, pahno ru, yzie liamarih, yzie âpahthu. abstrusely, adv. abstruseness, n. pahnothai ruzie, pahno ruzie."
+  },
+  {
+    "word": "absurd",
+    "definition": "(absard) adj. yzie hneivei, lyu leitupâ, thathâ, pahneichhichhih, ângialitupâ. absurdly, adv. absurdity, n. absurdness, n. ângializie."
+  },
+  {
+    "word": "abundance",
+    "definition": "(abandans) n. hluh-na, âhôhna, hneithluna, hluh-lailôna, âzaichheihna. abundancy, n. hluh-lailôna. abundant, adj. hluh, hluhpi, hluh rierao, hluh muarua, âzaichheih, âhôh, panâ. abundantly, adv."
+  },
+  {
+    "word": "abuse",
+    "definition": "(biuz) v. chhâ, riethla, ra, sei, âhrâhhnao, reipachhie, chhâpâ. n. rana, rarôna, âhrâhhnaona, âdoleipata hmâna. abuser, n. chhâpâtuhpa. abusive, adj. rarôhmâh, chhâthai. abusively, adv."
+  },
+  {
+    "word": "abut",
+    "definition": "(abat) v. âhnieh thlu, âvei, râh-âri, âpatyh. abutment, n. pawhmao patyhna, pai âpatyhna, âpazaona, dyuhpaina, âpahniehna."
+  },
+  {
+    "word": "abuzz",
+    "definition": "(abuz) adv., adj. thapawhpata, thathyupata."
+  },
+  {
+    "word": "abysmal",
+    "definition": "(abizmal) adj. (khaochhlô) chao chhâna hnei vei, âpahthu kaw."
+  },
+  {
+    "word": "abyss",
+    "definition": "(abis) n. khaochhlô chao chhâna hnei leipa, aleichiepa, tilaipi lihchakupa âpahthu kawpa, hriena su (meitipo). abyssal, adj. aleichiepa hmo."
+  },
+  {
+    "word": "acacia",
+    "definition": "(akeisia) n. thokô chahthlikiapa."
+  },
+  {
+    "word": "academic",
+    "definition": "(akademik) adj. châchuna sâhpa (university) hmo, pachuna kyh. academical, adj. âchuna sâhpa py hmo. academically, adv. academy, n. hmo miakha âchuna su, pachuna su peimawhpa, âchuna nata thaina pasâhsa khohpa py. academician, n. châchuna pasâhsa khohpa py chyhsa."
+  },
+  {
+    "word": "acajou",
+    "definition": "(akazu) n. khesu thei, khesu kô, (also cashew)."
+  },
+  {
+    "word": "acanthus",
+    "definition": "(akanthas) n. sibiepa hna hloh hneipa."
+  },
+  {
+    "word": "acappella",
+    "definition": "(akapela) adj., adv. hla chaneina aokhadeipa."
+  },
+  {
+    "word": "acarus",
+    "definition": "(akaras) n. ahri nata ihlih chi maih, sahlisaih dikaripa. acari, pl."
+  },
+  {
+    "word": "acatalectic",
+    "definition": "(akatalektik) adj. hla ao âlyupa hluhpi y. n. ao âlyupa hla châh."
+  },
+  {
+    "word": "acc.",
+    "definition": "abbrev. account, according."
+  },
+  {
+    "word": "accede",
+    "definition": "(aksid) v. (office rai) la, bei biehneina to, âbei, âhnia, tlô, rai âpazao, âpyhkhei, âpahlao, (hmotao) âryh tahkhei, zyh, pasai."
+  },
+  {
+    "word": "accelerando",
+    "definition": "(akseliarando) adj., adv. hlasapa chatliesa via rili."
+  },
+  {
+    "word": "accelerate",
+    "definition": "(akselereit) v. thapatlôsa, chatliesa via, hmo pasiesa chatlie. acceleration, n. chatlie viana, chatliesana. accelerative, adj. chatliesa thei. accelerator, n. chatliesatuhpa."
+  },
+  {
+    "word": "accent",
+    "definition": "(aksent) n. reihparosadâh, reihpathliedâh, reihpa-ina. v. reihpa-i, reih aony tao. accentuate, v. reihpa-i. accentual, adj. accentially, adv. accentuation, n. reihpa-isana."
+  },
+  {
+    "word": "accept",
+    "definition": "(aksept) v. âpyh, zyh, âla, dao, hnei khoh. acceptable, adj. âlatlâh châ, âpyhtlâh châ, khochhih. acceptance, n. âpyhna, âryh tahna. acceptation, n. âlana, âpyhna."
+  },
+  {
+    "word": "access",
+    "definition": "(akses) n. âsaohiah theina, pangaina lâpi, siepahliena kyh, ângia pahliena, khodâh hawhta hmâ theina, âryhpaoh chhona. accessible, adj. pangai thei, ângiah pahlie thei. accessibly, adv. accession, n. ryutona, beidyuchhai tona, âhnia theina, kiasâhna, ângiatheina. accessibility, n."
+  },
+  {
+    "word": "accession",
+    "definition": "See access."
+  },
+  {
+    "word": "accessory",
+    "definition": "(aksesori) n., adj. baichhapa, baokhâtuhpa, athodapa, chhaichhi, moleikheituhpa. accessories, pl."
+  },
+  {
+    "word": "accidence",
+    "definition": "(aksidens) n. grammar bie hmâdâh pananona."
+  },
+  {
+    "word": "accident",
+    "definition": "(aksident) n. (vâduana/vâhneina) âtyh tlamawna, âpiepasina, tahthlitahthlyu, vâphalei-y, taopamaih, sahlisaih dikaripa. acari, pl. accidental, adj. âpiepasina kyh. accidentally, adv."
+  },
+  {
+    "word": "acclaim",
+    "definition": "(akleim) v. (âlykheipata) rahao, thapawhpata awh. n. âlykheipata rahaona. acclamation, n. âlykheina rahaopa ao. acclamatory, adj. rahaona kyh."
+  },
+  {
+    "word": "acclimatise, -ize",
+    "definition": "(US acclimate) (aklamataiz) v. râh ziza âzie, pangeihsa. acclimatization, n. râh ziza paziesana."
+  },
+  {
+    "word": "acclivity",
+    "definition": "(akliviti) n. chakhâpa, châkhua. acclivitious, adj. chakhâ, châkhua."
+  },
+  {
+    "word": "accolade",
+    "definition": "(akoleid) n. pahsaipha âlypata chakaona, âpyhpahlyna, ôkhaih syna."
+  },
+  {
+    "word": "accomodate",
+    "definition": "(akomadeit) v. yna su pie, pahrâna su pie, âtlôh khai thei, patlôsa, patlôhsa, âtlôhpulu. accomodable, adj. patlôsa thei. accomodating, adj. pachâthaina hnei. accomodation, n. tlôna, tlôkiana, âriena su, pahrâna."
+  },
+  {
+    "word": "accompaniment",
+    "definition": "See accompany."
+  },
+  {
+    "word": "accompany",
+    "definition": "(akampani) v. pazi, zi, sielâh, taolâh, baokhâ, âhlao, hmo taokhei, hlasapa-âzy. accompanier, n. hla paryh-lâhtuhpa, pazituhpa, baokhâtuhpa. accompaniment, n. pazina, hla ao patlana, hlasalâhna, patlatuhpa. accompanist, n. totâ patlatuhpa."
+  },
+  {
+    "word": "accomplice",
+    "definition": "(akamplis) n. moleina taokheituhpa or taolâhtuhpa viasa."
+  },
+  {
+    "word": "accomplish",
+    "definition": "(akamplish) v. pangoh, patlô, tlô, patlôpatla, tao khai, patloh. accomplisable, adj. patlô thei, pangoh thei. accomplished, adj. riareih pha, pangoh. accomplishment, n. pangohna, patlôna, patlôpatlana, taopitlohna."
+  },
+  {
+    "word": "accord",
+    "definition": "(akord) v. pie, pasai, paryhsa, âchhothai, palôh âtla, chhothaiziathai, palôh âraoh. n. palôh-raohna, dyhryhna, chhothaina. accordance, n. palóh-raohna, âchhothaina, âlyuna, âryhna. accordant, adj. âchhothai, âryh."
+  },
+  {
+    "word": "accordance with",
+    "definition": "chahawhta, âryhpata, palôh-raohpata, âlyupata. accordingly, adv. chahawhna chata."
+  },
+  {
+    "word": "according to",
+    "definition": "adj. chahawhtra, hawhta."
+  },
+  {
+    "word": "accordion",
+    "definition": "(akordian) n. rah-mo hupazâpa chi. accordionist, n. rah-mo hupazâpa a tôthaipa."
+  },
+  {
+    "word": "accost",
+    "definition": "(akost) v. hmiadaisâta âpakhai, âpachhaipadai, âhniatata bie âchho, (chaozuahpa) âhniatata reipasao. accostable, adj. âpakhai thei."
+  },
+  {
+    "word": "accouchement",
+    "definition": "(akushma) n. (Fr) nawh hneipa, rakhô liata sawsapa."
+  },
+  {
+    "word": "account",
+    "definition": "(akaunt) v. hihsâ, chhu, aziepa reih, thâtih nata achhâpa reih, phusâ âvao, phusâ ziepa châbu liata roh. n. phusâ âvaona, phusâ rona, phusâ âbâhpa zie rona, phusâ âvaodâh, thâtih reina. accountable, adj. maophaoh thei, bai thei, achhâpa hnei. accountancy, n. phusâ âvaopa rai. accountant, adj. phusâ âvaothaipa chyhsa. accounting, n., adj. phusâ âvaodâh mohpasiana. accountability, n. maophaoh theina. on account of, vâta, chavâta. on no account achhâpa y vei. on account of that, chatanacha. on any account, adv. kheihtalâ raita, tlai."
+  },
+  {
+    "word": "accoutre",
+    "definition": "(akutar) v. âdyuhna chysia âtao, âdyuhna chhaichhi âky. accoutrement, n. chariah chhaichhi."
+  },
+  {
+    "word": "accredit",
+    "definition": "(akredit) v. pavipati, bai, châna bai, châ chhaota lyuhchâpa tuah. accreditation, n. pavipatina, etc."
+  },
+  {
+    "word": "accrete",
+    "definition": "(akrit) v. laiseihkhoh, y pakaoh, thyukhoh. accretion, n. laiseihna. accretive, adj. laiseih thei. accrescent, adj. laiseih rili."
+  },
+  {
+    "word": "accrue",
+    "definition": "(akru) v. âchôpakhy, pôh. accrual, n. pôhviana, phusâ pôhpa âchôpakhyna. accrued, adj. âchôpakhy, âpachôpakhy, pôh."
+  },
+  {
+    "word": "acct.",
+    "definition": "abbrev. account."
+  },
+  {
+    "word": "acculturation",
+    "definition": "(akalchareshan) n. chi hrozie patlyna. accultural, adj. chi hrozie patlyna kyh."
+  },
+  {
+    "word": "accumulate",
+    "definition": "(akiumiuleit) v. pôhpakhy, âchôpakhy, âpachôpakhy, âbaichha. accumulation, n. hmo hluhpi âchô pakhyna. accumulative, adj. âchô pakhy thei. accumulator, n. electric/battery thapatlôsana, âpachôtuhpa."
+  },
+  {
+    "word": "accurate",
+    "definition": "(akiureit) adj. sikhua, âchieh, âdo, âsu, âdo ngaita, âsuthai, kulâpado, pasu. accurately, adv. âsu ngaita, pazo leipata. accuracy, n. châsikhuana, pazo leina. accurateness, n. âdo sikhuazie, pazo leizie."
+  },
+  {
+    "word": "accurse",
+    "definition": "(akars) v. chhiesakhâh, chhiesasiapie, siasa. accursed, adj. âhaochhih, siapie tlâhchâ, siasapa to."
+  },
+  {
+    "word": "accuse",
+    "definition": "(akius) v. thailei pachhâsa, (moleina) bai, rubai, pu, leih. accusation, n. rubaina, puna baina. accusable, adj. bai thei, pu thei. accusal, n. baina, puna. accused, adj. accuser, n. a baituhpa, putuhpa. accusative, adj. bai thai, pu thai."
+  },
+  {
+    "word": "accustom",
+    "definition": "(akastam) v. ryhpata hnei, âpaoh, zy. accustomed to, zy, tlaichâ, dâh hawhta hnei."
+  },
+  {
+    "word": "ace",
+    "definition": "(eis) n. tôkâmâ, tao thei patluapa. adj. (sl) phangaita."
+  },
+  {
+    "word": "acedia",
+    "definition": "(asedia) n. thazeipa, tha hnei leipa, thathipa, âpielyu hoh leipa."
+  },
+  {
+    "word": "acephalous",
+    "definition": "(asefalas) adj. luh hnei leipa hmo, luh hnei vei."
+  },
+  {
+    "word": "acerbic",
+    "definition": "(asarbik) adj. hrozie chhie, reikah pasa, nônai vei, âhaochhih. acerbate, v. palôh pachhie, hiepahâh, ngiaryh pachhihsa vei. acerbity, n."
+  },
+  {
+    "word": "acetate",
+    "definition": "(aseteit) n. hmo pathaosana ti."
+  },
+  {
+    "word": "acetic",
+    "definition": "(asetik) adj. theilâ ti pathaopa."
+  },
+  {
+    "word": "acetylene",
+    "definition": "(asitilin) n. ziza roh chhiepa mei pakâna (welding) liata hmâpa."
+  },
+  {
+    "word": "ache",
+    "definition": "(eik) v. pasa, parâ, chaih, to, saw. n. pasapa, chai zôh pasapa, etc. (backache, toothache, headache). achy, adj. pasa, pasapa hnei. aching, n."
+  },
+  {
+    "word": "achieve",
+    "definition": "(achiv) v. hmotao hlaotloh, tao pitloh, pipatloh. achievable, adj. tao pitloh thei, tao hlaotloh thei. achievement, n. tao hlaotlohna, taopitlohna."
+  },
+  {
+    "word": "acicular",
+    "definition": "(asikiular) adj. chiephoh lyu."
+  },
+  {
+    "word": "aciculate",
+    "definition": "adj. chiephoh chahripa hnie âhno."
+  },
+  {
+    "word": "acid",
+    "definition": "(asid) adj. thao. n. athaopa, thohna thaopa. acidic, adj. thao, athaopa hmo. acidify, v. pathao, pathaosa. acidity, n. thaona. acidulous, adj. thao miemao. acidulate, v. pathaosa."
+  },
+  {
+    "word": "acierate",
+    "definition": "(asiareit) v. thuaphapa lâta tao, kâpathieh palothlu. acierage, n."
+  },
+  {
+    "word": "acinus",
+    "definition": "(asinas) n. theilâpa hmôdipa hluhpi hneipa. acinaceous, adj. hmôdipa hluhpi hnei. aciniform, adj. theilâpa hmôdipa pilâzie lyu."
+  },
+  {
+    "word": "ack-ack",
+    "definition": "(âk-âk) n. zawtheina kana meithei."
+  },
+  {
+    "word": "acknowledge",
+    "definition": "(aknoulidz) v. âpyh, âdozie âpyh, hmodaopa achhâzie palâsa, pahnokheina châ pie. acknowledgeable, adj. pahnokheina palâsa thei. acknowledgement, n. pahnokheina châ nata bie chhopaliena."
+  },
+  {
+    "word": "acme",
+    "definition": "(akmi) n. âsâhchaina, kihthlao, lichih-no, lochono."
+  },
+  {
+    "word": "acne",
+    "definition": "(akni) n. hmiathia, hmia pahbôpa."
+  },
+  {
+    "word": "acolyte",
+    "definition": "(akolait) n. RC chakaotuhpa chyhpa, chyhsa thiehpa, chhyna-o mohôhtuhpa, zituhpa ngâchhhipha."
+  },
+  {
+    "word": "aconite",
+    "definition": "(akonait) n. râh pawpi maihpa thina châmaih hneipa, chahawhpa hna châmaih, (hlabie) thina châmaih. aconitic, adj. aconitine, n. thina châmaih."
+  },
+  {
+    "word": "acorn",
+    "definition": "(ekorn) n. asieh thei, ârâtho thei."
+  },
+  {
+    "word": "acoustic, -cal",
+    "definition": "(akaustik, -kal) adjs. nahta theina kyh. acoustics, n. nahta theina kyh âchuna. acoustically, adv."
+  },
+  {
+    "word": "acquaint",
+    "definition": "(akueint) v. hmiasiah, pahno, pahnopathei. acquanted, adj. pahnochiehpa châ, hmiapahno. acquaintance, n. viasa pahno thlâhthlipa. acquainted with, adj. pahnopathei."
+  },
+  {
+    "word": "acquiesce",
+    "definition": "(akuies) v. âpyhkhei, paryhsa, âryh tahkhei, reih leipata âpyhkhei. acquiescent, adj. âpyhkhei, paryhsa. acquiescence, n. âpyhkheina."
+  },
+  {
+    "word": "acquire",
+    "definition": "(akuair) v. hnei, to, la, theina or thaina hmâpata hnei. acquired, adj. hnei, to. acquirable, adj. hnei thei, to thei. acquirability, n. acquirement, n. (âchuna/taona vâta) thaina or tona, hneina. Acquired Immune Deficiency Syndrome. See AIDS."
+  },
+  {
+    "word": "acquisition",
+    "definition": "(akuizishn) n. theina nata thaina vâta hneina. acquisitive, adj. hnei khoh, hnei byuh, hmo pahno byuh. acquisitiveness, n. hnei khona, pahno byuhna."
+  },
+  {
+    "word": "acquit",
+    "definition": "(akuit) v. papua, hmoparao lei awpata papua, pathlie, thaipachâsa. acquital, n. thaipachâsana, biebua pachhâna, pathliena. acquittance, n. (leibâh) pie or thô pangohna."
+  },
+  {
+    "word": "acre",
+    "definition": "(ekar) n. râh kawhzie thliena, sâh tikha tu, (hectares 0.4 tlu or Sq. yards 4840 tlu), o hmo lyu hmo. acreage, n. acre ynazie."
+  },
+  {
+    "word": "acrid",
+    "definition": "(akrid) adj. py, pakahpy, pakahzai, hiah miemao, roh hiah. acridness, n. pyzie, zaizie. acridity, n."
+  },
+  {
+    "word": "acrimony",
+    "definition": "(akrimoni) n. reihchakiana, tahchakiana, reikah âhaochhihpa, âpasasana, tah-lô-aina. acrominious, adj. reikahpasa. acrimoniously, adv."
+  },
+  {
+    "word": "acritude",
+    "definition": "(akritiud) n. reih chahrâhna, reikah âchakhona."
+  },
+  {
+    "word": "acro-",
+    "definition": "(prefix) pawhmao, kihthlao, laki, pai, tahna."
+  },
+  {
+    "word": "acrobat",
+    "definition": "(akrobat) n. khawhhri paraipa âhli thaipa, âbaleipa, circus/gymnastic taothaipa. acrobatic, adj. âbalei thaina kyh. acrobatics, n. circus hmotaopa."
+  },
+  {
+    "word": "acrogen",
+    "definition": "(akrojen) n. thaihraih hawhta sibie chody pahzaopa. acrogenous, adj. chody pahzao."
+  },
+  {
+    "word": "acronym",
+    "definition": "(akronim) n. mohchho thaby hawrawh lapakhypa moh, (NATO, Radar, etc)."
+  },
+  {
+    "word": "acrophobia",
+    "definition": "(akrofobia) n. âsâhpa china, nohina, âsâhpa liata nohina."
+  },
+  {
+    "word": "acropolis",
+    "definition": "(akropolis) n. Grik khihpi (Athens) kudôhpa, alôta khihpi dôhpa."
+  },
+  {
+    "word": "acrosome",
+    "definition": "(akrosom) n. baopati liata hrona tih yna."
+  },
+  {
+    "word": "acrospire",
+    "definition": "(akrospair) n. chi riepa chody kaw puatuapa."
+  },
+  {
+    "word": "across",
+    "definition": "(akros) prep., adv. khô liata, he tawhta râkhalâ taih, âkhâh lâta, vâhchapia, lâthlôh tai, siepakhô, chakâ, khô, chapia. come across, chapia, âtyh tlamaw."
+  },
+  {
+    "word": "acrostic",
+    "definition": "(akrostik) n. hla tao paryhdâh chikha, hlatlâh hawrawh tuachaipa hmâpata mohchho taopa."
+  },
+  {
+    "word": "acrylic",
+    "definition": "(akrilik) n. khairie nata tho chahthli ri."
+  },
+  {
+    "word": "act",
+    "definition": "(akt) v. tah, tao, hmotao, taotia, chyhsa ydâh âchâ, nothlahpa âchâ, âpaysa. n. hmotaopa, dâhtaopa, sawhkhâ biepiepa, phôhpa nothlahpata âchâna, phôhpa bo nanopa. acting, n. actor, n. chhapa âchâtuhpa. actress, n. chanô âchâtuhpa."
+  },
+  {
+    "word": "action",
+    "definition": "(akshn) n. hmotaona, hmotaopa, biebuapa ladâh."
+  },
+  {
+    "word": "activate",
+    "definition": "See active."
+  },
+  {
+    "word": "active",
+    "definition": "(aktiv) adj. âpiedala, thathyu, chaoli-âhua, chatliechakoh, yzia vei, âpiepâ hoh. actively, adv. activeness, n. âpiedalana, chaolihuana, âpiepâ hohna. activity, n. hmotaopa, hmo taotiapa. activist, n. py raihriatuhpa. activate, v. pahriasa, papiepâsa. activation, n. papiepâsana. activator, n. papiesatuhpa."
+  },
+  {
+    "word": "actor, actress",
+    "definition": "See act."
+  },
+  {
+    "word": "actual",
+    "definition": "(aktiual) adj. hmeiseih, cheingei, y tlai. actually, adv. actualise, -ize, v. pa-ysa hmeiseih. actualization, n. actuality, n. y hmeiseihna."
+  },
+  {
+    "word": "actuary",
+    "definition": "(aktiuari) n. âpiepasina kyh châta phusâ sokhâhpa (insurance) chârohtuhpa. actuarial, adj. insurance chârohtuhpa kyh."
+  },
+  {
+    "word": "actuate",
+    "definition": "(aktiueit) v. papiesa, pataosa, thapathyu. actuation, n. papiesana, pataosana. actuator, n. pataosatuhpa."
+  },
+  {
+    "word": "acuity",
+    "definition": "(akiuiti) n. (palôh) tiahzie, tiah dâh, pahnie theizier."
+  },
+  {
+    "word": "acumen",
+    "definition": "(akiumen) n. palôh chatliena, hmo yzie pahno chatliena. acuminate, v. palôh chatliesa, hmo pahno chatliesa, palôh patiahsa. accumination, n."
+  },
+  {
+    "word": "acupuncture",
+    "definition": "(akiupangkchar) n. thari viehpata pasana mohôhpa (injection hawhpa)."
+  },
+  {
+    "word": "acute",
+    "definition": "(akiut) adj. (palôh, pahnona) thatlô, pasoh, nota lei, (pasapa) pasa kaw, nasa, ngâsâ. acutely, adv. acuteness, n. nasazie. acute accent, n. feet-khangiana, ( 1' )."
+  },
+  {
+    "word": "acyclic",
+    "definition": "(asiklik) adj. daihti hnei hlei vei, daihti zi hlei vei."
+  },
+  {
+    "word": "ad infinitum",
+    "definition": "(ad infinitam) adv. chhâzawta, tlyzawta, zôzawta."
+  },
+  {
+    "word": "ad interim",
+    "definition": "(ad interim) adv. daidyhta, lâlao chhôh daihti châta."
+  },
+  {
+    "word": "ad-lib",
+    "definition": "(aed-lib) adv., adj. âpachyhdy leipata, ano lôthai tlaita, anokho tlaita. v. âpachyhdy leipata biereih pôhpia, daihti ruapa pahruh, ângiahna vâta taochhyh. ad-liber, n."
+  },
+  {
+    "word": "ad-man/adman",
+    "definition": "n. zawpi hnohta hmo reihpakawhna raihriatuhpa."
+  },
+  {
+    "word": "ad.",
+    "definition": "short for advertisement."
+  },
+  {
+    "word": "AD.",
+    "definition": "abbrev. anno domino, (Lat) Zisu pina noh tawhta kô reina."
+  },
+  {
+    "word": "adage",
+    "definition": "(adij) n. bieso, nôpaw bieso, machâ bieso."
+  },
+  {
+    "word": "adagio",
+    "definition": "(adajio) adv. (hla) dusawpata. adj. dusaw, sô. n. dusawpa, sôna."
+  },
+  {
+    "word": "Adam",
+    "definition": "(aedam) n. Adâh, chyhsapa. Adamite, n. Adâh chipathla. Adam's ale, n. ti. Adam's apple, n. raotipady."
+  },
+  {
+    "word": "adamant",
+    "definition": "(adamant) adj. palôh-lai, lôhlai. adamantly, adv. chho thei lei."
+  },
+  {
+    "word": "adapt",
+    "definition": "(edapt) v. taoparyh, pakyh, âpaoli, nôchâ pahmiesa, palyusa, su nata râh hrozie paryhsa. adaptable, adj. âpaoli thei. adaptability, n. âpaoli theina. adapted, adj. âpaoli, âhmie, âkyh. adaptative, adj. hmâh-lâh khoh thei. adaptively, adv. adaption, n. âpaolina, tao paryhna. adapter/adaptor, n. tao paryhtuhpa."
+  },
+  {
+    "word": "add",
+    "definition": "(ad) v. pahlyh, baichha, bai, pazao, pahlao, pahlyhpakhy. adder, n. pahlyhtuhpa. addition, n. pahlyhna, baina, baichhina. additional, adj. baichhana kyh, athodapa hmo."
+  },
+  {
+    "word": "addax",
+    "definition": "(adaks) n. sathawh chikha a ki âchamiehpa."
+  },
+  {
+    "word": "addend",
+    "definition": "(adend) n. baichhana nawhbaw."
+  },
+  {
+    "word": "addendum",
+    "definition": "(adendam) n. châbu bie or hmo baichhana. addenda, pl."
+  },
+  {
+    "word": "adder",
+    "definition": "(adar) n. parih châmaih pa-iahpa, vâzi. (also add)."
+  },
+  {
+    "word": "addict",
+    "definition": "(adikt) v. parikhei, tlaichâ, zy, pahawthei. n. pahawtheipa chyhsa. addicted, adj. hmotao tlaichâ, pahawthei, parikhei, zy. addiction, n. zyna, tlaichâna, pahawtheina, parikheina."
+  },
+  {
+    "word": "addition, additive",
+    "definition": "See add."
+  },
+  {
+    "word": "addle",
+    "definition": "(adl) v. awhtih leih, rao. addled, adj. addlement, n. awhtih leihna."
+  },
+  {
+    "word": "address",
+    "definition": "(adres) v. zawpi hnohta biereih, chyhsa hnohta châroh, châbyh liata yna moh roh. n. yna su moh. addressed, adj. chyhsa hnohta biereih/châroh. addressee, n. châpaphaopa daotuhpa. addresser, n. châ paphaotuhpa, zawpi hnohta biereihtuhpa."
+  },
+  {
+    "word": "adduce",
+    "definition": "(adius) v. bie pa-isana hmo reihpalâsa, pamosana châta hmâh. adducible, adj. bie pa-isa thei. adducent, adj. bie pa-isa."
+  },
+  {
+    "word": "aden-",
+    "definition": "(prefix) keihchhia, chhia, tahna."
+  },
+  {
+    "word": "adenitis",
+    "definition": "n. chhia pah-liapa pasana."
+  },
+  {
+    "word": "adenoid",
+    "definition": "adj. keihchhia lyu. adenoids, n. hnapasu chhôh liata chhia thlohpa. adenoidal, adj. chhia pah-liapa hmo."
+  },
+  {
+    "word": "adept",
+    "definition": "(adept) adj. thaipasia, thaiphnia, pahno pahnie, âsaomâ liahsa. n. hmotaozie thaipasiana, pahhniana."
+  },
+  {
+    "word": "adequate",
+    "definition": "(adikieit) adj. âdaih, âdaih thai, âkhi, âdôkhâ, âtivy, theina tlohpha. adequately, adv. âdaihpulu. adequateness, n. âdaihzie, âkhizie. adequacy, n. âdaihna, dôkhâna, tlohphana."
+  },
+  {
+    "word": "adhere",
+    "definition": "(adhiar) v. bai, âbai, âbaipâ, (chyutlâ) âpatu, pazi, phâpahla. adherence, n. âbaipâna, âbaina, âpabaina, phâpahlâna. adherent, adj. âbaipâ, âbai, phâpahla. n. zyhtuhpa, zituhpa, âchâhtuhpa. adherer, n. baipâtuhpa."
+  },
+  {
+    "word": "adhesion",
+    "definition": "(adhezhan) n. âbaina, baipâna, pachawhpâna. adhesive, adj. âkia, âbaipâ thei, âbai thei. n. hmo âkiapa. adhesiveness, n. âkiazie, âbai theizie. adhesively, adv."
+  },
+  {
+    "word": "adhoc",
+    "definition": "(ad hok) adj. (Lat) he hmo châta pachhuahpanoh."
+  },
+  {
+    "word": "adieu",
+    "definition": "(adiu) interj. atlâhpata, chibaih, Khazohpata cha vaih mawh sy. n. atlâhpa biereina, chibaih buna."
+  },
+  {
+    "word": "adios",
+    "definition": "(adios) interj. (Sp) atlâhpata sy, Khazohpata cha hrôbieh mawh sy."
+  },
+  {
+    "word": "adipose",
+    "definition": "(adipoz) adj. thawh, thawhbuluh. adiposity, n. thawhna."
+  },
+  {
+    "word": "adj.",
+    "definition": "abbrev. adjective."
+  },
+  {
+    "word": "adjacent",
+    "definition": "(adjesent) adj. opalyuhri, kiapâh, lâhnia, âvawdaih, vawpazao. adjacency, n. adjacently, adv."
+  },
+  {
+    "word": "adjective",
+    "definition": "(adjektiv) n. hmo moh reina (noun) chhichhâna reih pasiatuhpa."
+  },
+  {
+    "word": "adjoin",
+    "definition": "(adjoin) v. thabyta y, kiapâhta y, vawpazi, vawpazao. adjoining, adj. âpatyh, âpazao, lâhnia, âtyh thlâh rô."
+  },
+  {
+    "word": "adjourn",
+    "definition": "(adjarn) v. pachhâsa, pachhâsa chy, ryureina pachhâsa chy, daihti pasie. adjournment, n. ryurei pakhyna daihti pachhâsa chyna."
+  },
+  {
+    "word": "adjudge",
+    "definition": "(adjadj) v. pathlu, biepathlu, rao, lymâ patosa, ryureina bie pathlupa phuah. adjudgement, n."
+  },
+  {
+    "word": "adjudicate",
+    "definition": "(adjudikeit) v. ryureina dâh achhâzie phuah, dâh ryureizie hawhta paryh, âzaohna hmotaopa pasiatuhpa châ. adjudication, n. ryureina dâh hawhta mohpasiana. adjudicator, n."
+  },
+  {
+    "word": "adjunct",
+    "definition": "(adjangkt) adj. âbaichha, âpazao. n. pazaona/baichhana chyhsa, (gram) biepipa rawhta baichhapa pazaona. adjunction, n. adjunctive, adj. pazaosa thei, baichha thei. adjunctively, adv."
+  },
+  {
+    "word": "adjure",
+    "definition": "(adjur) v. hmeiseih tlaita biepie, âhnaw, pachhhipary. adjuration, n."
+  },
+  {
+    "word": "adjust",
+    "definition": "(adjast) v. tao paryh, paryhpari, paryh pabaoh. adjustable, adj. tao paryh thei. adjustment, n. tao paryhna."
+  },
+  {
+    "word": "adjutant",
+    "definition": "(adjutant) n. pheisaih molaipa Commanding Officer baotuhpa. adjutancy, n. adjutant rai, baotuhpa raihria. adjutant-general, n. General Office raihriapa sahlao hyutuhchaipa."
+  },
+  {
+    "word": "administer",
+    "definition": "(administar) v. chakao, chakaona raihria, hmâh, ryureina raihria, zyhnakyh chakaona raihria. administrative, adj. chakaona/mohôhna hmo, ryureina kyh. administration, n. sawhkhâ ryureina, mopakha ryurei chhôh daihti. administrator, n. ryureihtuhpa, ryureitlâhtla thaipa. administratorship, n. administratrix, n. chanô ryureihtuhpa."
+  },
+  {
+    "word": "admirable",
+    "definition": "See admire."
+  },
+  {
+    "word": "admiral",
+    "definition": "(admiral) n. balyh pheisaih hyutuh laichaipa, (general tlu). admiralty, n. balyh pheisaih hyutuhchaipa rai nata pisâ. admiralship, n."
+  },
+  {
+    "word": "admire",
+    "definition": "(admair) v. mochhyu, mohpasâh, pasâhsa, saipaza, mohpakia. admirable, adj. mohpasâh tlâhchhâ, mochhyu tlâhchâ. admirableness, n. mopasâhzie. admirably, adv. admiration, n. mopasâhna. admirer, n. mopasâhtuhpa. admiringly, adv."
+  },
+  {
+    "word": "admissible",
+    "definition": "See admit."
+  },
+  {
+    "word": "admit",
+    "definition": "(admit) v. lapangia, pangiasa, siku pangiasa pasai, âpyh, âdotlai tahpa âpyh. accessible, adj. pasaih thei, âpyh thei, lapangia thei. admissibility, n. lapangia pasai theina, âpyh theina. admittance, n. âpyhna, pangiasa pa-saina. admittedly, adv. admission, n. lapangiana, âpyhna. admissive, adj. âpyh thei, lapangia thei."
+  },
+  {
+    "word": "admix",
+    "definition": "(admiks) v. pahlaopahli, chopyhnyh, nyhpahlao, neih. admixture, n. nyhpahlaona, pahlaopahlina, neih pahlaona."
+  },
+  {
+    "word": "admonish",
+    "definition": "(admonish) v. pasipa-ao, padopaso, chhorei, biesakâ vaw."
+  },
+  {
+    "word": "admonition",
+    "definition": "(admonishan) n. rana, chhoreina, pasipa-aona, pachhiparyna. admonitive, adj. chhorei hmâh. admonitor, n. pasipa-aotuhpa. admonitory, adj. rana / biesakâvawna kyh.ado"
+  },
+  {
+    "word": "advent",
+    "definition": "(advent) n. (hmo peimawhpa) vaw tlôna, âvyna, Krista âvy eikhana or âvy heihna daihti, Krista âvy heihna. Adventist, n. Krista âvy heihna a hâtuhpa, kôsâh ryurei ngiapâtuhpa."
+  },
+  {
+    "word": "adventitious",
+    "definition": "(adventishas) adj. ypathlei, ytlamaw, zua, thlâhthli. adventitiously, adv."
+  },
+  {
+    "word": "adventure",
+    "definition": "(advencha) n. chichhihpa chatôh ngâhna, riahphapa hmotao. adventurer, n. hmo chichhihpa chatôh ngâhpa chyhsa. adventurous, adj. chichhihpa chatôh ngâh kaw. adventurously, adv."
+  },
+  {
+    "word": "adverb",
+    "definition": "(adverb) n. hmotaoapa reina (verb) reihpasiana mohchho, verb/adjective reihpasiapa mohchho. (eg. The sky is beautifully clear)."
+  },
+  {
+    "word": "adversarial",
+    "definition": "(advarserial) adj. âtuvi khoh, chyhsa pahao thai, bie-eichhia thai, â-iekhyh thai, eirei-eichâh âchhu."
+  },
+  {
+    "word": "adversary",
+    "definition": "(advarsari) n. chariahpa, khakhaipa, hmiahaopa, âdyuhtuhpa, (biehrai) Sâtâ."
+  },
+  {
+    "word": "adverse",
+    "definition": "(advars) adj. apha leina zieta, khohchhih vei, taopalôh, rietheichhih. adversely, adv. adverseness, n."
+  },
+  {
+    "word": "adversity",
+    "definition": "(adversiti) n. vâduana, vâchhiena, buana, ryhreihna, rairuana."
+  },
+  {
+    "word": "advertise",
+    "definition": "(advartaiz) v. zawpi pahnosa pakawh, hmô thei awpata tawh, phuah, reihpakawh, sawhkhâ rairuapa thâtih pahnosa. advertisement, n. reihpakawhna, pahnosa pakawhna. advertiser, n. reihpakawhtuhpa. advertising, n."
+  },
+  {
+    "word": "advert²",
+    "definition": "v. See advertise."
+  },
+  {
+    "word": "advert¹",
+    "definition": "(advart) v. suhrolâ palôh paiheihsa, reihchakia. advertence, -cy, n. pachâpahriana, uasana, saiheina, thlahsana. advertrent, adj. / adv. adj. pachâ-uasa, uasa. advertently, adv."
+  },
+  {
+    "word": "advice",
+    "definition": "(edvais) n. chhosiena, pachâkheina, pasopakâna, ryhraokheina, hmo yzie chhona, pachâna phapa piena. advisable, adj. zyhtlâh châ, taotlâh châ, chhosie thei. advisability, n. advisably, adv."
+  },
+  {
+    "word": "advise",
+    "definition": "(edvaiz) v. chhosie, pachâkhei, pasopakâ. advised, adj. chhosie, pachâkhei, pasopakâ. adviser, -sor, n. chhosietuhpa. advisory, adj. pasopakâna kyh. ill-advised, adj. pachâdâh hru. well-advised, adj. pachâdâh so."
+  },
+  {
+    "word": "advocacy",
+    "definition": "(advokeisi) n. reíkheina, hiakheina, âchâhna, moleipa châta reíhpha cheikheina, reíhpha cheituhpa."
+  },
+  {
+    "word": "advocate",
+    "definition": "(advokeit) n. dâhthaipa (ukil), reikheituhpa, moleipa hiakheituhpa. advocation, n. reikheina. advocator, n. reikheituhpa. advocatory, adj."
+  },
+  {
+    "word": "advt.",
+    "definition": "abbrev. advertisement."
+  },
+  {
+    "word": "adze",
+    "definition": "(adz) n. / v. n. dawchina, ahrei chyhpa (tho pathaina). v. tho sei, tho pathai."
+  },
+  {
+    "word": "aegis",
+    "definition": "(ejis) n. pabohsana, vaihna nata baona."
+  },
+  {
+    "word": "aeolian",
+    "definition": "(eiolian) adj. ziza nata thlih hmo, thlih raihriana kyh."
+  },
+  {
+    "word": "aeon / eon",
+    "definition": "(ian) n. chhâzaw, tlyzaw, daihti reipi, kô hluhpi, chhâ hluhpi. aenian, adj. chhâzaw, tlyzaw, daihti chhâ thai vei."
+  },
+  {
+    "word": "aerate",
+    "definition": "(eireit) v. ziza ryh, ziza rohchhiepa ti chhôh liata ryh, chatlaosa, buchaphy papua (soda hawhta). aeration, n. ti chhôh liata ziza ryhna."
+  },
+  {
+    "word": "aerial",
+    "definition": "(eirial) adj. / n. adj. ziza hmo, ruarâ, ziza liata y. n. Tv / radio ao ziza liata patuna khaw hmobaoh."
+  },
+  {
+    "word": "aerie",
+    "definition": "n. Same as eyrie.aeriform"
+  },
+  {
+    "word": "aforethought",
+    "definition": "adj. pachâ chiehpa."
+  },
+  {
+    "word": "aforetime",
+    "definition": "adv. hmialâna khata, zâkhano."
+  },
+  {
+    "word": "afraid",
+    "definition": "(afreid) adj. chi, chihuh, thlahzoh, ngâh vei, riahchhie, riahchi."
+  },
+  {
+    "word": "afreet",
+    "definition": "See afrit."
+  },
+  {
+    "word": "afresh",
+    "definition": "(afres) adv. thathiehpata, (athaby tawhta) athiehpa tlaita, taopathi."
+  },
+  {
+    "word": "African",
+    "definition": "(afrikan) adj. / n. adj. Africa râh hmo. n. Africa chyhsa. Africaner, n. S. Africa liata mongyuhpa."
+  },
+  {
+    "word": "afrit / afreet",
+    "definition": "(afrit) n. (phôhpa) ahripa molei kawpa."
+  },
+  {
+    "word": "Afro",
+    "definition": "(afro) adj. Africa chyhsa, tahna."
+  },
+  {
+    "word": "aft",
+    "definition": "adj., adv. hnoh lâchhâh, hnoh-lâ, balyh/zawtheina chao lâchhâh."
+  },
+  {
+    "word": "after",
+    "definition": "prep., adv., conj. hnoh lâta, khai tawhta, hnohkua, rakha tawhta. afterwards, adv. khai tawhta, atavia. afterbirth, n. hawsaih pih tawhta hlâ puapa, hlâ, paw thi tawhta hawsaih pihpa. afterglow, n. nohtla khaihpa thlaraw. aftermath, n. hnoh-lâta a ypa hmo, hmo phaleipa ta a vaw pazipa. afterall, phrasal hnohkua cha, tawh tly cha. afternoon, (afternoon) n. nohchhô hnoh, zâlâ râhsâ, zâlâ. aftershave, n. hmaohmi ngyu khai tawhta hmâpa rohpahâhpa. afterthought, n. pachâ pathina, pachâ pazina."
+  },
+  {
+    "word": "aftermost / aftmost",
+    "definition": "(aftarmost) adj. balyh chaochhâna hmo, hnohchai, chhâpachie."
+  },
+  {
+    "word": "afterward / afterwards",
+    "definition": "See after."
+  },
+  {
+    "word": "again",
+    "definition": "(agein) adv. heih, khao, lilaw. never again, phrasal heih khao vei, beih aw vei. again and again, phrasal chanei ngâthlâh ha, parieparyh. do again, phrasal tao heih, tao chanei, chanei."
+  },
+  {
+    "word": "against",
+    "definition": "(ageinst) prep. âdyuhna zieta, âchakhiana zieta, vyuhpata, chhâta, padaipachhaina zieta. against many odds, adv. vâsâta, rairu kawpata."
+  },
+  {
+    "word": "agape²",
+    "definition": "(ageip) adj. akawhpi pakah â, âcha-ia, âchakawh."
+  },
+  {
+    "word": "agape¹",
+    "definition": "(agape) n. (Grik) Krizyhpa kyh-pachâna (hiachhiena âhlao vei), kyh-pachâna kyhchhi. agapae, pl."
+  },
+  {
+    "word": "agate",
+    "definition": "(ageit) n. lôsôhpa chikha."
+  },
+  {
+    "word": "age",
+    "definition": "n. / v. n. kô, uhtheina kô, uhtheizie, hrochhôh daihti reizie, pitlohna kô. v. machâlâ pangai. aged, adj. uhthei, machâ, nôpi, pawpi. ageing, n. machâsâlâ pangaina. ageless, adj. machâ thai vei, kô daihti hnei vei. of age, phrasal pitloh. come of age, phrasal kôtlohpa (kô 21 uhthei). over age, phrasal kô taihpa hlâta uhthei via. under age, phrasal kô pitloh vei."
+  },
+  {
+    "word": "agenda",
+    "definition": "(ajenda) n. biepachia byuhpa."
+  },
+  {
+    "word": "agent",
+    "definition": "(ejent) n. chyhsa vyuhta raihriapa, chyhsa châta taotuhpa, arulâta raihriapa py. agency, n. sôdaohna, sôdaoh châta hmâna."
+  },
+  {
+    "word": "agglomerate",
+    "definition": "(aglomereit) v. / adj. v. pahmaoh, pahmaoh pakhy, pôhpakhy, pôhthlu. adj. hmo chikha y pahmaoh, luhpabyuh, (bot) pawhmao âpachhaoh. agglomerative, adj. pawhmao âpachhaoh thei. agglomeration, n."
+  },
+  {
+    "word": "agglutinate",
+    "definition": "(aglutineit) v. / adj. v. pachawhpâ, baipâ, bai, phâpahla, âkiapa (glue or gum) hmâpata baipâ. adj. âbaipâ, phâpahlâ, pachawhpâ. agglutinable, adj. âbai thei, baipâ thei. agglutitant, adj. baipâ, pachawhpâna hmo, baipâtuhpa. agglutination, n. agglutinative, adj."
+  },
+  {
+    "word": "aggrandise, -ize",
+    "definition": "(agrandaiz) v. rônah rili, parônahsa, peimawh rili, pasâhsa via, pahneirôhsa, thapatlôsa. aggrandizement, n."
+  },
+  {
+    "word": "aggravate",
+    "definition": "(agraveit) v. hiepâlih, patahsâ, pa-uasa, pakhâsâ, pabuachhaih. aggravated, adj. aggravating, n. buana. aggravation, n. uasana, pachhiesa heihna."
+  },
+  {
+    "word": "aggregate",
+    "definition": "(agrikeit) adj. / n. / v. adj. a zydua, palyupalih, pakhy. n. sâkhapata yna, a chyh ta pakhy, py. v. palyupalih, bupakhy, bupakhyta tao. aggregation, n. papyhna, hluhpi pabupa. aggregative, adj."
+  },
+  {
+    "word": "aggression",
+    "definition": "(agreshan) n. pathao chhieliena, dyuh pathaona, ryru patu chhieliena. aggressive, adj. â chheih, duma pathei. aggressively, adv. agressiveness, n. agressor, n. dyuh pathaotuhpa."
+  },
+  {
+    "word": "aggrieve",
+    "definition": "(agriv) v. pachhiesakhei, paroh, rypaoh leipa, pa-i. aggrieved, adj. aih, chhiesakhei, tah, pa-i."
+  },
+  {
+    "word": "aghast",
+    "definition": "(agast) adj. ngiaha, a ngiaha kaw, palôh hria ta ahroh."
+  },
+  {
+    "word": "agile",
+    "definition": "(edjail) adj. chatlie, chatlie chakoh, hru thai. agility, n. chatlie chakohna."
+  },
+  {
+    "word": "agitate",
+    "definition": "(adjiteit) v. pathluah, chalyu thai, phu papua, eikhia, pahni. agitated, adj. thluah, eikhia. agitation, n. thluahna, pawna. agitator, n. pawhtuhpa."
+  },
+  {
+    "word": "agnate",
+    "definition": "(agneit) n. / adj. n. pawlâta sanawh. adj."
+  },
+  {
+    "word": "agnostic",
+    "definition": "(agnostik) n. / adj. Khazohpa yta pahno leipa. agnosticism, n."
+  },
+  {
+    "word": "ago",
+    "definition": "(agou) adv. khahlâta, hlâta, khata. long ago, adv. khahlâpi ta, phahnai khata, chhochhi khata."
+  },
+  {
+    "word": "agog",
+    "definition": "(agog) adj. hmo thiehpa hmô khoh kawpa, hnabeiseih ngâpata ypa, khoh ngâpata ypa."
+  },
+  {
+    "word": "agonize, -ise",
+    "definition": "(egonaiz) v. riethei tlohkhei, taona pasa tlohkhei. agonizing, adj. pasa ngâpata ypa. agonizedly, adv."
+  },
+  {
+    "word": "agony",
+    "definition": "(egoni) n. pasa taona ngâthlâpata yna, thakâ pasana."
+  },
+  {
+    "word": "agoraphobia",
+    "definition": "(agorafobia) n. zawpi yna su, su lapa chi-na zaphina."
+  },
+  {
+    "word": "agrarian",
+    "definition": "(agrearian) adj. alei leipalie, hmo, tlyliah kyh."
+  },
+  {
+    "word": "agree",
+    "definition": "(agri) v. kholâh, hiahkhaih, ryhparoh, reih-hrialh, biekha, palôh hmia khatâta y, ngiapâkhei, thapyrh. agreeable, adj. khotlâhchâ, ryhpaorôh, alychhih. agreeably, adv. agreeableness, n. khotlâhchâzie. agreed, adj. ryhparoh chiehpa, biekha chiehpa."
+  },
+  {
+    "word": "agreement",
+    "definition": "(agriment) n. bietaina, hiahkhaihna, ryhparohna, reih-hrialhna, sakhâta yna."
+  },
+  {
+    "word": "agriculture",
+    "definition": "(agrikalcha) n. leihria kyh, tlyliah tano kyh chuna. agricultural, adj. leihria kyh. agriculturalist, n. leihriatuhpa."
+  },
+  {
+    "word": "agronomy",
+    "definition": "(agronomi) n. tlyliah tano kyh chuna. agronomist, n."
+  },
+  {
+    "word": "aground",
+    "definition": "(agraund) adv. (ti-liata) alei pakaohpa, alô kô khâpa, âpathupâpa. run aground, v. ti-liata sôh pakaoh."
+  },
+  {
+    "word": "ague",
+    "definition": "(egiu) n. thalo pawpa, thalo chalo hmia."
+  },
+  {
+    "word": "ah",
+    "definition": "(a) int. e! i-hi! a-hâ! tahna."
+  },
+  {
+    "word": "aha",
+    "definition": "(aha) int. a-hâ! (alyhpa, hneipa nata mawhna reitahna)."
+  },
+  {
+    "word": "ahead",
+    "definition": "(ahed) adv. hmia lâta, hmia lâ chao, tlyh via, hmo hluhlâta. straight ahead, hmia lâ pangai tlaita. get ahead, v. hmia lâ tôh."
+  },
+  {
+    "word": "ahem",
+    "definition": "(ahem) int. ao pathaina, ao thlaona, pachâ pahriana ato."
+  },
+  {
+    "word": "ahoy",
+    "definition": "(ahoi) int. balyh chhityh tupa vaw aona ao (ship ahoy!)."
+  },
+  {
+    "word": "aid",
+    "definition": "(eid) v. / n. v. bao, thapasapa. n. baona, baotuhpa, rairua tina hmo. aide, n. (Am) baotuhpa peimawhpa."
+  },
+  {
+    "word": "AIDS",
+    "definition": "(eids) n. acquired immune deficiency syndrome, chhih-rina pachhaihtuhpa pahrâpa thlâhna dâhpipa pasana."
+  },
+  {
+    "word": "ail",
+    "definition": "(eil) v. tlâhleipa, pasa, riethei, thapasa, pachhiesa, thaba. ailing, adj. tlâhlei ngâthlâhpa, pasapa. ailment, n. pasana chhipa."
+  },
+  {
+    "word": "aim",
+    "definition": "(eim) v. / n. v. pachy, thlâ, âchhu, khoh. n. pachyna, pachy-chhihpa, âchhuna, palôh-khohna. aimless, adj. âchhuna hnei leipa, pachydâh hnei leipa. aimlessly, adv. aimlessness, n."
+  },
+  {
+    "word": "air",
+    "definition": "(eir) n. / v. n. ziza, tihu, hmia-hmotaonazie, mo-zie, lasiri ao, hla ao. v. ziza ryhsa, (chysia) ziza liata papho, zawpi pahnosa. airing, n. ziza ryhsana, râh-sie-paphaona. airless, adj. ziza hnei leipa. air-conditioned, adj. ziza sypa/raohpa o chhôh-liata chhia-pâpa. air-conditioner, n. ziza sytuhpa maching. air-conditioning, n. airfield, n. zawtheina âpachhôna leipalie. airforce, n. zawtheina pheisai py. air-gun, n. meithairu, ziza thlâpata meithai chawhpa. airhostess, n. zawtheina chhôh liata raihriapa chanô. airily, adv. ziza hawhta, aropahâhpa ta, thalânapa ta. air-letter, n. zawtheina paphaopa châbyh. airlift, n. zawtheina ta hmo phaona. airline, n. zawtheina ta chyhsa nata hmo phao-na py. airliner, n. zawtheina laipa. air-lock, n. ziza dôhna, ziza âsuana. airman, n. zawtheina chhityhtuhpa chapaw. airplane, n. zawtheina. airport, n. zawtheina âpachhôna nata tawh-na su, a station. air-raid, n. zawtheina ta khazâhyhnapâ dyuhna. airship, n. ziza ta pazawpa balyh laipa (gas balloon). airtight, adj. ziza a ngia thei leina su, dôh thlâpâpa. airway, n. zawtheina lâpi, ziza pyhna lâpi. airworthy, adj. zawtheina chho tlohpata a pha-pa. airy, adj. ziza a pha kawna su, thapâ-chhihpa, aruarâpa, palôh thlahpah-kâpa, thalânapa."
+  },
+  {
+    "word": "aisle",
+    "definition": "(ail) n. (kôsâh or cinema o chhôh) dudo chawh-na lâpi, pakhâ-pazaona lâpi."
+  },
+  {
+    "word": "ajar",
+    "definition": "(adjar) adv., adj. (o-chhi) khia tewpa ta âpahâpa, meih-ta âpahâpa."
+  },
+  {
+    "word": "akimbo",
+    "definition": "(akimbou) adv. a tasiata kupa a kiapa ta âvaw chhaohpa (with arms akimbo)."
+  },
+  {
+    "word": "akin",
+    "definition": "(akin) adj. chhôhkha lyu, sanawh lyu, a lyupa."
+  },
+  {
+    "word": "al fresco",
+    "definition": "(alfreskou) adv., adj. (It) zawpi siana ta, o-lâpaw ta, ziza pha su ta."
+  },
+  {
+    "word": "alabaster",
+    "definition": "(alabasta) n. alô sâpa dôh ngâpa nata phapa chi."
+  },
+  {
+    "word": "alacrity",
+    "definition": "(alakriti) n. palôh khona, alyhna nata chatliena, palôh-thahkâna."
+  },
+  {
+    "word": "alarm",
+    "definition": "(alarm) n. / v. n. chihuhna, chi-ao chana, pahnona meih/bell chana. v. pachihuh, pahnosa. alarm-clock, n. pahnona bell a chamathei chhori. alarming, adj. pachihuh chhihpa. alarmist, n. chyhsa pachihuhtuhpa, thâtih chhihpa reikawhtuhpa."
+  },
+  {
+    "word": "alas",
+    "definition": "(elas) int. chiahaw! chiao! moh-riethei chhih! tahna."
+  },
+  {
+    "word": "albatross",
+    "definition": "(albatros) n. tilaipahôh chôta a zawpa vawh-laipa chi."
+  },
+  {
+    "word": "albeit",
+    "definition": "(olbi-it) conj. (arch) châhrasala, tahrasala."
+  },
+  {
+    "word": "albino",
+    "definition": "(albino) n. mophapa (chyhsa, sah-sâ, vawh, tita, a hmi nata a hnaw a sâpa). albinism, n. mophana."
+  },
+  {
+    "word": "album",
+    "definition": "(albam) n. photo, ticket, khaw siana châbu."
+  },
+  {
+    "word": "albumen",
+    "definition": "(albiumen) n. vawhru ti a sâpa."
+  },
+  {
+    "word": "alchemy",
+    "definition": "(alkemi) n. dâhtlei hmâta thasâ sôh viapa, (sâhna hawhta) taona chuna. alchemist, n. dâhtlei hmâta thasâ sôh viapa taotuhpa."
+  },
+  {
+    "word": "alcohol",
+    "definition": "(alkohol) n. tila, thakâpa ti, thih-thla ti, sah-sahâpa ti. alcoholic, adj. / n. adj. tila âpahlaopa ti. n. tila reih-mâpa chyhsa, tila thôhmâhpâpa. alcoholism, n. tila reih-mâpa pasana."
+  },
+  {
+    "word": "alcove",
+    "definition": "(alkouv) n. o-tlâh kaokiapa o-chhôh pakhâpa chhiapa su."
+  },
+  {
+    "word": "alder",
+    "definition": "(olda) n. tho-chi kha."
+  },
+  {
+    "word": "alderman",
+    "definition": "(oldaman) n. khapi (city) ryureituhpa chhôhkha upa."
+  },
+  {
+    "word": "ale",
+    "definition": "(eil) n. tila chikha (beer hawhta taopa)."
+  },
+  {
+    "word": "alert",
+    "definition": "(alart) adj. / n. / v. adj. molaipa, vaimâpa, chachaorâpa ta ypa. n. khazâhyhnapâ vaw râh pahnona ao. v. pavaimâ, pamolaipa ta chhia. alertly, adv. alertness, n. pavaimâzie. on the alert, phrasal vaimâ ngâthlâpata y."
+  },
+  {
+    "word": "alexia",
+    "definition": "(aleksia) n. thlohna pasana vâta châ rei thai leina."
+  },
+  {
+    "word": "alfalfa",
+    "definition": "(alfalfa) n. râh-chi kha (mo-sâ nata siahra chaw-chhih)."
+  },
+  {
+    "word": "alga",
+    "definition": "(alga) n. tirâh, tiliata a kâpa tlâh (algae, pl.)."
+  },
+  {
+    "word": "algebra",
+    "definition": "(aldjibra) n. hmawrawh nata hmotaona chhori chuna (maths chi kha). algebraic, -cal, adjs. algebraically, adv."
+  },
+  {
+    "word": "alias",
+    "definition": "(elias) adv. / n. adv. (Lat) moh-thiehpa ta, moh-hruapa ta. n. moh-hruapa, moh-thiehpa."
+  },
+  {
+    "word": "alibi",
+    "definition": "(alibai) n. moleipa ta hmo a taona su ta a y leina bie-reipa, hmo a y-nota su hrua ta a yna bie-reipa."
+  },
+  {
+    "word": "alien",
+    "definition": "(elien) adj. / n. adj. râh-hrôpa, chyhsa-hrôpa, hmo-tlei-pa. n. râh-hrôpa chyhsa, hmo tlei-pa, planet hrupa tawhta a vawpa chyhsa/sah-sâ. alienable, adj. hrua-lâ sôh-pazaoh thei, pie-theihpa. alienate, v. chhôhkha-sanawh pahrâ-pakawh, palôh panano, khâ-khâi ta tao, râh-hrôpa ta pie-pazao. alienation, n. khâkhâi-ta taona, palôh pananona, râh-hrôpa ta sôh piepazaona. alienist, n. thlohna pahrâtuhpa doctor."
+  },
+  {
+    "word": "alight²",
+    "definition": "(alait) adj. meipaleih âdua, meikâ, mei-ia, khaih."
+  },
+  {
+    "word": "alight¹",
+    "definition": "(alait) v. (balyh/zawtheina/siahra tawhta) chhi, vaw tlô."
+  },
+  {
+    "word": "align, aline",
+    "definition": "(alain) v. rari ta chhia, rari sakhâta chhia, py-sakhâ ta pazaoh. alignment, n. rari sakhâ ta chhiana, py-sakhâ ta pazaohna."
+  },
+  {
+    "word": "alike",
+    "definition": "(alaik) adj., adv. a lyupa, hmo-khapa, sakhâta, chhaota."
+  },
+  {
+    "word": "alimentary",
+    "definition": "(alimentari) adj. chaw-chhih kyh, phahnai-na kyh, chyna kyh. alimentary canal, n. chaw chhih pahrâpa tlôna chhôh-khao (pawpi liata a pazao-pa lapi)."
+  },
+  {
+    "word": "alimony",
+    "definition": "(alimoni) n. nô-vah â-hnei-khao leipa nota vahpa ta a lahpinô hlâpa phusâ a piana."
+  },
+  {
+    "word": "alive",
+    "definition": "(alaiv) adj. hroh, chatlie, molei, molaipa ta y, thahkâpa. alive to, phrasal pahnolaipa, vaihmâpa."
+  },
+  {
+    "word": "alkali",
+    "definition": "(alkalai) n. alôdipa (soda/potash hawhta chaw-hmo paraophatuhpa). alkaline, adj. alôdipa a phlaopa. alkalinity, n."
+  },
+  {
+    "word": "all",
+    "definition": "(ol) adj., adv., n. adj. a zydua, a popi, maphie, phaphi, khai, chhao, to, papuapali. adv. tlaita, thlâpâta. n. a zydua ta, hmo-zydua. all along, phrasal a thaby tawhta, chanei. all and sundry, phrasal chyhsa to, mopha to. all but, phrasal deichhy, tep. all in, phrasal chhua kaw, thaba kaw. all in all, phrasal a peimawh chaipa. all out, phrasal thatlôna zydua hmâta. all right, phrasal a pha, a hlâh, thapâ kaw. all told, phrasal pakhyta, a zydua chhao ta. at all, phrasal chhao ta, chhao, hmeiseih, khâpa chhao. once for all, phrasal eikha tlaita, beih aw vei."
+  },
+  {
+    "word": "Allah",
+    "definition": "(ala) n. Muslim hgawh Khazohpa moh."
+  },
+  {
+    "word": "allay",
+    "definition": "(alei) v. papasâ, tlâosa, panano, papasao (chi-na nata pasana hawhta)."
+  },
+  {
+    "word": "allege",
+    "definition": "(aledj) v. a hmeiseihpa pahnoleipata reih-thla-pa, pahlyhpa. alleged, adj. reih-thlapa. allegedly, adv. allegation, n. pahlyhna bie, reih thlapa bie."
+  },
+  {
+    "word": "allegiance",
+    "definition": "(alidjans) n. abeipa/saohkhâ chôta reih-ngiapâna nata pahnona."
+  },
+  {
+    "word": "allegory",
+    "definition": "(alegori) n. tlahpahlisana bie, thupachhia bie (hro-zierzi phapa reina bie). allegic, -cal, adjs. allegorically, adv. allegorist, n. tlahpahlisana bie reituhpa."
+  },
+  {
+    "word": "alleluia",
+    "definition": "(aliluia) int., n. See hallelujah."
+  },
+  {
+    "word": "allergy",
+    "definition": "(alerdji) n. hmokha hria/tlâhna vâta pôhpa-pasa/thachhie vaw y-na (pasa chi kha). allergic, adj. allergy hneipa."
+  },
+  {
+    "word": "alleviate",
+    "definition": "(alivieit) v. papasâ, tlâosa (pasana nata rietheina hawhta). alleviation, n. papasâna. alleviative, -tor, n."
+  },
+  {
+    "word": "alley",
+    "definition": "(eli) n. o-kiapâh lâpi chyhpa, lâpi dudo (alleys, pl.)."
+  },
+  {
+    "word": "alliance",
+    "definition": "(alaians) n. py-sakhâ ta âpazaohna (râh nata râh or chhôhkha nata chhôhkha)."
+  },
+  {
+    "word": "alligator",
+    "definition": "(aligeita) n. tilaipahôh râh-hneirôpa ta a ypa sah-sâ lai kawpa chi (crocodile hawhta)."
+  },
+  {
+    "word": "alliterate",
+    "definition": "(alitarkeit) v. hmawrawh âlyupa hawhta dudo reih/châ-rari ta tao. alliteration, n. alliterative, adj."
+  },
+  {
+    "word": "allocate",
+    "definition": "(alokeit) v. sôh pie, chhiariata sôh pakhâsa, raihria pakhâsa. allocation, n. sôh pakhâsana."
+  },
+  {
+    "word": "allot",
+    "definition": "(alot) v. râh/hmo to-rari ta pie, chyhsa tlotlâh rakha ta pie. allotment, n. pie-rari-na hmo, pie-thlyhpa râh chhyhpa."
+  },
+  {
+    "word": "allow",
+    "definition": "(alau) v. pasai, ngiapâkhei, phusâ pie, hmo pahnosa. allowable, adj. pasai tlâhchâ. allowably, adv. allowance, n. pasaina, phusâ pie-chhieliena, chhyhriana. make allowance for, phrasal ngiathaih, uasalâta pachâkhei."
+  },
+  {
+    "word": "alloy",
+    "definition": "(aloi) n. / v. n. thasâ-chi pani a paraopa, (sâhna nata liahsa hawhta paraopa). v. thasâ chi pani parao, parao padâhsa. unalloyed, adj. parao padâhsa leipa, âbisua ngâthlâhpa."
+  },
+  {
+    "word": "allude",
+    "definition": "(aliud) v. moh-tlai pahnoleipata reih-hrialh, chho-hrialh, sawh-chhia. allusion, n. chhohrialhna, sawhchhiana. allusive, adj. allusively, adv."
+  },
+  {
+    "word": "allure",
+    "definition": "(aliur) v. pathlu, palôh-hrua, reihpahly. allurement, n. pathluna hmo. alluring, adj. pathlu thai kawpa, palôh hrua ngâthlâhpa. alluringly, adv.alluvial"
+  },
+  {
+    "word": "altercation",
+    "definition": "(oltekeishan) n. bie-eichhiana, eirei-eichâh âchhuana, reih-hrialhna buana.alter ego"
+  },
+  {
+    "word": "Amazon",
+    "definition": "(emazon) n. chanô matha/tha-hri."
+  },
+  {
+    "word": "ambassador",
+    "definition": "(embasado) n. râh hrôpa liata saohkhâ vyuhpa ta a ypa/ palyupalihpa (ambassadress, n. chanô)."
+  },
+  {
+    "word": "amber",
+    "definition": "(emba) n. thasâ-chi hmi a no-hupa thlapa hmo sôhpa."
+  },
+  {
+    "word": "ambergris",
+    "definition": "(embagris) n. tilaipahôh liata sah-sâ awhthupa tawhta puapa thohna rimâpa taona chhaichhi."
+  },
+  {
+    "word": "ambidextrous",
+    "definition": "(embidekstras) adj. ku chachâh lâ nata ku chavei lâ ahmahto ta a hmâ thai veipa."
+  },
+  {
+    "word": "ambient",
+    "definition": "(embient) adj. a kiapâhpa."
+  },
+  {
+    "word": "ambiguous",
+    "definition": "(embigiuas) adj. a yzie hluhpi hneipa, a fiakhâ tlai leipa, palôh pathliena tloh leipa. ambiguously, adv. ambiguity, n."
+  },
+  {
+    "word": "ambition",
+    "definition": "(embishan) n. palôh khohna (mo-pha lâ, thai lâ, theih lâ). ambitious, adj. palôh khona hneipa, khona laipa hneipa. ambitiously, adv."
+  },
+  {
+    "word": "amble",
+    "definition": "(embla) v. / n. v. thlahpha-kâpata sie. n. thlahpha-kâpata siena."
+  },
+  {
+    "word": "ambrosia",
+    "definition": "(embrousia) n. (Grik Khazohpa zy) chaw hmiathlah (hmo rimâpa nata palôh thlahpa). ambrosial, adj."
+  },
+  {
+    "word": "ambulance",
+    "definition": "(embiulans) n. tlâhlei phaona mawtaw, baona py."
+  },
+  {
+    "word": "ambush",
+    "definition": "(embush) n. / v. n. chana, a nyu hmâta aona. v. nyu, nyu-hmâta dyuh."
+  },
+  {
+    "word": "ameba",
+    "definition": "See amoeba."
+  },
+  {
+    "word": "ameliorate",
+    "definition": "(emelioreit) v. a vaw pha via, pava pha via. amelioration, n. pha viana."
+  },
+  {
+    "word": "amen",
+    "definition": "(amen) int. châ hra mawh sy, hmeiseih."
+  },
+  {
+    "word": "amenable",
+    "definition": "(aminabal) adj. chyhsa uata ngiapa, ryhreipa a zi-thaipa. amenably, adv. amenability, n. ryhreipa zi-thaizie."
+  },
+  {
+    "word": "amend",
+    "definition": "(emend) v. a hro lâta panano (pha via awpata), pado, tao-pha heih. amendable, adj. taopha theihpa, pado theihpa. amendment, n. ryhpa thiehpa pado-na, a hrolâ pananona. make amends for, phrasal thâh."
+  },
+  {
+    "word": "amenity",
+    "definition": "(eminiti) n. palôh pachhâna hmo."
+  },
+  {
+    "word": "American",
+    "definition": "(emerikan) n. America râh chyhsa."
+  },
+  {
+    "word": "amethyst",
+    "definition": "(emithist) n. alô hlu a nohupa, alô hlu pakhona chi kha (jewel chi kha)."
+  },
+  {
+    "word": "amiable",
+    "definition": "(emiebal) adj. viasa tao tlâhchâpa, hmô-khoh chhihpa. amiably, adv. amiability, n. viasa tao tlâhchâzie."
+  },
+  {
+    "word": "amicable",
+    "definition": "(emikabal) adj. ryhparoh tlâhchâpa, thlahlôh-tlâhchâpa. amicably, adv. amicability, n."
+  },
+  {
+    "word": "amid, amidst",
+    "definition": "(emid, emidst) prep. a lialiah liata, hrakha ta."
+  },
+  {
+    "word": "amino acid",
+    "definition": "(emino esid) n. thalo phahnaina protein chi kha."
+  },
+  {
+    "word": "amiss",
+    "definition": "(emis) adv., adj. adv. hlâh-leipata, su leipa ta, a y-awpa hawhta y leipata. adj. hmopha leipa/hlâh leipa. take amiss, v. bie pakhâ lei lâta la."
+  },
+  {
+    "word": "amity",
+    "definition": "(emiti) n. py-sakhâta ryhparohna, reih-hrialhna (râh nata râh likah)."
+  },
+  {
+    "word": "ammonia",
+    "definition": "(emonia) n. ziza nata hui pahlaopa mei hui chi kha."
+  },
+  {
+    "word": "ammunition",
+    "definition": "(emiunishan) n. sah-tha, tila laihria, a thlih nata theihpi, khazâhyhnapâ dyuhna su hmo zydua."
+  },
+  {
+    "word": "amnesia",
+    "definition": "(emnisia) n. thlohna pasana vâta hmo pahnothai leina/thei-khao leina."
+  },
+  {
+    "word": "amnesty",
+    "definition": "(emnisti) n. saohkhâ/kheihawhpa ryureituhpa hawhta chyhsa zydua pakhyna mo-sakhâ ta ryna pie-na/ngiathai-na (pâti hawhta)."
+  },
+  {
+    "word": "amoeba",
+    "definition": "(emiba) n. nônâ pathaipa zy hroh-chhih thai leipa pasana."
+  },
+  {
+    "word": "amok, amuck",
+    "definition": "(emak) adv. palôh a thai leipata adyuh nata tah. run amok, v. adyuhpa ta a tly/tao."
+  },
+  {
+    "word": "among, amongst",
+    "definition": "(emong, emongst) prep. hry liata."
+  },
+  {
+    "word": "amorous",
+    "definition": "(emoras) adj. kyh pachâ hmâpa. amorously, adv. amorousness, n."
+  },
+  {
+    "word": "amorphous",
+    "definition": "(emorfos) adj. mozie hneileipa."
+  },
+  {
+    "word": "amount",
+    "definition": "(amaunt) n. a zydua ta, sôh zydua (tâkâ). amount to, v. zydua sakhâ chhei pakhyna tawhta a pua na."
+  },
+  {
+    "word": "amour",
+    "definition": "(emur) n. amopakhata kyh-pachâna a rupa ta hneina, hmosa."
+  },
+  {
+    "word": "ampere",
+    "definition": "(empear) n. electric thachhâ zie tehna. (amp, tahpata a duna ta hmâpa a châ)."
+  },
+  {
+    "word": "amphibian",
+    "definition": "(emfibian) n. râh liata nata tiliata a pahra theipa (chôhchhô hawhta). amphibious, adj."
+  },
+  {
+    "word": "amphitheatre",
+    "definition": "(emfitieta) n. mo-sakhâ mo-na su pakhâpa kô kiah a tona awpa tlu pakhâpa."
+  },
+  {
+    "word": "ample",
+    "definition": "(empal) adj. a do kawpa, a zaoh kawpa. amply, adv. do kawpata."
+  },
+  {
+    "word": "amplify",
+    "definition": "(emplifai) v. palai, bierei tlô-pachiesa. amplification, n. palaina (ao hawhta). amplifier, n. ao-palaituhpa thlâhna."
+  },
+  {
+    "word": "amputate",
+    "definition": "(empiuteit) v. tlâh-leina vâta ku nata phei tai. amputation, n. pheiku taina. amputee, n. ku/phei taipa chyhsa."
+  },
+  {
+    "word": "amuck",
+    "definition": "See amok."
+  },
+  {
+    "word": "amulet",
+    "definition": "(emiulat) n. pasana nata hmochhie a khô khei theipa hmo pakhru pa a rohpa ahrao (aohrao hawhta)."
+  },
+  {
+    "word": "amuse",
+    "definition": "(emiuz) v. palôh-pahâ, pahrohpahâh, pahnai. amusement, n. palôh-pahâhna hmo, palôh pachhâna hmo. amusing, adj. pahnai chhihpa, a pha kawpa, palôh a hrua kawpa. amusingly, adv."
+  },
+  {
+    "word": "an",
+    "definition": "(en/an) art. a, e, i, o, u nata ao hro patuhpa hmia liata (a) vyuhpa ta hmâpa bie, kha, hmokha tahna."
+  },
+  {
+    "word": "anachronism",
+    "definition": "(enakronizam) n. a kô/daihti reikhaona tlai leipa ta ypa."
+  },
+  {
+    "word": "anaemia",
+    "definition": "(animia) n. thisaih thahnai a tlaih leina pasana. anaemic, adj."
+  },
+  {
+    "word": "anaesthesia, anesthesia",
+    "definition": "(anesthizia) n. thachhâ thai leina, u-thai khao leina, u-thaina asai. anaesthetic, n. pahihtheina tho. anaesthetist, n. pahih-thaipa. anaesthetize, v. (operation nota) pahihtheina tho chia ta pahih."
+  },
+  {
+    "word": "anagram",
+    "definition": "(enagram) n. hawrawh rari-hmâta thumal mo-nônô hawhta thlyh/pananona (time tawhta item hawhta).analgesic"
+  },
+  {
+    "word": "analgesic",
+    "definition": "(enaldjesik) n., adj. pasana tho/paphalai theina tho/pasana tho-tlâh chhihpa."
+  },
+  {
+    "word": "analogy",
+    "definition": "(enelodji) n. palai-pasa-khâna tahna, tlahpahlisana bie y-zie a panano tyhpa chi. analogical, adj. analogize, v. analogous, adj. a lyu thlâhapata a ypa."
+  },
+  {
+    "word": "analyse",
+    "definition": "(analaiz) v. fiah kawpata pakha-chiana (yzie), a peimawh zie dâhta. analyst, n. pakhachiatuhpa."
+  },
+  {
+    "word": "analysis",
+    "definition": "(anelisis) n. a panano pata/dâhta pakha chiana. analytic, -cal, adjs."
+  },
+  {
+    "word": "anarchism",
+    "definition": "(enarkizam) n. ryhreituhpa, saohkhâ khâ chhao y sypata â chhuana py. anarchist, n. anarchy, n. ryhreipa/saohkhâ a y leina râh hrohrâna."
+  },
+  {
+    "word": "anatomy",
+    "definition": "(enetomi) n. chysâ nata sa-sâ (chhôh khao zydua) chuna yzie. anatomical, adj. anatomist, n."
+  },
+  {
+    "word": "ancestor",
+    "definition": "(ensesto) n. pathlatuhpa thlatlahpâ, ahlâta a hmâtuhpa (ancestress, n. chanô). ancestral, adj. pathlatuhpa sôh-râh/chi-tho. ancestry, n. pathlatuhpa sahlao chi."
+  },
+  {
+    "word": "anchor",
+    "definition": "(enko) n. / v. n. balyh dônha lôthu. v. lôthu chhiata balyh padô, chhi, padô hmeihseih. anchorage, n. balyh dônha su, tilaipahôh kâmâ, pakhyna su. anchor-man, n. TV leh radio a thâtih puakheituhpa, hnôhlâ-chaipa ria-patlahtuhpa (infaona hawhta)."
+  },
+  {
+    "word": "anchovy",
+    "definition": "(enchovi) n. tilaipahôh liata nga chi-kha."
+  },
+  {
+    "word": "ancient",
+    "definition": "(enshant) adj. hlâpi-noh, machhâ nohta (Ancient History). the ancients, n. pl. hlâpi a y-tuapa zy sahlao."
+  },
+  {
+    "word": "ancillary",
+    "definition": "(ensilari) adj. a baotuhpa/y-chhiepa (py/school hawhta)."
+  },
+  {
+    "word": "and",
+    "definition": "(and/en) conj. nata, tita, chita, pazaona bie. and so forth/on, n. chatawh chata."
+  },
+  {
+    "word": "anecdote",
+    "definition": "(anikdout) n. thyutliah dapa phaoh-tlohna thâtih tlyupa, theihlâta reipa thâtih tlyupa. anecdotal, adj. anecdotist, n."
+  },
+  {
+    "word": "anemia",
+    "definition": "See anaemia."
+  },
+  {
+    "word": "anemone",
+    "definition": "(enimoni) n. pawhmao chi kha tlâh liata a pawpa; (sea anemone) tilaipahôh râh pahrâpa ahro chhihpa pawhmao."
+  },
+  {
+    "word": "anesthesia, etc",
+    "definition": "See anaesthesia."
+  },
+  {
+    "word": "anew",
+    "definition": "(aniu) adv. a thiehpa ta, a tha by charei ta, a hro lâta."
+  },
+  {
+    "word": "angel",
+    "definition": "(eindjal) n. vâtiakhaokha, palôhngia/viasa tlolâh chhihpa (biena). angelic, adj. vâtiakhaokha hawhta hmo a thaipa. angelically, adv."
+  },
+  {
+    "word": "anger",
+    "definition": "(enga) n. / v. n. thakhâna, palôh-sa-na, aoh-na. v. pathakhâ, palôh pa-sa, pa-aoh."
+  },
+  {
+    "word": "angina",
+    "definition": "(endjaina) n. ripasana pasana chi kha (angina pectoris)."
+  },
+  {
+    "word": "angle²",
+    "definition": "(engal) v. ngahia. angler, n. ngahiatuhpa."
+  },
+  {
+    "word": "angle¹",
+    "definition": "(engal) n. kôki-ah, a kia, hmo mopachâna dâh. angular, adj. ki hluhpi hneipa, sah kawpa (chysâhawh ta). angularity, n."
+  },
+  {
+    "word": "Anglican",
+    "definition": "(englikan) adj. / n. England (Church of England) kohchhran tlâh/chyhsa."
+  },
+  {
+    "word": "anglicize, -ise",
+    "definition": "(englisaiz) v. English reih dâh y zie, awm dâh uasa, chyhsa."
+  },
+  {
+    "word": "Anglo-",
+    "definition": "(englo) pref. English."
+  },
+  {
+    "word": "Anglo-Saxon",
+    "definition": "(englo-sakson) n. hlâpi noh ta England a ryureituhpa zy."
+  },
+  {
+    "word": "Angola",
+    "definition": "(engoula) n. Africa lâ lialiah chhôh râh pakha."
+  },
+  {
+    "word": "angora",
+    "definition": "(engora) n. mietie-hmi hluhpa chi (Turkey râh tawhta)."
+  },
+  {
+    "word": "angry",
+    "definition": "(engri) adj. thakhâ, aoh, luhchha. angrily, adv. thakhâ ngâpata."
+  },
+  {
+    "word": "anguish",
+    "definition": "(enguish) n. palôh pasana nata riethei-taona. anguished, adj. palôh pasapa."
+  },
+  {
+    "word": "bassoon",
+    "definition": "(basun), n. tho tôphipa ao pakyhpa. bassoonist, n. tho tôphipa atô thaipa chyhsa."
+  },
+  {
+    "word": "bastard",
+    "definition": "(bastard), n. riasawpa, khiliah saw, S. Africa liata mongyuhpa nata movyhpa chi âpahlaopa saw, atatapa châ leipa, no-aichhihpa, vâduapa. bastardly, adv. bastardy, n."
+  },
+  {
+    "word": "baste1",
+    "definition": "(beist), v. mahsôta pazei, chôchahreita chhei. basting, n. chôchahreita chheipa."
+  },
+  {
+    "word": "baste2",
+    "definition": "(beist), v. âhlapaipypata poh bieh, viahchhâ chateipa sathaw phiephuh hnia."
+  },
+  {
+    "word": "bastinado",
+    "definition": "(bastinado), v. sôsita pheipazah ry pazei."
+  },
+  {
+    "word": "bastion",
+    "definition": "(bastion), n. khihpi kudôhpa ki lâta chariah saina ochhâh sâhpa, âvaihna, chariah vaina. bastioned, adj."
+  },
+  {
+    "word": "bat1",
+    "definition": "(bet), n. cricket khaihnasôh, baseball/tennis khaihnasôh, byuhthô phiapa."
+  },
+  {
+    "word": "bat2",
+    "definition": "(bet), n. lôkâhtâbalâpa. bats, n. ahru-pa hmotao. batty, adj. lôkâhtâbalâpa lyu or hluh. have bats in the belfry, hmo ngâkhei, pachâdâh nanopa hnei. like a bat out of hell, chatlie ngâsâ."
+  },
+  {
+    "word": "bat3",
+    "definition": "(bet), v. movo chakhyh pah-ra ngâkaw, movo âpiepâ. not bat an eye/eyelid, mopadei dâh tawhta hmo noâh tahna âhno vei."
+  },
+  {
+    "word": "batata",
+    "definition": "(batata), n. (Spanish) biahbahrah."
+  },
+  {
+    "word": "batch",
+    "definition": "(batch), n. raohkhata hmotao khohpa, raohkhata y khohpa, hlaokha."
+  },
+  {
+    "word": "bate",
+    "definition": "(beit), v. pachyhsa via, zie-pa-ysa via, âsy via, zyh via, hraitiahpa pamei. bated, adj. with bated breath, kâpada ngâkawna chôta, ngâh leina chôta."
+  },
+  {
+    "word": "bath",
+    "definition": "(badh), n. ngaisipa, ngaisina, ngaisina su tipa-o, sasaihpata nohsa aihpa. baths, n. ngaisina o nata tipa-o. v. ngaisi, ngaipasi. bathroom, n. ngaisina chhôpadâhpa."
+  },
+  {
+    "word": "bathe",
+    "definition": "(beidh), v. ngai-âsi, ngaipasi, ngaisi, ti liata palaopalâ. n. ngaisipa, ti liata palaopalâna. bather, n. ngai pasituhpa, tizawna chhaichhi."
+  },
+  {
+    "word": "bathometer",
+    "definition": "(bathomatar), n. ti âpahthuzie thliena khaw."
+  },
+  {
+    "word": "bathos",
+    "definition": "(bethos), n. biereipa/châropa phapa alila leipa lâta pachâsa tlôhpa. bathetic, adj."
+  },
+  {
+    "word": "bathy-",
+    "definition": "(prefix) âpahthu, tahna. bathyal, adj. tilaipi metres 200-2000 âpahthupa hmo. bathymeter, n. ti âpahthuzie thliena khaw. bathysphere, n. balyh tiry ângia pahthuzie saina chhôpadâhpa."
+  },
+  {
+    "word": "batman",
+    "definition": "(batman), n. tuahiapa chyhsa, pheisaih molaipa chakaotuhpa (sei)."
+  },
+  {
+    "word": "baton",
+    "definition": "(batan), n. hla chhihthatuhpa hlavaina sômahsi, ârâpasuana sôsi âhlâ pachhuahpa, police ryureina sômahsi."
+  },
+  {
+    "word": "batsman",
+    "definition": "(batzman), n. cricket âkhaihna chheituhpa."
+  },
+  {
+    "word": "battalion",
+    "definition": "(batalion), n. pheisaih hlaokha (sâhkha rachhôh)."
+  },
+  {
+    "word": "batten1",
+    "definition": "(batn), v. pati âtô, âpathawhsa, rihbiepata pati âtô."
+  },
+  {
+    "word": "batten2",
+    "definition": "(batn), n. tho-âpa tlai seihpa pâhchhô nâhna, hmo pazao pa-isana."
+  },
+  {
+    "word": "batter",
+    "definition": "(bettar), v. thata chhei chanei, thata âchô chanei, chheichahrie, tupaota tu, meithei thata kachanei. n. viahdie nata awhtih sâhpiti liata chahria pahlaopata chhopa. battered, adj. saw thata tu tyh. battered wife, tu zôzawpa lahpinô, vahpa ku adao tyhpa lahpinô. battering-ram, n. thotô pâhchhô chhuh chheihna."
+  },
+  {
+    "word": "battery",
+    "definition": "(batari), n. dôhlamei-óh lao,"
   },
   {
     "word": "cabal",
-    "definition": "(kabal), n. arulâta hmotaopa py, chyhsa leihparutuhpa py, politic py âpachhaihpa. v. parutuhpa py pudua, arulâta chyhsa leih."
+    "definition": "(kebal), n.arulâta hmotapa py, chyhsa leihparutuhpa py, politic py âpachhaihpa. v. parutuhpa py pudua, arulâta chyhsa leih. caballer, n. leihparutuhpa."
+  },
+  {
+    "word": "cabala",
+    "definition": "See cabbala."
   },
   {
     "word": "caballero",
     "definition": "(kabaliero), n. (Sp) chyhsa zachhihpa, pawtlohpa."
   },
   {
+    "word": "caballine",
+    "definition": "(kabalin), n.,adj. arâ chôchâh."
+  },
+  {
     "word": "cabana",
-    "definition": "(kabana), n. (US) tilaipi raphy liata ochyhpa."
+    "definition": "(kabana), n. (US) tilaipi raphyu liata ochyhpa."
   },
   {
     "word": "cabaret",
@@ -168,12 +1956,12 @@
     "definition": "(kabij), n. chohlô."
   },
   {
-    "word": "cabbala",
+    "word": "cabbala/cabala",
     "definition": "(kabala), n. Zunawh ryhpa pachuna, biehrai bienyupa reihpasiana."
   },
   {
-    "word": "cabby",
-    "definition": "(keibi), n. taxi haohtuhpa."
+    "word": "cabby/cabbie",
+    "definition": "(keibi), n. taxi haohtuh-pa. (See also cab)."
   },
   {
     "word": "cabin",
@@ -188,20 +1976,36 @@
     "definition": "(keibl), n. thuari charipa, balyh hraina thuasaih ri, bie paphaona thuari."
   },
   {
+    "word": "cable television",
+    "definition": "n. Tv. nothlahpa cable ta paphaopa."
+  },
+  {
+    "word": "cablegram",
+    "definition": "n. cable bie paphaopa."
+  },
+  {
+    "word": "cabochon",
+    "definition": "(kaboshon), n. lôsôhpa cha-â mâh leipa."
+  },
+  {
     "word": "caboodle",
-    "definition": "(kabudl), n. (sl) zawpi pôhpakhypa."
+    "definition": "(kabudl), n. (sl) zawpi pôh-pakhypa."
   },
   {
     "word": "caboose",
-    "definition": "(kabus), n. balyh/tlâhbalyh chhônkâ, (US) tlâhphia."
+    "definition": "(kabus), n. balyh/tlâhbalyh chôhkâ, (US) tlâhphia."
   },
   {
     "word": "cabotage",
-    "definition": "(kaboteidj), n. râhhropa chô liata zawtheina pazawsa pašai leina."
+    "definition": "(kaboteidj), n. râhhropa chô liata zawtheina pazawsa pasai leina, râhhropa tilaipi liata balyh sôdaoh pasai leina."
+  },
+  {
+    "word": "cabriole/capriole",
+    "definition": "(capriol), nn.âcho-tlaipa. adj. dawkâh phei sa chahkie lyu."
   },
   {
     "word": "cabriolet",
-    "definition": "(kabriolit), n. tawlailih phei-nopa, motor chyhpa chôkhu thlie theipa."
+    "definition": "(kabrioliti). n. tawlailih phei-nopa, motor chyhpa chôkhu thlie thei-pa, mongyuh dyuchhai bâh chhaopa."
   },
   {
     "word": "cacao",
@@ -213,19 +2017,23 @@
   },
   {
     "word": "cache",
-    "definition": "(kash), n. ryu nyuna su, hmo pachô pakhyna su, niebawpa/theisâlô pasopakhyna su."
+    "definition": "(kash), n. ryu nyuna su, hmo pachô pakhyna su, niebawpa/theisâlô pasopakhyna su. v. ryu nyu, pasopakhy."
   },
   {
     "word": "cachet",
     "definition": "(kashe), n. office hmo chahnaona (seal), thohna pahlyna palâpâpa chi."
   },
   {
-    "word": "cachexy",
-    "definition": "(kekeksi), n. pôhpa duahmo pha leina."
+    "word": "cachexy/cachexia",
+    "definition": "(kekeksi/sia), n. pôhpa duahmo pha leina. cachectic,-cal, adjs. duahmo pha leina kyh."
   },
   {
     "word": "cachinnate",
-    "definition": "(kakineit), v. thapita pahneih."
+    "definition": "(kakineit), v. thapita pa-hneih. cachinnation, n. thapita pa-hneina. cachinnatory, adj. thata or a thapita pahneina kyh."
+  },
+  {
+    "word": "cacholot",
+    "definition": "Same as cachalot."
   },
   {
     "word": "cachou",
@@ -233,15 +2041,19 @@
   },
   {
     "word": "cack-handed",
-    "definition": "(kak-handid), adj. (sl) cha-veipa châ, mâkiah vei."
+    "definition": "(kak-handid), adj. (sl) cha-veipa châ, mâkiah vei. cack-handedness, n. chaveipa châna, mâkiah leina."
   },
   {
     "word": "cackle",
-    "definition": "(kakl), n. awhtlô reih, tyhphy reih, padawpa. v. awhpadaw, awhtlô reih cheih."
+    "definition": "(kakl), n. awhtlô reih, tyhphy reih, padawpa. v. awhpadaw, awhtlô reih cheih. cackler, n. awh padawtuhpa. cut the cackle, (sl) yzie hneileipata bie âchiapa chalihsa."
+  },
+  {
+    "word": "caco-",
+    "definition": "(prefix) araopa, achhiepa, pha leipa, tahna."
   },
   {
     "word": "cacodyl",
-    "definition": "(kakodil), n. thohna ti roh-chhiepa."
+    "definition": "(kakodil), n. thohna ti roh-chhiepa. cacodylic, adj. thohna ti rohchhiepa hmo."
   },
   {
     "word": "cacoepy",
@@ -253,334 +2065,2942 @@
   },
   {
     "word": "cacography",
-    "definition": "(kakografi), n. châropa ku-zôchhiepa, châropa hawrawh spelling âdoleipa."
+    "definition": "(kakografi), n. châropa ku-zôchhiepa, châropa hawrawh spelling âdoleipa. cacographer, n. kuzô chhiepa, spelling padoleituhpa. caco-"
   },
   {
-    "word": "necrobiosis",
-    "definition": "(nekrobaiosis), n. thari nata thazôh thina."
+    "word": "cacology",
+    "definition": "(kakoladji), n. reikah hmâzie âdo leipa, reihparosazie âdoleipa."
   },
   {
-    "word": "necromancy",
-    "definition": "(nekroumansi), n. athihpa biechhona hmo chhochhieliena."
+    "word": "cacphony",
+    "definition": "(kakofani), n. pyu âraoh leipa nahzâ khaipa. cacphonic,-cal, adj. pyu âraoh leipa hmo. cacphonious, adj. pyu papai."
   },
   {
-    "word": "necrophobia",
-    "definition": "(nekroufobia), n. athihpa ri china."
+    "word": "cactus",
+    "definition": "(kaktas), n. pawpi kô hna hnei leipa nata hloh chhaopa, (Zisu hloh-lakho taona). cacti, cactuses, pls."
   },
   {
-    "word": "necropolis",
-    "definition": "(nekroupalis), n. thlâ su."
+    "word": "cacuminal",
+    "definition": "(kakiuminal), adj. dâhpathla. n. dâhpathlapa, dâhpathlapa pyu."
   },
   {
-    "word": "necropsy",
-    "definition": "(nekroupsi), n. athihpa ri dawhty ta a ezâhpa."
+    "word": "cad",
+    "definition": "(kad), n. (reihparohpa) dyutlai leipa, palôhchyhpa, zakheichhihpa. caddish, adj. caddishness, n. dyutlaileina, zakhei chhihna, palôhchyhzie."
   },
   {
-    "word": "necrosis",
-    "definition": "(nekrousis), n. ru nata sapa pachiahpa thina."
+    "word": "cadastral",
+    "definition": "(kadastral), adj. phusâ âvaopa rona kyh, râh thliena nata saina kyh."
   },
   {
-    "word": "nectar",
-    "definition": "(nektar), n. pawpi tithlôhpa (akheih pazypa), hrona ti, hrona ti khazohpa."
+    "word": "cadaver",
+    "definition": "(kadavar), n. athihpa ri. cadaveric, adj. athihpa ri hmo. cadaverous, adj. athihpa ri lyu, zaohkarie. cadaverousness, n."
   },
   {
-    "word": "nectarine",
-    "definition": "(nektarin), n. mietei chikha."
+    "word": "caddice",
+    "definition": "See caddis."
   },
   {
-    "word": "neddy",
-    "definition": "(nedi), n. (sl) alâ, (Austr) arâ ta ârâpasuana chikha, chyhsa hrupa."
+    "word": "caddie/caddy",
+    "definition": "(kadi), n. golf âkhaihpa pazituhpa sykhao."
   },
   {
-    "word": "nee",
-    "definition": "(nei), adj. chanô pho moh, (vahpa hnei hlâta)."
+    "word": "caddis, caddice",
+    "definition": "(kadis), n. lôvâpa tih kei thaohpa, taw saima-iehpa."
   },
   {
-    "word": "need",
-    "definition": "(nid), n. byuhchhiahpa, hmo byuh-pa, hmokhopa, ângiahna, mamawh-pa. v. byuh, ângiah, mamawh."
+    "word": "caddy",
+    "definition": "See caddie."
   },
   {
-    "word": "needy",
-    "definition": "adj. sipasa, sichâpasa, dyhchhie."
+    "word": "caddy",
+    "definition": "(kadi), n. thopihaw khôna baoh, thuabaoh."
   },
   {
-    "word": "needful",
-    "definition": "adj. byuh, â-ngiah, mamawh."
+    "word": "cade",
+    "definition": "(keid), n. mietahkupa/arâ taw dao kawpa."
   },
   {
-    "word": "needless",
-    "definition": "adj. byuh vei, ângiah vei."
+    "word": "cadence",
+    "definition": "(kedens), n. hla-ao tliahpa, solfa-pa aobi (d r m f s l t d) âpazinadâh. cadenced, adj."
   },
   {
-    "word": "needle",
-    "definition": "(nidl), n. chiephoh, khaw chiephoh."
+    "word": "cadet",
+    "definition": "(kadet), n. pheisaih hyutuhpa châta pachusapa, pheisaih molaipa (officer) rai âchutuhpa. cadetship, n. cadet corpe, n. pheisaih molaipa châta pachusapa sahlao."
   },
   {
-    "word": "nefarious",
-    "definition": "(niferias), adj. molei, chochhie, nôchâchhie, dâh châ vei."
+    "word": "cadge",
+    "definition": "(kadz), v. châhiah, hmiasyu, kudao. cadger, n. kudaotuhpa, chyhsa"
   },
   {
-    "word": "negate",
-    "definition": "(nigeit), v. y vei tah, châ vei tah, âdo vei, ao-u."
+    "word": "cadi",
+    "definition": "(kadi), n. Mosolman baohsâpa, (magistrate)."
   },
   {
-    "word": "negative",
-    "definition": "(negativ), adj. châ vei, ao-u, vei. n. nothlahpa lana saliahpao châhna nohpahlipa yna."
+    "word": "cadre",
+    "definition": "(kadr), n. pheisaih py pachhaihpa, pheisaih hyutuhpa, pheisaih bai hneipa."
   },
   {
-    "word": "neglect",
-    "definition": "(niglekt), v. hrâkyu vei, uasa vei, pachâ-uasa vei, rai uasa vei, rai diathlâ."
+    "word": "caduceus",
+    "definition": "(kadiusias), n. (phôhpa) khazoh lyuhchâpa Hermes chôchahrei (parih nothlahpa)."
   },
   {
-    "word": "negligence",
-    "definition": "(neglijens), n. sohsi leina, diathlâna, uasa leina, hrâkyu leina."
+    "word": "caducous",
+    "definition": "(kadiukas), adj. thokô hna/pawpi thlaita zô tyh."
   },
   {
-    "word": "negligible",
-    "definition": "(neglijibl), adj. reikhipha vei, uasa khi lei, charichakâ thei, pachâkhi tloh vei."
+    "word": "caecilia",
+    "definition": "(seisilia), n. tliapahniapa chi phei hnei leipa."
   },
   {
-    "word": "negotiate",
-    "definition": "(nigoshiieit), v. reihparyh, bie reikhoh, âparyh, âparyhna biereih."
+    "word": "caecum,(US) cecum",
+    "definition": "(seikam), n. chaopopa, sykhao chao pamaipa, sahroh chhôrih sykhao lyupa, sa chhôrih."
   },
   {
-    "word": "negotiation",
-    "definition": "n. âparyhna bie reikheina."
+    "word": "Caesar",
+    "definition": "(sizar), n. Rome beichaipa Caius Julius Caesar, Sizâh, pychhôh tawhta cha-âpa hawsaih. caesarian, adj. nô pychhôh tawhta cha-âpa hawsaih chôchâh."
   },
   {
-    "word": "Negress",
-    "definition": "(nigris), n. Negro chanô."
+    "word": "caesium, (US) cesium",
+    "definition": "(siziam), n. âthaona thaby chaipa (atom hmo), ngôhtâkâ thuadiehpa, thuati-iahpa, nothlahpa pasina thohna ti."
   },
   {
-    "word": "Negrillo",
-    "definition": "(nigrilou), n. Africa Negro chyhsa."
+    "word": "cafe",
+    "definition": "(kafe), n. thopidaoh chyhpa, niedona su."
   },
   {
-    "word": "Negro",
-    "definition": "(nigrou), n. Negro chyhsa."
+    "word": "cafeteria",
+    "definition": "Same as cafe."
   },
   {
-    "word": "menage",
-    "definition": "(meinazh), n. chhônkha khihsa paduana, khihsa tôhbô paryhna."
+    "word": "caff.",
+    "definition": "(sl) for cafe/cafeteria."
   },
   {
-    "word": "menagerie",
-    "definition": "(minajeri), n. râhsa khaoh-hrei liata hraikhôhpa."
+    "word": "caffeine",
+    "definition": "(kafein), n. kawfi/thopi thatlôna, thopi patana. caffeinated, adj. pata, patasa."
   },
   {
-    "word": "menarche",
-    "definition": "(minarke), n. chanô eikha thi hnei tuana."
+    "word": "cage",
+    "definition": "(keij), n. pavaw by. v. by liata pavaw khô, hraikhôh, patâhsa. caged, adj. hraikhôh."
   },
   {
-    "word": "mend",
-    "definition": "(mend), v. hmo phaleipa padopaso, taopathi, taopaphasa, baithla."
+    "word": "cagey/cagy",
+    "definition": "(kaji), adj. phih, biephih, bie âpadia, biedopa nyu, biedopa nyuthu, sopiehpie, bie siaryu reihvei."
   },
   {
-    "word": "mendacious",
-    "definition": "(mendeishas), adj. haih thai, haipabie reih hmâh, haiphiah, âdo vei, ngâchhih vei."
+    "word": "cagy",
+    "definition": "See cagey."
   },
   {
-    "word": "mendelism",
-    "definition": "(mendilizm), n. zie âpathla kheina kyh Mendel pachuna."
+    "word": "cahoots/in cahoots",
+    "definition": "(in kahuts), npl. (sl) rei-âparaohpa, moleina kyh liata rei âparaohpa."
   },
   {
-    "word": "mendicant",
-    "definition": "(mendikant), adj. kudao, châhiah, chyhsa hmo hiah thai."
+    "word": "dal segno",
+    "definition": "(dalsegno), solfa ngiana (DS, &) hlasapa kua heihna su."
   },
   {
-    "word": "menfolks",
-    "definition": "(menfolkz), npl. chapaw sahlao, chhônkha chapawzy."
+    "word": "dale",
+    "definition": "(deil), n. saikao, saikao bypa, saimahkao bypa, chavah kao."
   },
   {
-    "word": "menhir",
-    "definition": "(menhiar), n. hlâno lôpanô laipa lôbôpa."
+    "word": "dalliance",
+    "definition": "(dalians), n. nomana, pasô leina, haihina."
   },
   {
-    "word": "menial",
-    "definition": "(minial), adj. sei chôchâh, sei ràihria, raihria nawh."
+    "word": "dally",
+    "definition": "(dali), v. moh panawh, noma, haihi, daihti pasô vei. dalliance, n. nomana, haihina."
   },
   {
-    "word": "meningitis",
-    "definition": "(meninjaitis), n. lathli or ru lathli pasana, lathli pahlytuhpa radâpa hmahpa vâta pasana."
+    "word": "Dalmatian",
+    "definition": "(dalmashian), adj. Dalmatia râh hmo (tahmâ Yugoslavia râh liata a y). n. Dalmatia râh chyhsa."
   },
   {
-    "word": "meniscus",
-    "definition": "(meniskas), n. thlâpâ dieh thaohpa lyupata âpahhlôpa, nothlah lana thlalâ râkhalâ pakaopa."
+    "word": "dalmatic",
+    "definition": "(dalmatik), n. KC theihthaipa viahkao pahsipa."
   },
   {
-    "word": "menopause",
-    "definition": "(menopoz), n. chanô thi hneipa âchalihna, chanô sathei chhâna."
+    "word": "dalton",
+    "definition": "(daltan), n. atom pachhaihpa moh. daltonism, n. Dalton pachuna siku moh, asaihpa nata ahrohpa pahrua thai leina, âchuhaiapa khonazie hawhta pachuna."
   },
   {
-    "word": "menorrhagia",
-    "definition": "(menarajia), n. chanô thi hneipa âhâh thei leina."
+    "word": "damage",
+    "definition": "(demeij), n. raona, paraona, raorâna, chhiena. v. phieparao, rao, parao, paraoparâ. damages, n. hmo paraona mâ piepa. damageable, adj. rao thei, parao thei."
   },
   {
-    "word": "menses",
-    "definition": "(mensiz), npl. thlachareih chanô thi hneina."
+    "word": "damask",
+    "definition": "(damask), n. maitanô pohthladi pahniapa ta taopa. damask rose (saraw) paw asaihpa rôh."
   },
   {
-    "word": "menstruate",
-    "definition": "(menstrueit), v. chanô thi hnei."
+    "word": "dame",
+    "definition": "(deim), n. chhôhkha nôhrâhpa, nô, nôtlohpa chanô, chanô rônahpa."
   },
   {
-    "word": "mensurable",
-    "definition": "(mensiurabl), adj. (seihzie, laizie) thlie thei."
+    "word": "damfool/dammit",
+    "definition": "See dam."
   },
   {
-    "word": "mensuration",
-    "definition": "(mensiureishan), n. (seihzie, laizie) thliena dâh."
+    "word": "damn",
+    "definition": "(daem), interj. chhiesakhâpata y mawh sy, (hiehâhna) sâlâh/sâlamâh. v. chhâzaw hriena patosa. damnable, adj. âhaochhih, khotlâhchâ vei, thailei pachâsa thei, phalei ngaita. damnation,"
   },
   {
-    "word": "menswear",
-    "definition": "(mensueir), n. chapaw chysia."
+    "word": "damp",
+    "definition": "(damp), n. pazuapa, pahnapa, dâhniehnupa. adj. pazua, pahna, dâhniehnu. v. pahna, pazua. dampen v. pazuasa, pahnasa. dampish, adj. dampness, n. pahnazie. damply, adv. damp proof, adj. pahna theivei."
   },
   {
-    "word": "mental",
-    "definition": "(mental), adj. palôh, palôh-lâ hmo, palôh-rupa hmo, pachâpa hmo."
+    "word": "damsel",
+    "definition": "(damzel), n. (reihparohpa) laihsa, laihsa dawpa, chanô hawti."
   },
   {
-    "word": "menthol",
-    "definition": "(menthol), n. hnapasu popa pahvâsana thohna rohtôpa, pôhpa pasapa panaisana thohna."
+    "word": "dam²",
+    "definition": "(daem), n. sahroh panô hlôpa."
   },
   {
-    "word": "mention",
-    "definition": "(menshan), n. moh chakhipata reina, reihpalâsana. v. moh chakhipata reih, reihpalâsa, mohpado, reipâ."
+    "word": "dam³/damned/damfool/dammit",
+    "definition": "adj. ngâ, hruthu, ngâbu, chhiesapata y mawh sy."
   },
   {
-    "word": "mentor",
-    "definition": "(mentar), n. pasopakâtuhpa, pachusatuhpa, hmotao pachutuhpa."
+    "word": "dam¹",
+    "definition": "(dam), n. tipa-o, titohpa, hydro electric power taona titohpa. v. tipa-o, titoh, chavah toh."
   },
   {
-    "word": "menu",
-    "definition": "(meniu), n. niebawpa chinanopa moh roh papuana, niebawpa chi moh rona."
+    "word": "dance",
+    "definition": "(dans), n. lâ, lâna. v. lâh. dancer, n. lâhtuhpa. dancing, n. lâna. dance to someone's tune, mohropa khozieta y."
   },
   {
-    "word": "mepacrine",
-    "definition": "(mepakrain), n. chasipipa thohna paohpa."
+    "word": "dandelion",
+    "definition": "(dandilaian), n. pawpi moh, pawmaihdinô, pawmaihpa."
   },
   {
-    "word": "Negroid",
-    "definition": "adj. Negro chipathla."
+    "word": "dander",
+    "definition": "(dendar), n. hiehâhchhihpa, hâhpathana, hiepahâhna."
   },
   {
-    "word": "Negus",
-    "definition": "(nigas), n. Ethiopia râh (Abyssinia) abei châna moh."
+    "word": "dandify",
+    "definition": "See dandy."
   },
   {
-    "word": "negus",
-    "definition": "(nigas), n. sahhma hiahpa ti pahlaopa."
+    "word": "dandle",
+    "definition": "(dandl), v. (hawsaih) âly-ua, pasuapalie. dandler, n. âly-uatuhpa."
   },
   {
-    "word": "neigh",
-    "definition": "(nei), v. arâ sâh. n. arâ sâreih."
+    "word": "dandruff",
+    "definition": "(dendraf), n. lurâh, lurâh pathapa.."
   },
   {
-    "word": "neighbour",
-    "definition": "(neibar), n. opa, opalyuhri, lâhniasinô, chheipâh. v. opa."
+    "word": "dandy",
+    "definition": "(dandi), n. âtobina ngâkheipa, dyuna, dyuthâpa. adj. âtobi dyu, dyuthâ. dandily, adv. dandify, v. tobina padyu-thâsa. dandish, adj. dyuthâ."
   },
   {
-    "word": "neighbourhood",
-    "definition": "(neibarhud), n. opana, opalyuhri châna, eima chheipâh, eima chaby."
+    "word": "Dane",
+    "definition": "(dein), n. Denmark chi chyhsa. Danish, adj. Dane hmo. n. Dane chyhsa or reih."
   },
   {
-    "word": "neither",
-    "definition": "(neithar), adj., pron. hra vei, châ hra vei, châ pyly vei, a khei hawhpa hmah."
+    "word": "danger",
+    "definition": "(deinjar), n. chichhihpa. dangerous, adj. chichhih. dangerously, adv. dangerous manner, barobaria."
   },
   {
-    "word": "Nemesis",
-    "definition": "(nemisis), n. (phôhpa) viarithô hmâhpa khazohpa nô, viarithôna, biesireina, moleina theilâpa."
+    "word": "dangle",
+    "definition": "(dangl), v. pathliah, pangieh, tliah. dangler, n. dangling, n., adj. âpathliahpa, âpangiehpa."
   },
   {
-    "word": "neo-",
-    "definition": "(prefix), athiehpa, hmothiehpa, tahmâ hlâ, tahna."
+    "word": "Danish",
+    "definition": "See Dane."
   },
   {
-    "word": "neoclassic",
-    "definition": "(nioklasik), adj. hlâno Grik chharopa thyutliana daihti pathiehsana hmo."
+    "word": "dank",
+    "definition": "(dangk), adj. âthuhny, pahnapa rohchhie. dankish, adj. thuhniehnu. dankness, n. thuhniehnuna."
   },
   {
-    "word": "neolithic",
-    "definition": "(niolithik), adj. alô chaihhrai hmâ daihti hmo."
+    "word": "danse macabre",
+    "definition": "(das makabar), n. (Fr) athih lâ."
   },
   {
-    "word": "neologism",
-    "definition": "(niolojizm), n. reih thiehpa, reikah thiehpa hmâna."
+    "word": "danseur",
+    "definition": "(daseir), n. (Fr) ballet lâhtuhpa chapaw. danseuse, n. ballet lâhtuhpa chanô."
   },
   {
-    "word": "neon",
-    "definition": "(nion), n. leilô pahlytuhpa ziza rôh hnei leipa, y babâ hra."
+    "word": "dao",
+    "definition": "(dau), n. (hindi) tâkô."
   },
   {
-    "word": "neonatal",
-    "definition": "(nionatal), adj. hawsaih pih thiehpa chôchâh."
+    "word": "dap",
+    "definition": "(dap), v. âty, âtypakhua, bawhlô âtho pakhua, ti chôpho liata keipa ny."
   },
   {
-    "word": "neophobia",
-    "definition": "(niofobia), n. hmo thiehpa hmâ china."
+    "word": "dapper",
+    "definition": "(depar), adj. (chyhsa matawpa) siavovâ, âpiedala. dapperness, n. siavovâna."
   },
   {
-    "word": "neophyte",
-    "definition": "(niofait), n. ngiapâna hropa liata chyhsa ângia thiehpa, pihpathi thiehpa, py chyhsa thiehpa."
+    "word": "dapple",
+    "definition": "(dapl), adj. cheichapai, âchapai. v. cheichapaisa. dappled, adj. (sahroh) cheichapai."
   },
   {
-    "word": "neoteric",
-    "definition": "(niotirik), adj. hmo thiehlâh, thyutlia daihti hmo."
+    "word": "dare",
+    "definition": "(deir), v. ngâh, pahao, ângâ. n. hmo taothei ângâna. daring, adj. riahpha, chhyu, ngâh, chihuh vei. n. riahphana. daringly, adv. daredevil, n. ahrungâpa riahphapa, âpapeisana hnei leipa, âsohsi leipa. I dare say, ei hnabeiseih, achâ nahta ei pangiasa."
   },
   {
-    "word": "nephew",
-    "definition": "(nefiu), n. unawhpa saw, sietanô saw chapaw, sawheihpa chapaw."
+    "word": "dark",
+    "definition": "(dak), adj. âthoh, zoh, thohkaluh, âtikaluh, zoh-meih, movyh, vyh, dô, âchhoh. n. zâzohna, zohna, âthohna, zâ chhôh daihti, hmo pahno leina, palôh zohna. darken, v. pazohsa, pathoh, pathohsa. darkness, n. zohna. darky/darkie, n. (âhaona bie) vyh-lo, movyhpa. dark ages, European history century 5-15 taih daihti. dark continent, Africa râhzohpa. dark room, n. chhôpadâh zohpa. prince of darkness, zohnz beipa, Sâtâ. dark red, adj. dô."
   },
   {
-    "word": "nephology",
-    "definition": "(nifoladji), n. awhsi âzawpa khuh thâtih âchuna."
+    "word": "darling",
+    "definition": "(darling), n. rianai, lôhdu, kho ngaitapa."
   },
   {
-    "word": "nephritis",
-    "definition": "(nefraitis), n. lôpo pasana, lôpo thlohpa pasana."
+    "word": "darn",
+    "definition": "(dan), v. baithla, pohkiah mei, mawzâ phieh, phiehpa baithla. darning, n. phiehpa theina. darner, n. phiehpa atheituhpa."
   },
   {
-    "word": "nephro-",
-    "definition": "(prefix) lôpo, thisaih taopathina lôpo, tahna."
+    "word": "darn/darned",
+    "definition": "interj. (hawti reikah) damn/damned, tahna."
   },
   {
-    "word": "neplusultra",
-    "definition": "(neplasultra), n. taopha theina âsâh chaipa, point hmôna âsâh chaipa."
+    "word": "dart",
+    "definition": "(dat), n. thua pahzaopa châka â chaloh pasuana, eikhapita hmialâ ârâ syulyuna, achatliepata âpathlôna."
   },
   {
-    "word": "nepotism",
-    "definition": "(nepotizm), n. sanawh khokhei via pahchaina."
+    "word": "dash²",
+    "definition": "(das), n. rawrôhna, chahrao chatôhna, signal hawrawh, châropa hawrawh pazaosana ngiana, (–)."
   },
   {
-    "word": "Neptune",
-    "definition": "(neptiun), n. awhsi laipa âhla chaipa, tilaipi khazohpa."
+    "word": "dash¹",
+    "definition": "(das), v. thy, vawh, pazaw, sukhy, paraopakei, âzawhnao, chabyu, eikhapita ârâ. dasher, n. dashing, adj. thathyu, ialia, liluazoh, chysia palyuh kaw. dashingly, adv."
   },
   {
-    "word": "neptunium",
-    "definition": "(neptiuniam), n. atom hmo dikaripa chikha."
+    "word": "dastard",
+    "definition": "n. chyhsa riachhie moleipa. dastardly, adj. dastardliness, n. riachhie moleina."
   },
   {
-    "word": "nereid",
-    "definition": "(nireid), n. (phôhpa) tilaipi khazohpa sawchanô, tilaipi liata pahrâpa laihsa, tilaipi châkah-riepa."
+    "word": "data",
+    "definition": "(data), n. chânna biedopa pahnosana, chhichâna dopa pahnona, achâna si-khuapa."
   },
   {
-    "word": "nerve",
-    "definition": "(narv), n. sapa pahnona, pahnona thari, liathih (niepa), ria, ri. v. thapatlô, thapatlôsa."
+    "word": "date²",
+    "definition": "(det), n. bakô thei thlôhpa."
   },
   {
-    "word": "nervous",
-    "definition": "adj. thlazoh, chihuh, liathih nie, china hnei, chipathoh."
+    "word": "date¹",
+    "definition": "(deit), n. târinoh, a vaw tlô noh, laihsa charei kheina, thlakha chhôh noh ypazy, nohtaipa, noh-raopa. v. daihti rao, laihsa chareikhei, nohtaih. out of date, daihti châ khao vei. up to date, tahmâhlâ. date line, n. nochhi nata notla râh daihti pachhaihna su."
   },
   {
-    "word": "nervy",
-    "definition": "(narvi), adj. (colloq) pahnona kyh liata thatlô vei, (sl) hmiakawh, âhrâh, liathih niepa hmo."
+    "word": "dative",
+    "definition": "(detiv), adj.,n. reihpahlaopâzie, raochiehpa, hmo dy."
   },
   {
-    "word": "nescience",
-    "definition": "(nesians), n. sapa pahnona hnei leina."
+    "word": "daub",
+    "definition": "(daub), v. (hlyu, chia...) hnia, chanô, bai, thu. n. baina, thuna, hniatuhpa. daubing, n. dauber, n. hniatuhpa."
   },
   {
-    "word": "ness",
-    "definition": "(nes), n. tilaipilâ alei saohpatluapa."
+    "word": "daughter",
+    "definition": "(dawtar), n. sawchanô. daughter-in-law, n. sawchapaw lahpinô, myuh-nô."
+  },
+  {
+    "word": "daunt",
+    "definition": "v. pachhipary, thlahpazo, pachisa. daunter, n. pachhiparytuhpa. dauntless, adj. chi vei, chihuh vei. dauntlessly, adv. chi tiarâh leipata."
+  },
+  {
+    "word": "dauphin",
+    "definition": "(dawfin), n. Fr bei sawchapaw uhtheipa."
+  },
+  {
+    "word": "davenport",
+    "definition": "(davenport), n. chârona dawkâh seihpa, (US) dyuchhai seihpa."
+  },
+  {
+    "word": "dysphoric",
+    "definition": "adj. ypahâh leina kyh."
+  },
+  {
+    "word": "dyspnoea, (US) dyspnea",
+    "definition": "(dispnia), n. huso thei leina, huso rairuna."
+  },
+  {
+    "word": "E, e",
+    "definition": "(i). n. English alphabet liata hawrawh sâpangawhna."
+  },
+  {
+    "word": "each",
+    "definition": "(ich), adj., pron. to, tota, lahkita, momaih, chyu, lilaw, sâkha raih-rie."
+  },
+  {
+    "word": "eager",
+    "definition": "(igar), adj. ângiatiah vei, byuh, thathyu, palôh dadaoh, ngiabâhpata mokhâh. eagerly adv. eagerness, n. ngiatiah leizie."
+  },
+  {
+    "word": "eagle",
+    "definition": "(igl), n. pihmôhpi, vâkhieh. eaglet, n. pihmôhtaw, pihmôh pitloh leipa. eagle-eyed/eagle-sighted, adjs. mopahvâ, hmôpasia thei."
+  },
+  {
+    "word": "ear",
+    "definition": "(iar), n. nah, nahkao, nahkhaoh, nahchahkao, nahpahvâna, sâhho hmao, chhâmeih hyh. eared, adj. earful, n. nahkhaoh bie. earless, adj. nahkao hnei vei. eardrum, n. nahzâpa. earache, n. nahkhaoh pasana. eardrops, n. thohna ti nahkhaoh pathlaohthlupa. earing, n. rahy. earhole, n. nahkao viepa khaoh. earflap, n. lakhu kâ pathliahpa nahkao khuna. ear-lobe, n. nahkao arylâ âpathliahpa. ear-phone, n. reihparosana nahkhaoh liata pangaihpa. ear-piece, n. telephone hmaokâ nahkao liata pabaipa. ear-mark, n. sahroh hneipa ngiana nahkao cha-âpa, âhnona/ngiana taopa. turn a deaf ear, thei lei âpachâsa. ear-"
+  },
+  {
+    "word": "earl",
+    "definition": "(arl), n. British râh beiphoso, beimachâ. earldom, n. earl biehneina chhôh, earl âbeina,"
+  },
+  {
+    "word": "early",
+    "definition": "(arli), adj., adv. ypatoh, hmâ, âthao tuanalâ, mydi, chatlie. earlier, (compar) patoh via, hmâ via, ytu via. earliest, (superl) ytuachai, chatliechai. earliness, n. ytuana, patohna, hmâzie. early-morning, mydi, mydikari. early-bird, mydi thyupatohpa."
+  },
+  {
+    "word": "earn",
+    "definition": "(arn), v. hlao, (mohphana) hlao, hriapapua, hriahlao, âphuh. earner, n. hlaotuhpa, hriahlaotuhpa, hria papuatuhpa. earnings, n. hlao, hria papuapa."
+  },
+  {
+    "word": "earnest",
+    "definition": "(arnist), n. hmo âpahawhpa bietaina, hmo sokhâhpa, âtaih khâhna."
+  },
+  {
+    "word": "earnest",
+    "definition": "(arnist), adj. phahnaingiah, tao hmeiseih, phahnaikhoh, saiso hmeiseih leita. in earnest, hmeiseihna chôta, phahnaingiahna chôta. n. saisopa châ vei, tah hmeiseihna. earnestly, adv. earnestness, n. phahnaingiahna, phahnaikhohna."
+  },
+  {
+    "word": "earnings",
+    "definition": "See earn."
+  },
+  {
+    "word": "earphone, earshot",
+    "definition": "See ear."
+  },
+  {
+    "word": "earth",
+    "definition": "(arth), n. alei, chhaoh-lei, leilô, sapa khizaw. earthen, adj. beih-leita taopa hmo. earthen-ware, n. alei beiphiah. earthly, adj. alei hmo, sapa khizaw hmo. earthy, adj. alei hmo."
+  },
+  {
+    "word": "earthquake",
+    "definition": "(arthkhweik), n. alosihpa."
+  },
+  {
+    "word": "earthworm",
+    "definition": "(arthwarm), n. châkahriepa."
+  },
+  {
+    "word": "earwig",
+    "definition": "(iarwig), n. chailakiepa."
+  },
+  {
+    "word": "ease",
+    "definition": "(iz), n. raitlyhna, thadâhna, huhnona, pachâchhie leina, nôtlyhna, ypahâhna, chhôhhmohna. v. hu-"
+  },
+  {
+    "word": "easel",
+    "definition": "(izl), n. nothlah patlypa tawna tôh (pheithôhpa)."
+  },
+  {
+    "word": "east",
+    "definition": "(ist), n. nochhi, nochhi râh, khichhalâ râh. adj.,adv. nochhilâ, khichhalâ. east-bound, easterly, adjs. nochhilâ tahpa, nochhilâ tawhta, nochhilâ âheih. adv. nochhi lâchhâh. n. nochhi râh thlih. eastern, adj. nochhi lâchhâh, nochhilâ râh hmo. easterner, n. nochhi râh chyhsa. easternmost, adj. nochhilâ râh chhâchaina kyh. eastwards, adv. no-chhi lâchhâhta. east-end, n. London khihpi nochhi vaih."
+  },
+  {
+    "word": "Easter",
+    "definition": "(ister), n. Zisu Krista thyuheihna Noh. Easter-egg, n. Zisu thyuheihna Noh âlynata awhtih âpiena."
+  },
+  {
+    "word": "easy",
+    "definition": "(izi). See ease."
+  },
+  {
+    "word": "eat",
+    "definition": "(it), v. (ate, pt. eaten, pp) nie, pati nie, nieparao. eatable, adj. nie thie, nie-tlâh châ. eater, n. nietuhpa."
+  },
+  {
+    "word": "eaves",
+    "definition": "(ivs), n. ngiathliah, ngiapy, ngiapydi padaohna tlâsy. eaves-drop, n. ngia-pydi."
+  },
+  {
+    "word": "eavesdrop",
+    "definition": "(ivzdrop), v. ngiahpathli, arulâta nahthlie, nahthlieparu."
+  },
+  {
+    "word": "ebb",
+    "definition": "(eb), v. chalâhparâpa kua/âlie lilaw., a zyhvia laih. Daylight was ebbing away; His fortune was beginning to ebb. n. chalâhparâpa kua lilawpa."
+  },
+  {
+    "word": "ebony",
+    "definition": "(ebani), n. tho châpa avyhpa chi, (US sl) movyh chyhsa. adj. tho vyhpa hmo, tho vyhpata taopa hmo. ebonite, n. khairie pavyhsapa chi."
+  },
+  {
+    "word": "ebullient",
+    "definition": "(abiuliant), adj. thathyu, â-phawhlaw, palôh âzawvaw, nôtlyh, hluh, panâ. ebulliently, adv. ebullience,-cy, nn."
+  },
+  {
+    "word": "ebullition",
+    "definition": "(ebiulishan), n. ti âtlaopa, tiphihpa, rakhuh hiehâhpa."
+  },
+  {
+    "word": "eccentric",
+    "definition": "(eksentrik), adj. ychâhla, ytlua-ta y, ânano, no-âchchhih. n. chyhsa zie ychâhlapa, ytluata ypa, y-eihpa. eccentricity, n. ychâhlana, ytluata yna. eccentrically, adv. ytluata ypata."
+  },
+  {
+    "word": "ecclesia",
+    "definition": "(iklizia), n. zawpi pôhpakhypa, awnanopa pôhpakhyna, Zunawh ryu-reina pakhypi. ecclesiastic, n. theihthaipa, zyhna chakaotuhpa. ecclesiastical, adj. awnanopa hmo. ecclesiastically, adv. ecclesiast, n. biechhotuhpa."
+  },
+  {
+    "word": "echelon",
+    "definition": "(eshalon), n. pheisaih py pachhaihpa, maophaohna nata bie-hneina âhnai-âsâh hneipata pahruana, py liata chânna duahmo, sawhkhâ molaipa duahmo. the higher/upper/top echolons, civil service raihria pe'nawh."
+  },
+  {
+    "word": "echo",
+    "definition": "(ekho), n. pyu khaipaliepa, khai-paliena. v. ao khaipalie. echoes, pl."
+  },
+  {
+    "word": "eclair",
+    "definition": "(ekleir), n. viahchhâ thlôhpa (cream pahlaopa)."
+  },
+  {
+    "word": "eclat",
+    "definition": "(eklat), n. raihria no-âh chhihpa, ângiapa, rônahpa, mohpathâhpa."
+  },
+  {
+    "word": "eclectic",
+    "definition": "(eklektik), adj. âtlyh pakhy khoh, hmo chinanopa hluhpi tawhta aphapa âtlyh. n. chyhsa khokhiehpa,"
+  },
+  {
+    "word": "fabulist",
+    "definition": "(fabiulist), n. phôhpa phichhyh thaipa."
+  },
+  {
+    "word": "fabulous",
+    "definition": "(fabiulas), adj. phôhpa hmo, rônah, no-âhchhih, zochhihpâ vei, hmo theipa châ vei. The food is fabulous. fabulously, adv. fabulousity, n."
+  },
+  {
+    "word": "facade",
+    "definition": "(fasad), n. laihmia, laihmia lâ, laihkah lâchhâh."
+  },
+  {
+    "word": "face",
+    "definition": "(feis), n. hmia, hmi, hmiachhy, hmisâ, hnazô, hmiaphaozie, hmia â-chhyna, hmiadaisâ, âchakana. v. hmia chhy, âheihnao, âtyh, su, hnia, thu. The ball hit him in the face. faced, adj. âtyh, âheihnao. two-faced, adj. hmia sâno hnei, bie taothitaohlai thai. facial, adj. hmia chôchâh. facially, adv. face to face, hmiadaisâta. in the face of, cha hmiakôta cha. lose-face, hmiachhie. face-saving, hmiachhie papai-na. face value, sôhzie âlânadâh."
+  },
+  {
+    "word": "facet",
+    "definition": "(fasit), n. lônah hmia hluhpi hnei-pa hmiakha. faceted, adj."
+  },
+  {
+    "word": "facetious",
+    "definition": "(fesishas), adj. pahneisaiso khoh, saisô, saiso thai, saiso hmâh. She kept making facetious remarks. facetiousness, n."
+  },
+  {
+    "word": "facia/fascia",
+    "definition": "(fashia), n. sôdaoh o laihmia pâhchhô liata moh tawpa."
+  },
+  {
+    "word": "facial",
+    "definition": "See face."
+  },
+  {
+    "word": "facies",
+    "definition": "(feshiz), n. hmiaphaozie tlâhpipa, chôpho âlâdâh."
+  },
+  {
+    "word": "facile",
+    "definition": "(fasail), adj. nônai, reikah nai, nópha, naosia, taonao, rainaokhianao. facilely, adv. facileness, n."
+  },
+  {
+    "word": "facilitate",
+    "definition": "(fasiliteit), v. rai panaosa, rairuna panaosa via, ryhpaohna pie. It would facilitate matters if you were more cooperative. facilitation, n. rai-runa panaosana. facilitative, adj. rai panaosa via thei."
+  },
+  {
+    "word": "facility",
+    "definition": "(fasiliti), n. rai panaosana, rairu-pa panaosa viana, âthlâziana châta ryhpaohna, naosia kheina, chhaichhi phahnaipa. He plays the piano with surprising facility. The guests are provided accommodation facility."
+  },
+  {
+    "word": "facsimile",
+    "definition": "(faksimili), n. châropa sikhua patlyna (copy), a dâhdeipa, a kakuapa. facsimiled, adj. facsimiles, pl."
+  },
+  {
+    "word": "fact",
+    "definition": "(fakt), n. hrnodopa, châtlaipa, chá hmeiseihpa, ytlaipa. No one can deny the fact that fire burns. factual, adj. y tlai. factuality, n. factualness, n. in fact, a châ tlai, châ hmeiseih, âdopata cha. as a matter of fact, âdopata cha."
+  },
+  {
+    "word": "faction",
+    "definition": "(fakshan), n. py âpachhaihna, palôhtlâh leina vâta pychyhpa âpa-duana. factional, adj. py âpachhaihna kyh. factionalism, n. factious, adj. py pabua pachhaih hmâh."
+  },
+  {
+    "word": "factitious",
+    "definition": "(faktishas), adj. taochyhpa hmo, hmeiseihpa châ vei. factitiousness, n. factitiously, adv."
+  },
+  {
+    "word": "factor",
+    "definition": "(faktar), n. pa-ysatuhpa, patlô-satuhpa, hihsâpa nawhbaw lai leipata raih theituhpa. factorial, adj. factorise, v. hihsâpa factor lâta tao."
+  },
+  {
+    "word": "factory",
+    "definition": "(faktari), n. hmotao papuana supipa, khaw hmotona o."
+  },
+  {
+    "word": "factual, factuality",
+    "definition": "See fact."
+  },
+  {
+    "word": "faculty",
+    "definition": "(fakalti), n. pikheipa palôh thatlôna, hmo kyhkha liata theina, university pachuna kyhkha, university pachutuhpazy, thaina."
+  },
+  {
+    "word": "fad",
+    "definition": "(fad), n. chysia âpasuah no, thathyu-na tlyuh leipa, âdaih rei leipa. faddy, adj. faddily, adv. faddishness, n."
+  },
+  {
+    "word": "fade",
+    "definition": "(feid), v. noh-âli, padâh, tleih, uah, lo. Jeans fade when you frequently wash them. faded, adj. tleih. fadedness, n. tleihzie, noh-âlizie."
+  },
+  {
+    "word": "faeces/feces",
+    "definition": "(fisiz), npl. iechhiepa, ie,"
+  },
+  {
+    "word": "faerie/faery",
+    "definition": "(feiri), n. lahsi, (same as fairy)."
+  },
+  {
+    "word": "fagot/faggot",
+    "definition": "(fegat), n. meireipeih, sapathi chateipa, (US sl) no-aichhihpa, chapaw chaohaohpa."
+  },
+  {
+    "word": "fag²",
+    "definition": "(feg), n. (US sl) chaohaohpa."
+  },
+  {
+    "word": "fag¹",
+    "definition": "(feg), v. riepatheisa, hriapasa. n. rai pasapa/rietheichhihpa, châhnamei. fagged, adj. raihriapasa. faggery, n. fag-end, châhnamei tlôna, lailyupa, nô-nâhpa, hmâtlâh leipa. fagged out, tha-chhâ liahsa, ngei."
+  },
+  {
+    "word": "fah",
+    "definition": "(fâ), n. (mus) solfa aopangawhna, f."
+  },
+  {
+    "word": "Fahrenheit",
+    "definition": "(faranhait), n. chakuazie nata lalôhzie thliena bi, (ti chakuapa cha de-gree 32 liata dâhhaw lâta âpahtlo, tisahpa degree 212 liata âtlao. (Dr.Gabriel D. Fahrenheit hmô papuapa)."
+  },
+  {
+    "word": "faience",
+    "definition": "(feians), n. aleibeih hlyu hniapa."
+  },
+  {
+    "word": "fail",
+    "definition": "(feil), v. hlaochhâ, hlaotlohvei, tloh-vei, âhnawh, taotheivei. The letter failed to arrive in time. failing, n. tlôleina, tloh-leina. prep. vei khiala. failure, n. hlaochhâna. Failure is the pillar of suc-cess. without fail, cheingei, chheilei-pata. I'll be there at two o'clock with-out fail."
+  },
+  {
+    "word": "failure",
+    "definition": "See fail."
+  },
+  {
+    "word": "fain",
+    "definition": "(fein), adj. (reihparohpa) byuh, âly, khoh, ly-y. adv. thaphapata, paphasa kawpata."
+  },
+  {
+    "word": "faint",
+    "definition": "(feint), adj. vihvâh, siavei, âlâpasia vei, sianônâvei. We saw the faint outline of the mountain through the mist, Meithâh ta akhupa tlâh vivâhta eima hmô. v. nomaoh, thipahra, thachhâ, nokhih pahno vei. He fainted from hunger. n. nokhih pahno leina, thi-pahrana. fainting, n.,adj. faintly, adv. faintness, n. faint heart, adj. chihuh, thlahzoh."
+  },
+  {
+    "word": "fair-way",
+    "definition": "(ferwei), n. balyh sie theina lâpi."
+  },
+  {
+    "word": "fairy",
+    "definition": "(feiri), n. lahsi, ahrizuah-nô, vâhiah. fairies, pl. fairytale, n. ahripa phôhpa. fairy shape, adj. chhithai. fairy godmother, n. dyuthaipa ahrizuah-nô. fairy-lamb, n. dyu mei-ôh."
+  },
+  {
+    "word": "fair²",
+    "definition": "(feir), n. daohpi, bahzâ su, hmototapa pamosana nata zuana su. fair ground, n. bahzâ su bypa."
+  },
+  {
+    "word": "fair¹",
+    "definition": "(feir), adj. âdo, âsikhua, piehpievei, pha, ngyuh, chhithai, âdaihnakhi. She deserves a fair trial. fairly, adv. âdopata. fairness, n. âdozie. fair and square, âdaihna khi, âsikhua. fair copy, asiapata châpatlypa. fair play, âdopata hmototapa. the fair sex, chanô. fair game, âdopa."
+  },
+  {
+    "word": "faith",
+    "definition": "(feith), n. âlôhna, zona, zyhna, ngâna, ngâpâna, ngiapâna. Faith is stronger than reason. Ngiapâna he pachána hlâta a thatlôvia. faithful, adj. ngâchhih, âdo, zochhih. faithfully, adv. faithfulness, n. ngâchhihna. faithless, adj. ngâna hnei vei. faithlessly, adv. in good faith, ngâna chôta, diathlâ leipata. the faithful, n. ângiapâtuhpa."
+  },
+  {
+    "word": "fake",
+    "definition": "(feik), n. taochhyhpa, hmeiseih leipa, dôveina nothlahpa. adj. âdovei, apa kheipa. fakery, n. anothlahpa hmo."
+  },
+  {
+    "word": "fakir",
+    "definition": "(fakir), n. (Muslim) theihthaipa."
+  },
+  {
+    "word": "falcate/falcated",
+    "definition": "(falkeit,-tid), adj. savá a lyu, savá hawhta âpahko. falciform, adj. savá pilázie lyu. falculate, adj. savá hawh ta âpahko."
+  },
+  {
+    "word": "falcon",
+    "definition": "(falkan), n. pihmóh chyhpa, hmó chhich. falconer, n. pihmóh pasatuhpa. falconry, n. pihmóh ta pavaw ábyhpa."
+  },
+  {
+    "word": "falculate",
+    "definition": "See falcate."
+  },
+  {
+    "word": "faldstool",
+    "definition": "(foldstul), n. dyuchhai thlie theipa, bishop dyuchhai bâh leipa."
+  },
+  {
+    "word": "fall",
+    "definition": "(fawl), v. (fell, pt. fallen, pp), tla, pao,"
+  },
+  {
+    "word": "faring",
+    "definition": "(feiring), n. zawtheina/balyh pôhpa âtyhna paphina."
+  },
+  {
+    "word": "gain",
+    "definition": "(gein), n. hmohneipa pôhna, âthôhna, hneirôna topa, hluh viana, âhlaohna. gainful, adj. âthôh, âhlaoh. gainfully, adv. gainer, n. âthôhna totuhpa."
+  },
+  {
+    "word": "gain",
+    "definition": "(gein), v. to, hnei, hmahsie, âthôhna hmô, âthôhkhei, thatlôtupâ. gainings, n. âthôhna, hlaopapuana."
+  },
+  {
+    "word": "gainsay",
+    "definition": "(geinsei), v. ei, bie-ei, reih-ei. gainsaying, n. eina, bie-eina, reiheina."
+  },
+  {
+    "word": "gait",
+    "definition": "(geit), n. lâsie, lâsiedâh, lâsiepa, siedâh."
+  },
+  {
+    "word": "gaiter",
+    "definition": "(geitar), n. ngiah-ly pahlyna."
+  },
+  {
+    "word": "gal",
+    "definition": "(gal), n. same as girl."
+  },
+  {
+    "word": "gala",
+    "definition": "(gala), n. zawpi âpalysana noh hmâna. gala-dress, n. zawpi âpalysana noh chysia."
+  },
+  {
+    "word": "galatic",
+    "definition": "(galaktic), n. sao nata chhiah ârina kyh, awhsi hluhpi hmo."
+  },
+  {
+    "word": "galaxy",
+    "definition": "(galaksi), n. sao nata chhiah ârina (awhsi hluhpi âpaziahpa), chyhsa rônahpa sahlao pôhpakhypa."
+  },
+  {
+    "word": "galbanum",
+    "definition": "(galbanam), n. tho chahthli rohpahâhpa."
+  },
+  {
+    "word": "gale",
+    "definition": "(geil), n. thlihpasapa, thlihpawpa, chothyu, pyu palopasahpa."
+  },
+  {
+    "word": "galingale",
+    "definition": "(galinggeil), n. iahtabaopa rohpahâhpa."
+  },
+  {
+    "word": "gall",
+    "definition": "(gol), n. chicheipa karuhpa, arâ vo âhliapa, vo padaohpa."
+  },
+  {
+    "word": "gall",
+    "definition": "(gol), n. hmôkhaw, hmôkhaw tikhapa, pathi liata tikhapa. gall-bladder, n. hmôkhaw byh. gall-stone, n. hmôkhaw liata alô."
+  },
+  {
+    "word": "gallant",
+    "definition": "(galant), adj. riahpha, pahsaipha, chhyu, âtlai, tloh, ângia, laihsa sy thei. n. laihsa khiahlypa satlia tlohpa. gallantly, adv. gallantry, n. pahsaiphana, riahphana."
+  },
+  {
+    "word": "gallantry",
+    "definition": "See gallant."
+  },
+  {
+    "word": "gallery",
+    "definition": "(galari), n. chhyna o chhôh pâhchhô chô liata dyuchhai patlâhpa, cinema hall susâhpa liata dyuchhai."
+  },
+  {
+    "word": "galley",
+    "definition": "(gali), n. balyh siphiah chhâhkha hneipa, balyh beih chhona o."
+  },
+  {
+    "word": "Gallic",
+    "definition": "(galik), adj. France râh hmo, Gaul (chyhsa) chôchâh."
+  },
+  {
+    "word": "gallivant",
+    "definition": "(galivant), v. âpalysapata âkhiekhâ laih."
+  },
+  {
+    "word": "gallon",
+    "definition": "(gallan), n. ti panuana (litres 4.5 tlu), ti panuana baoh."
+  },
+  {
+    "word": "gallop",
+    "definition": "(galap), v. âthluah, thapita ârâ, âpathlô, arâ abaopata ârâ. n. thapita ârâpa, âthluahpa, âpathlôpa. galloper, n. thata âthluahtuhpa. galloping, adj. thapita ârâ, âthluah, âpathlô."
+  },
+  {
+    "word": "galloway",
+    "definition": "(galowei), n. arâ chyhpa chi, râhsa ki leipa chikha."
+  },
+  {
+    "word": "gallows",
+    "definition": "(galouz), n. chyhsa moleipa pa-aosaona tho tôh vâhchapiapa. gallows humour, saisoheipa."
+  },
+  {
+    "word": "gallstone",
+    "definition": "See gall."
+  },
+  {
+    "word": "gallup poll",
+    "definition": "(galap pol), n. âtlyhna hnei chyta zawpi pachâdâh lapakhypa, (George Gullup pathaopa)."
+  },
+  {
+    "word": "galore",
+    "definition": "(gelor), adv. ahluhpi, hyhkha, râh-raw."
+  },
+  {
+    "word": "galosh, golosh",
+    "definition": "(gelosh), n. pheiky chôta âkypathopa chi khairie pheiky."
+  },
+  {
+    "word": "galvanism",
+    "definition": "(galvanizm), n. (science) battery tawhta chemical action (thohna thatlôna) hmâpata electricity tao papuapa, battery taopapuapa dôhla hmotaotheina. galvanic, adj. battery dôhla hmotaotheina papuapa chôchâh. galvanize,-ise, v. electric tha patusa, thua palothlu. galvano-meter, n. dôhla hmotaotheina raihria thliena sanâh."
+  },
+  {
+    "word": "galvanometer",
+    "definition": "See galvanism."
+  },
+  {
+    "word": "gambit",
+    "definition": "(gaembit), n. (chess âkhaihna..."
+  },
+  {
+    "word": "heterosexual",
+    "definition": "(heteroseksual), adj. chanô-chapawna âlyu leipa hmo."
+  },
+  {
+    "word": "hetman",
+    "definition": "(hetman), n. hlâno Polish or Cossack râh pheisaih hyutuhpa."
+  },
+  {
+    "word": "heuristic",
+    "definition": "(hiuristik), adj. hmô papuana chata phahnai."
+  },
+  {
+    "word": "hew",
+    "definition": "(hiu), v. (hewed, pt. hewn, pp) chheih, âchai, suah, pahreih, chhawh, pachaih, âchaipoh. hew down, v. tho thlu, thlu papao."
+  },
+  {
+    "word": "hex",
+    "definition": "(heks), n. dyuthaina, dyuna, hmo no-âhpa taothaina. v. dyu."
+  },
+  {
+    "word": "hexa-",
+    "definition": "(prefix) sâcharu, 6, tahna. hexad, n. nawhbaw sâcharu âpatlâhpa. hexachord n. solfa aocharu hneipa."
+  },
+  {
+    "word": "hexagon",
+    "definition": "(heksagon), n. hmo tlâhhroh sâcharu hneipa. hexagonal, adj. tlâhhroh sâcharu hneipa chôchâh."
+  },
+  {
+    "word": "hexapla",
+    "definition": "(hekzapla), n. Greek biehrai eicharu papuana."
+  },
+  {
+    "word": "hexapod",
+    "definition": "(hekzapod), n. lôvâpa pheicharu hneipa."
+  },
+  {
+    "word": "hexateuch",
+    "definition": "(hekzatiuk), n. biehrai chabu hmiatuapa sâcharupazy, (Genesis - Joshua). hexateuchal, adj."
+  },
+  {
+    "word": "hey",
+    "definition": "(hei), interj. y! hy! hei!"
+  },
+  {
+    "word": "heyday",
+    "definition": "(heidei), n. lochono, lichih no, hneirô no, hlaotloh no."
+  },
+  {
+    "word": "hi",
+    "definition": "(hai), interj. y, hy! azavy nâ! hi there, y khaih!"
+  },
+  {
+    "word": "hiabachi",
+    "definition": "(hiabachi), n. (Japan) sa chhona beih."
+  },
+  {
+    "word": "hiatus",
+    "definition": "(hiatas), n. hmotao awpah a y lei no, âchalih chy no, daihti ruapa, hmotao âpahâsai chy no. hiatuses, pl."
+  },
+  {
+    "word": "hibakusha",
+    "definition": "(hibakusa), n. Hiroshima nata Nagasaki khihpi liata bomb pathlapa vâta chyhsa leidiapa sahlao (kô 1945 liata)."
+  },
+  {
+    "word": "hibernate",
+    "definition": "(haibarneit), v. sahroh nata lôvâpa thlasi chhôh zydua âmôkua. hibernation, n. thlasi chhôh âmôna, daihti reipi chhôh rai âvâhna. hibernal, adj. chasipaw chhôh daihti âvâhpa hmo."
+  },
+  {
+    "word": "hibernian",
+    "definition": "(haibarnian), adj. Ireland râh hmo. n. Irish chyhsa."
+  },
+  {
+    "word": "hiccup",
+    "definition": "(hikap), n. chuachah-ua niepa. (also hic-cough)."
+  },
+  {
+    "word": "hick",
+    "definition": "(hik), n. (colloq) thotlâhpaw, chyhsa nawhpa. adj. hruthiethu."
+  },
+  {
+    "word": "hickory",
+    "definition": "(hikari), n. (US) thophapa chi."
+  },
+  {
+    "word": "hid, hidden",
+    "definition": "See hide."
+  },
+  {
+    "word": "hide",
+    "definition": "(haid), n. viahchao vo, sahroh vo, savo. hidebound, adj. vochha, chhoru, ano bie khoh, palôhchyh, bie paipacha."
+  },
+  {
+    "word": "hide",
+    "definition": "(haid), v. (hid, pt. hidden, pp) nyu, ânyu, ânyuthu, âchhei, phih, pahli, khu, biephih. hiding, n. nyuna, phihna. hidden, adj. nyu, phih, pahli, khu. hide and seek, n. tâkuh-nyupa."
+  },
+  {
+    "word": "hidebound",
+    "definition": "See hide."
+  },
+  {
+    "word": "hideous",
+    "definition": "(hidias), adj. hmichhie, chhie, chichhih. hideously, adv. hideousness, n. hmichhhiezie."
+  },
+  {
+    "word": "hiding",
+    "definition": "See hide."
+  },
+  {
+    "word": "hidrosis",
+    "definition": "(hidrosiz), n. (med) mathlai pua tupâna. hidrotic, adj."
+  },
+  {
+    "word": "hie",
+    "definition": "(hai), v. para, paraparô."
+  },
+  {
+    "word": "hiemal",
+    "definition": "(himal), adj. chasipaw nota y, chasipaw chata y, chasipaw hmo."
+  },
+  {
+    "word": "hierarch",
+    "definition": "(haiarark), n. theihthai beichaipa, awnanopa hyutuhchaipa. hierarchic,-cal, adjs. theihthai beichaipa kyh. hierarchically, adv."
+  },
+  {
+    "word": "hierarchy",
+    "definition": "(haiararkhi), n. âbeina nata biehneina âhnai-âsâh âsana, bei duahmo âhnaichaipa tawhta âsâhchaipa taihta âpazina."
+  },
+  {
+    "word": "hieroglyph",
+    "definition": "(haiaroglif), n. hlâno Egypt râh nothlahpa hmâpata châronadâh, nothlahpa hmâpata châropa."
+  },
+  {
+    "word": "hierogram",
+    "definition": "(haiarogram), n. hmo pathaihpa pamosana nothlahpa."
+  },
+  {
+    "word": "I'll",
+    "definition": "short for I will, I shall."
+  },
+  {
+    "word": "igneous",
+    "definition": "(ignias), adj. alô châ, tlâhkâpata alô châpa phipapua."
+  },
+  {
+    "word": "ignite",
+    "definition": "(ignait), v. meihlih zoh, mei ia, kâ. ignition, n. mei-iana, meikâna, meikâpa âhlâhna."
+  },
+  {
+    "word": "ignoble",
+    "definition": "(ignobl), adj. nozabary. ignobleness, n. nozachhihzie. ignobility, n. nozachhihna."
+  },
+  {
+    "word": "ignominious",
+    "definition": "(ignominias), adj. maophyuh dâhlâh, nozabary, zakhei âchhih. ignominiously, adv."
+  },
+  {
+    "word": "ignominy",
+    "definition": "(ignomini), n. nozabaryna, maophyuh dâhlâhna, nozachhihpa, nohzaona, mohchhiensa. ignominious, adj. ignominiously, adv."
+  },
+  {
+    "word": "ignoramus",
+    "definition": "(ignaramas), n. khâpahmah pahno leipa, chukhawchulia pahno leipa. ignoramuses, pl."
+  },
+  {
+    "word": "ignorance",
+    "definition": "(ignorans), n. hmo pahnopa hnei leina, pahno leina, palôhhâh leina, hmo thaothâh pahno leina."
+  },
+  {
+    "word": "ignorant",
+    "definition": "(ignorant), adj. hmo pahno vei, chukhawchulia pahno vei, thaothâh pahno vei, palôhhâh vei, hru. ignorantly, adv."
+  },
+  {
+    "word": "ignore",
+    "definition": "(ignor), v. pahno khoh vei, pahno lei âpachâsa, mohpakhô. ignorable, adj. mohpakhô thei."
+  },
+  {
+    "word": "iguana",
+    "definition": "(iguana), n. sawsâ laipa."
+  },
+  {
+    "word": "ikon",
+    "definition": "See icon."
+  },
+  {
+    "word": "ilk",
+    "definition": "(ilk), n. (colloq) chi, chikhapa, chikharikhkapa. adj. (science) âmiakha, miakha. of that ilk, kha hawhpa chi."
+  },
+  {
+    "word": "ill",
+    "definition": "(il), adj. hnâ, hnâchô, pasa, tlâh vei, cha-ôh, pei, âdo vei, chieh vei. adv. pei, khochhih vei, rairu. n. moleipa, hmo peipa, hmphaleipa. ills, npl. vâduana. illness, n. tlâh-leina, chieh-leina, pasana. ill-advised, adj. so vei, âryhna pahno vei. ill-bred, nôchhie, âlawh. ill-favoured, adj. palôh la vei, a âchhih vei. ill-gotten, âdo leipata hnei. ill-disposed, adj. âpakyh pha vei. ill-fated, adj. vâdua, vâchhie. ill-feeling, adj. palôh-chhie. ill-health, hri-iah pathaih vei. ill-mannered, adj. sachhie, nôchhie. ill-starred, adj. vâdua âchhih. ill-tempered, adj. pathichhie, pathi pachhoh. ill-treat, v. taola, taosala, pasaipa-i. ill-at-ease, pachâphavei, palôhsasi."
+  },
+  {
+    "word": "illation",
+    "definition": "(ileshan), n. âtlychakana chhaota hmo laichadaina."
+  },
+  {
+    "word": "illegal",
+    "definition": "(iligal), adj. dâh châ vei, dâh chakhia, dâhta pasai vei, dâh siezie châ vei. illegally, adv. illegality, n. dâh châ leina. illegalize,-ise, v. dâhta khâh. illegalization, n. illegal child, n. riasaw."
+  },
+  {
+    "word": "illegible",
+    "definition": "(ilejibl), adj. (châropa) rei ru, sia vei. illegibly, adv. illegitimately, adv. illegitimacy, n."
+  },
+  {
+    "word": "illiberal",
+    "definition": "(illiberal), adj. palôhbuah, pachâ kawh vei, riakhieh. illiberally, adv. illiberality, n."
+  },
+  {
+    "word": "illicit",
+    "definition": "(ilisit), adj. dâh châ vei, pasaipa châ vei. illicitly, adv. illicitness, n."
+  },
+  {
+    "word": "illimitable",
+    "definition": "(ilimitabl), adj. chhâthai vei, rakhapa hnei vei."
+  },
+  {
+    "word": "illiterate",
+    "definition": "(ilitarait), adj. châthai vei, chârei nata ro thai vei. illiterately, adv. illiteracy (ilitarasi), n. chârei nata ro thai leina, châthai leina."
+  },
+  {
+    "word": "illness",
+    "definition": "See ill."
+  },
+  {
+    "word": "illogical",
+    "definition": "(ilojikal), adj. bie âzaokhi vei, âkyh vei, âmiemâh vei, biereipa âpatupakei vei. illogically, adv."
+  },
+  {
+    "word": "illume",
+    "definition": "(ilium), v. (poet) pakhaihsa."
+  },
+  {
+    "word": "illuminate",
+    "definition": "(iliumnineit), v. pakhaih, pakhaihsa, khaih, dieh, khaihpa chhi, pahvâsa, novâhna pie, palâpasia, pasiasa. illuminating, adj. illumina-"
+  },
+  {
+    "word": "Jim Crow school",
+    "definition": "Negro chi ngâlâh chata hmâpa."
+  },
+  {
+    "word": "jingle",
+    "definition": "(jinggl), n. pyury âzaokhipata paropa, kaly/karu pyu hawhta. v. karu pyu parosa, kaly pyu paro. jingler, n. jingling, adj."
+  },
+  {
+    "word": "jingo",
+    "definition": "(jinggo), n. ano chikhaheih nata râh âchâhpa chyhsa, ano râh âpalaikhei tupâpa chyhsa."
+  },
+  {
+    "word": "jink",
+    "definition": "(jingk), v. aru lâta hmotao, chyhsa pathlohpata ârâsai, chyhsa dôveipata hmotao. n. (rugby/football/hockey) bawhlô chyhsa dôveina, chahawhta dôveipata chyhsa tleisaina."
+  },
+  {
+    "word": "jinker",
+    "definition": "(jingkar), n. tawlailih pheinopa arâ âdaophipa tho palyna chi."
+  },
+  {
+    "word": "jinn",
+    "definition": "(jin), npl. hlâno Mosolman phôhpa liata ahripa, thlâhchahmuhpa, (also jinnee, jinni, djinni, genie)."
+  },
+  {
+    "word": "jinx",
+    "definition": "(jingks), n. vâduana vawcheihtuhpa or vaw tlôkheituhpa."
+  },
+  {
+    "word": "jitter",
+    "definition": "(jitar), v. âphawhlaw, âphochâ. jittery, adj."
+  },
+  {
+    "word": "jive",
+    "definition": "(jaiv), n. jazz lâna music, âchotlaipa lâna hla patlana."
+  },
+  {
+    "word": "Job1",
+    "definition": "(job), n. Zawba, chyhsa reizyhpa nata palôh pahsipa. Job's comforter, chyhsa pachârôhpa thlahpalôh âchhuah tlôhpata pachârôhna tlao baichhatuhpa."
+  },
+  {
+    "word": "job2",
+    "definition": "(job), n. rai, raihria, nietluana rai, sawhkhâ rai, moleipe'nawh raihria. jobless, adj. rai hnei vei, rai y vei."
+  },
+  {
+    "word": "job3",
+    "definition": "(job), n. hmao pahzaopa pachuna."
+  },
+  {
+    "word": "jockey",
+    "definition": "(joki), n. arâta ârâpasuatuhpa, sôdaohna kyh liata âphuhphia leipa tovyuh phana âpahawhpa chyhsa. v. haoh, dôvei, âduahmo paryh."
+  },
+  {
+    "word": "jockstrap",
+    "definition": "(jokstrap), n. âtaopasuana nota chapaw zâ nata tihmô pahlyna."
+  },
+  {
+    "word": "jocose",
+    "definition": "(jokos), adj. pahneisaiso khoh, saisô, saiso tao hoh."
+  },
+  {
+    "word": "jocular",
+    "definition": "(jokiular), adj. pahneisaiso tao thai, pahneichhi pachhihsa, saiso thai. jocularity, n. jocularly, adv."
+  },
+  {
+    "word": "jocund",
+    "definition": "(jokand), adj. âly thei, rhapaw, thapha, saisô. jocundity, n. âly theina. jocundly, adv."
+  },
+  {
+    "word": "jodhpurs",
+    "definition": "(jodpurz), n. arâ kiana chaopasypa pheipai rachhôh âcha-iepa."
+  },
+  {
+    "word": "Joe",
+    "definition": "(jo), n. chapaw, chyhsa chakhyhpa, chyhsa lâh-lapa."
+  },
+  {
+    "word": "jog",
+    "definition": "(jog), v. chatho, chalyu, chalyuchali, chati, chatitha, nâ, kuchakhita nâ, chahriachahrâ, thapathyusa, dusaw lôhchâta ârâ. n. nâpa, dusawta ârâpa, azyhtata chachhaopa."
+  },
+  {
+    "word": "joggle1",
+    "definition": "(jogl), v. âchatho, âchathlei, chalyuchali, chachhao."
+  },
+  {
+    "word": "joggle2",
+    "definition": "(jogl), n. hâh, leizaih a lia lei nawpata chhâhchabi reipa, chamoliapa tokhâhna thochiah paduakhâhpa."
+  },
+  {
+    "word": "John",
+    "definition": "(jon), n. chyhsa moh, (Zawhana, Zawna), also Johnny, hneirôhpa raitlypa awna moh."
+  },
+  {
+    "word": "join",
+    "definition": "(join), v. pazao, pazaosa, pataopazao, pahlyhkhoh, âpazao. n. âpazaona, hmo âpazaona su. joiner, n. pazaotuhpa. joint, n. âpazaona, ru âpazaona, âpatyhna. joining, n. jointed, adj. pazao. jointly, adv. jointless, adj. âpazao vei. jointness, n. âpazaozie. joint-account, n. bank account mopano âhlypa. joint-stock, company sahlao âhlypa sôh nata hmobaoh."
+  },
+  {
+    "word": "jointure",
+    "definition": "(joinchar), n. nôvah âhneina daihti liata chanô ryuto awpa bietaipa (vahpa thi tawhta to awpah)."
+  },
+  {
+    "word": "joist",
+    "definition": "(joist), n. khâpia."
+  },
+  {
+    "word": "joke",
+    "definition": "(jok), n. pahneisaiso, saisopa. v. pahneisaiso tao, saisoh. joker, n. tôkâ pypuah, saisohtuhpa. jokingly, adv. saisolâta. no joke, hmo hmeiseihpa nata rairupakyh, hmo chakhyhpa châvei. jolly (joli), adj. âlythei kaw, saiso khoh,"
+  },
+  {
+    "word": "kettle",
+    "definition": "(ketl), n. keli, thopi beih. kettleful, n. keli hmokha. kettledrum, n. khoh chyhpa chao pahzaopa."
+  },
+  {
+    "word": "ketubah",
+    "definition": "(ketubah), n. Zunawh nôvah âhneipa bietaina châ."
+  },
+  {
+    "word": "key",
+    "definition": "(ki), n. châhbi, tâlâ pahyna, hlaki, ao pakhâna, hlaki lana, pyungiapa ao thlana, hmotaozie, hmosiezie, kyh. keyboard, n. tlaipih kupah-rota tôpa. key-hole, n. tâlâ khaoh châhbi chahraohna. key-ring, n. châhbi ri. keyman, n. sôdaohna kyh liata chyhsa peimawh chaipa. key-note, n. hla ao parosazie âpahniehna chaipa. key-word, n. châropa biepipa, biereipa biepipa."
+  },
+  {
+    "word": "key/cay",
+    "definition": "(ki, kei), n. liahpahlô âhnaipa, liahpahlô âpabupa, chavah pachiahpa likawh liata râhpadaipa."
+  },
+  {
+    "word": "khaddi, khaddar",
+    "definition": "n. India râh thaisana khaw kuta hriapa."
+  },
+  {
+    "word": "khaki",
+    "definition": "(khaki), adj. khâki rôh, alei rôh. n. khâki poh."
+  },
+  {
+    "word": "khalif",
+    "definition": "See caliph."
+  },
+  {
+    "word": "khan",
+    "definition": "(khan), n. nochhirâh khichhai bu, Asia bei sawchapawpa, bei, Persia râh ryureihtuhpa (governor)."
+  },
+  {
+    "word": "kibble",
+    "definition": "(kibl), n. tikhaoh-reipa ti thaina tibyh."
+  },
+  {
+    "word": "kibe",
+    "definition": "(kaib), n. phei ngavâhhmaothy chawhpa, chawhkaripa."
+  },
+  {
+    "word": "kick",
+    "definition": "(kik), v. chapie, âpachhi, phei chhuhkhy, meitheita su, sahhma dopata chathosa. n. chapiepa, pheita chhuhkhypa, âpachhipa, tlykhypa. kicking, n.,adj. kickback, n. bietaina chata phusâ arulâta pie chhieliepa. kick off, football âkhaihpa pathaona."
+  },
+  {
+    "word": "kid",
+    "definition": "(kid), n. hâti, hawti, sawnawh, sawnawhpa, mietaw, (US) nawhta. v. dô, dôvei, âpangia. kidding, n. dôna, dôveina. kidglove, n. mievo kupaky. kiddy, kiddie, nn. hawtichhie, hawti chyhpa, sawnawh chyhpa. kiddies, pl."
+  },
+  {
+    "word": "kidnap",
+    "definition": "(kidnap), v. chyhsapa paru, phusâ haw khona vâta chyhsa paru. kidnapper, n. chyhsa parutuhpa."
+  },
+  {
+    "word": "kidney",
+    "definition": "(kidni), n. lôpo. kidney bean, n. abiah chikha, (french bean chi). kidney-stone, lôpo liata alô ypa."
+  },
+  {
+    "word": "kill",
+    "definition": "(kil), v. thie, chheisao, physao, khaw thatlôna chalihsa, thohna thatlôna pahleisa. n. sakapa, sathiepa, thiepa. killer, n. thietuhpa. killing, n., adj. sahroh thiena, thietuna, pahneichhipa âtaih thei leipa. kill two birds with one stone, eikha saliahta hmo sâno lâta taopakaoh. kill the fatted calf, râh hlapi lâ khitlyna tawhta vawtlôpa alyna kyhchhi. dressed to kill, ângialina taihta âtobipa."
+  },
+  {
+    "word": "killick/killock",
+    "definition": "(kilik, kilok), n. balyh paduasana thuacha-ia."
+  },
+  {
+    "word": "kiln",
+    "definition": "(kiln), n. hmo pachawhna meihô, chinaih raona meihôpi."
+  },
+  {
+    "word": "kilo",
+    "definition": "(kilo), n. kilogram. (sâhkha, 1000)."
+  },
+  {
+    "word": "kilogram, kilogramme",
+    "definition": "n. âhrizie panuana, gram 1000 tlu, (kg. 1)."
+  },
+  {
+    "word": "kilometer",
+    "definition": "(kilometar), n. âhlazie thliena, metre 1000 tlu, (km. 1)."
+  },
+  {
+    "word": "kilowatt",
+    "definition": "(kilowat), n. electric thatlôzie thliena, watt sâhkha (1000)."
+  },
+  {
+    "word": "kilt",
+    "definition": "(kilt), n. (Scot) chapaw poh âsaihpa chi, (pahkhu rakha taihta). kilted, adj. poh pachhohpa âsaih."
+  },
+  {
+    "word": "kilter",
+    "definition": "(kiltar), n. (US sl) hmo phapa, hmâ tlâhchâpa. off-kilter, out of kilter, pha khao vei, hmâ tlâhchâ vei."
+  },
+  {
+    "word": "kimono",
+    "definition": "(kimono), n. Japan viahkao pahsipa."
+  },
+  {
+    "word": "kin",
+    "definition": "(kin), n. lôhpasapa, chhôhkha, sanawh-rinô, sanawhpa. adj. âzaona hnei, sanawh. kinfolk, n. heih-nawh, hrihruah. kinship, n. âsanawhna,"
+  },
+  {
+    "word": "kwashiorkor",
+    "definition": "(kuasiokor), n. râh palopa su (tropical regions) liata hawti pasana (protein âphahlana vâta)."
+  },
+  {
+    "word": "L",
+    "definition": "(el), n. Roman nawhbaw 50-na."
+  },
+  {
+    "word": "L, l",
+    "definition": "(el). n. English alphabet liata hawrawh hleinona."
+  },
+  {
+    "word": "L.",
+    "definition": "abbrev. (driving) learner, motor haoh âchupa."
+  },
+  {
+    "word": "lab.",
+    "definition": "Short for laboratory."
+  },
+  {
+    "word": "label",
+    "definition": "(leibel), n. hmo ngiana pohpai or châhnapai pataihpa, châhna phia chhana lâta châ hna pataihpa. v. pataih, bai, châna reihpasia."
+  },
+  {
+    "word": "labial",
+    "definition": "(leibial), adj. hmao chôchâh, hmaomopata reih parosapa mohchho hmo. labial sounds, hmaomopata reih parosapa hawrawh (eg. m, p, b). labium, n. sapa pachiahpa hmao lyupa. labia majora & minora, n. chhuvo laipa nata chyhpa."
+  },
+  {
+    "word": "labile",
+    "definition": "(leibail), adj. (US) âhuary, ânano parie, âthla parie, sôhlôh vei. lability, n. ânano pariena."
+  },
+  {
+    "word": "labium",
+    "definition": "See under labial."
+  },
+  {
+    "word": "labor",
+    "definition": "US spelling for labour."
+  },
+  {
+    "word": "laboratory",
+    "definition": "(laboratari), n. thohna raihriana su, science rai mohpachhina su, research taotuhpa raihriana chhôpadâhpa."
+  },
+  {
+    "word": "labour",
+    "definition": "(US) labor, (lebor), n. rai, raihria, hriapasana, raihria hlaopa, hlawvâhpa, sawzeihpa. v. hria, raihria, hriapasa, hria hlao, âhlawvâh. laborious, adj. hriapasa, tiama, chahra, rai ârieh, hriapasa byuh, rai rietheichhih. laboriously, adv. laboriousness, n. hria pasazie. labourer, n. raihriatuhpa, hriahlaotuhpa. labour party, n. British râh political py moh."
+  },
+  {
+    "word": "labrum",
+    "definition": "(labram), n. lôvâpa hmao, lôvâpa sapa pachiahpa hmaovo lyupa. labra, pl."
+  },
+  {
+    "word": "laburnum",
+    "definition": "(labarnam), n. sibiepa thina châmaih hneipa, (hnâtao hawhpa)."
+  },
+  {
+    "word": "labyrinth",
+    "definition": "(labarinth), n. lâpi vâhcahpia hôlôpa, siena kyh pahno rupa, (fig) âtymâ kawpa hmo. labyrinthine, adj. lâpi vâhcahpia hôlôpa hmo."
+  },
+  {
+    "word": "lac1/lakh",
+    "definition": "(lak), n. (India, Pakistan) thyhrawh, (1,00,000)."
+  },
+  {
+    "word": "lac2",
+    "definition": "(lak), n. thosaihpa chahthli âkiapa, chari."
+  },
+  {
+    "word": "lace",
+    "definition": "(leis), n. palari phieh pangiapa hmo chatyna, (pheiky ri hawhpa), pohbiepa pai pathliahpa. v. biehpa-i, hraipa i, chakhipa-i."
+  },
+  {
+    "word": "lacerate",
+    "definition": "(lasareit), v. chahri, (chysia) hrie, (vo) âhrie. laceration, n. chahrina hmah, âchahrisana. lacerative, adj. chahri thei."
+  },
+  {
+    "word": "laches",
+    "definition": "(lachiz), n. biebua paryhna daihti pahawhsana."
+  },
+  {
+    "word": "lachrymal",
+    "definition": "(lakrimal), adj. mothlih chôchâh. lachrymation, n. mothlih ti. lachrymator, n. mothlih patlasatuhpa, (meikhuh or tear gas). lachrymary, adj. mothlihpataw, mothlihpa-ô, mothlihchita. lachrymose, adj. mothlih tla nao. lachrymosely, adv."
+  },
+  {
+    "word": "lacing",
+    "definition": "(leising), n. hmo biepâna ri. See also lace."
+  },
+  {
+    "word": "lack",
+    "definition": "(lak), v. mâh-mua, âphahla, âdaih vei, âkhi vei, hnei vei. lacking, adj. (be lacking), âphahla, mâh-mua. lack-lustre,-ter, adjs. rôh âlâhâh vei, nohthyu vei, palôhzoh."
+  },
+  {
+    "word": "lackadaisical",
+    "definition": "(lakadezikal), adj. hmiakai vei, hmiachhie, riethei hmiaphaoh, thachhie hmiaphaoh. lackadaisically,"
+  },
+  {
+    "word": "M, m",
+    "definition": "(em), n. English alphabet liata hawrawh hleithôhna."
+  },
+  {
+    "word": "ma'am",
+    "definition": "Same as madam."
+  },
+  {
+    "word": "ma, mama",
+    "definition": "n. nô awna moh, einâ."
+  },
+  {
+    "word": "mac",
+    "definition": "short for mackintosh."
+  },
+  {
+    "word": "macabre",
+    "definition": "(makabar), adj. rarôh-y, hmia chichhih, athih lâ lyu."
+  },
+  {
+    "word": "macadam",
+    "definition": "(makeidam), n. alô pakeipa lâpi paraihna. macadam road, n. rawrâ phawthlupa lâpi. macadamize, v. lâpi rawrâ phawthlu. macadamization, n."
+  },
+  {
+    "word": "macaque",
+    "definition": "(makak), n. azyh chikha moh."
+  },
+  {
+    "word": "macaroni",
+    "definition": "(makaroni), n. châkah-riepa lyupa viahchhâ."
+  },
+  {
+    "word": "macaroon",
+    "definition": "(makarun), n. viahchhâ thlôhpa almond thei pahlaopa."
+  },
+  {
+    "word": "macaw",
+    "definition": "(makaw), n. aki laipa."
+  },
+  {
+    "word": "mace",
+    "definition": "(meis), n. mawsala hawhta hmâpa thei."
+  },
+  {
+    "word": "mace",
+    "definition": "(meis), n. âdyuhna chôchahrei seichhi pataihpa, abeizie pamosana chôchahrei luhbyuhpa."
+  },
+  {
+    "word": "macerate",
+    "definition": "(masareit), v. lô-iahta pachie panaisa. maceration, n."
+  },
+  {
+    "word": "mach",
+    "definition": "(mak), n. zawtheina sie chatliezie. mach two, pyu sie chatliezie lieno."
+  },
+  {
+    "word": "machete",
+    "definition": "(masheti), n. (also matchet) chaizôh, Latin American chaihhrai."
+  },
+  {
+    "word": "machiavellian",
+    "definition": "(makiavelian), adj. Machiavelli (kô 1469-1526) pachâdâh reipaphana hmo."
+  },
+  {
+    "word": "machinate",
+    "definition": "(makineit), v. leihparu. machination, n. leihparuna. machinator, n. leihparutuhpa."
+  },
+  {
+    "word": "machine",
+    "definition": "(mashin), n. khaw, (poh biena khaw), raihriana khaw. machinery, n. khaw, raihriana khaw laipa, khaw lâchhâh chhaichhi."
+  },
+  {
+    "word": "machismo",
+    "definition": "(mashismo), n. chapawna, pôh pahreihpa vâta âpatheisana."
+  },
+  {
+    "word": "macho",
+    "definition": "(macho), n. âpakawpahlopa, chapaw kawpa, âpatheisapa."
+  },
+  {
+    "word": "macintosh",
+    "definition": "See makintosh."
+  },
+  {
+    "word": "mack",
+    "definition": "short for mackintosh."
+  },
+  {
+    "word": "mackerel",
+    "definition": "(makral), n. tilaipi ngadipa (ngalâ lyupa)."
+  },
+  {
+    "word": "mackintosh, macintosh",
+    "definition": "(makintosh), n. khairiepoh viahkaochô pahsipa, khairiepoh."
+  },
+  {
+    "word": "mackle1",
+    "definition": "(makl), n. khawchhuh laipa (press). hawrawh châti âhlaopa nata sianônâ leipa."
+  },
+  {
+    "word": "mackle2",
+    "definition": "(makl), n. thlalâ hawhta siapa alô liata avyhpata âhlaopa. mackled, adj. avyhpa kiah."
+  },
+  {
+    "word": "macrame/macrami",
+    "definition": "(makrami), n. pohpai pathliapa."
+  },
+  {
+    "word": "macro-",
+    "definition": "(prefix) seih, rônah, tahna."
+  },
+  {
+    "word": "macrobiotic",
+    "definition": "(makrobaiotik), adj. hroh pareihna patikyh, hrohparei, tlâhparei."
+  },
+  {
+    "word": "macrocephalic,-lous",
+    "definition": "(makrosefalik,-las), adjs. luh lai, luh seih. macrocephaly, n. luh-lai pahlawna."
+  },
+  {
+    "word": "macrocosm",
+    "definition": "(makrokozm), n. alei nata vâ liata ypa hmo zydua. macrocosmic, adj. hmototie chôchâh. macrocomically, adv."
+  },
+  {
+    "word": "macron",
+    "definition": "(makron), n. thluseih, hawrawh chô thluseih."
+  },
+  {
+    "word": "macropod",
+    "definition": "(makropod), adj., n. phei seihpa, dovâh âsâhpa, byhpi nata pheipazah seihpa."
+  },
+  {
+    "word": "macropterous",
+    "definition": "(makroptiras), adj. mathlaw seih."
+  },
+  {
+    "word": "mythology",
+    "definition": "(mitholadji), n. hlâno phôhpa laichadaina. mythological, adj. hlâno phôhpa hmo, hmo hmeiseih leipa kyh. mythologist, n. hlâno phôhpa thâtih athaipa chyhsa."
+  },
+  {
+    "word": "myxomatosis",
+    "definition": "(miksoumatousis), n. pazupipa pasana hri âpaka theipa chi."
+  },
+  {
+    "word": "n",
+    "definition": "(en). Abbrev. for name, neuter, note, and."
+  },
+  {
+    "word": "N, n",
+    "definition": "(en), n. English alphabet liata hawrawh hleipalihna."
+  },
+  {
+    "word": "naartje",
+    "definition": "See nartje."
+  },
+  {
+    "word": "nab",
+    "definition": "(nab), v. (colloq) kupatu, hmo paraopa patu. (He was nabbed by the police). nabber, n. patutuhpa."
+  },
+  {
+    "word": "nabla",
+    "definition": "(nabla), n. ngiana ki thôh hneipa (triangle) paliepalâpa."
+  },
+  {
+    "word": "nabob",
+    "definition": "(nebob), n. nochhilâ râh liata mongyuh hneirôhpa."
+  },
+  {
+    "word": "nacelle",
+    "definition": "(nasel), n. balu zawtheina."
+  },
+  {
+    "word": "nacre",
+    "definition": "(nakar), n. taikuh-lô, taikuh panô, taikuh kyh."
+  },
+  {
+    "word": "nadir",
+    "definition": "(nedir), n. (fig) luhchô dady avâ, âhnai chaina su."
+  },
+  {
+    "word": "naff",
+    "definition": "(naf), adj. pha vei, chhie, khâpatlâh châ vei."
+  },
+  {
+    "word": "nag",
+    "definition": "(nag), v. chyhsa taochheina âbyh, sei, seitia, ra parie, (pasapa) chaih, parâ. nagger, n. seitiatuhpa."
+  },
+  {
+    "word": "nag",
+    "definition": "(nag), n. (colloq) arâ chyhpa chi."
+  },
+  {
+    "word": "naga",
+    "definition": "(naga), n. (sanskrit) parih, chyphao, hindu parih khazohpa."
+  },
+  {
+    "word": "nagana",
+    "definition": "(nagana), n. sahroh pasana hri chikha."
+  },
+  {
+    "word": "naif/naive",
+    "definition": "(naif, naiv), adjs. palôhhâh vei, nawh. naively, adv."
+  },
+  {
+    "word": "nail",
+    "definition": "(neil), n. pahto, thuakhai. v. khai, khaipâ. nailery, n. thuakhai taona su. nail brush, n. pahto pathaina. nail polish, n. pahto hniapa rôh."
+  },
+  {
+    "word": "naive",
+    "definition": "See naif."
+  },
+  {
+    "word": "naivety",
+    "definition": "(naivti), n. palôhhâh leina."
+  },
+  {
+    "word": "naked",
+    "definition": "(neikid), adj. thluahrua, sasaih, tlatlai. nakedly, adv. nakedness, n. thluahruazie. naked-eye, mo cheingei, mo tlatlai, (mobaina hmâpa châ vei)."
+  },
+  {
+    "word": "name",
+    "definition": "(neim), n. moh, mohphana, mohpathâhna. v. moh bi, moh chakhuah, moh chakhi. nameless, adj. moh hnei vei. namely, adv. cha chuh, chahzy chuh, cha mohzy cha. namesake, n. moh pachyuhna. in name, adv. amohtata. in the name of, mohta, ano mohta. proper name, n. moh tlatlaipa."
+  },
+  {
+    "word": "nana",
+    "definition": "(nana), n. ahrupa, angâpa."
+  },
+  {
+    "word": "nana",
+    "definition": "See nanny."
+  },
+  {
+    "word": "nancy",
+    "definition": "(nansi), n. (sl) chapaw châ tlôhta chanô nôchâ phaohpa, chaohaohpa."
+  },
+  {
+    "word": "nankeen",
+    "definition": "(nankin), n. pohthâ maihpa."
+  },
+  {
+    "word": "nanny",
+    "definition": "(nani), n. nawhhâtuhpa, miepanô. nanny goat, miepanô, mie chahnôpa."
+  },
+  {
+    "word": "nap1",
+    "definition": "(nap), n. nohchhôta buakhata âmô duapa. v. nohchhôta buakhata âmô dua."
+  },
+  {
+    "word": "nap2",
+    "definition": "(nap), n. poh chakheipa pai chakie paraohpa."
+  },
+  {
+    "word": "napalm",
+    "definition": "(nepalm), n. petrol chahthli bomb taona."
+  },
+  {
+    "word": "nape",
+    "definition": "(neip), n. hnohkhi."
+  },
+  {
+    "word": "napery",
+    "definition": "(neipari), n. dawkâh pohphaw naipa."
+  },
+  {
+    "word": "naphtha",
+    "definition": "(naftha), n. alkatra nata petrol chahthli thata kâ theipa."
+  },
+  {
+    "word": "naphthalene",
+    "definition": "(nafthalin), n. alkatra nata..."
+  },
+  {
+    "word": "obit.",
+    "definition": "abbrev. obituary."
+  },
+  {
+    "word": "obituary",
+    "definition": "(obitiuari), n. athihpa thâtih chyupa châropata pahnosana. adj. athihpa thâtih pahnosana hmo."
+  },
+  {
+    "word": "object",
+    "definition": "(objekt), v. âpyh vei, khoh vei, ei, bie âdyuh. n. hmo hmô theipa nata hria theipa, tao âchhuahpa, hmo pachâpa. objected, adj. âpyh vei, ei, reih-ei. objection, n. âpyh leina, kholeina, bie âdyuhna, eina, reih-eina. objectionable, adj. khochhih vei, pei, ângiachâ vei. objectionably, adv."
+  },
+  {
+    "word": "objective",
+    "definition": "(objektiv), n. tao âchhuahpa, hmotao âchhuahpa. adj. pachâna palôh khôtholâ hmo, a y tlaipa hmo. objectively, adv. objectivity, n."
+  },
+  {
+    "word": "objure",
+    "definition": "(objiur), v. chhiesakhâh, chhiesana bietai ta chahry, zachhih kawpata haw. objuration, n. chhiesakhâhna."
+  },
+  {
+    "word": "objurgate",
+    "definition": "(objiurgeit), v. chhorei, ra, pasipa-ao. objurgation, n. chhoreina, rana, rarôna, pasipa-aona."
+  },
+  {
+    "word": "oblate",
+    "definition": "(obleit), adj. hlô âpaih, hlô phia. oblateness, n. hlô âpaihzie/phiazie."
+  },
+  {
+    "word": "oblation",
+    "definition": "(obleisan), n. Khazohpa hmo hlâpa, hmo hlâna."
+  },
+  {
+    "word": "obligate",
+    "definition": "(obligeit), v. (hmotaopa dâh ta chyhsa) chahry, âhnaw, taopakhoh. obligation, n. taopakhona, hmopha tao chyhsa chô liata byuhna, chyhsa bao hohna. obligatory, adj. bao khona kyh, taopakhona kyh."
+  },
+  {
+    "word": "oblige",
+    "definition": "(oblaidj), v. chyhsa hmotaopa khoh, (khokheina) âhnaw, pasaipa-i, leitheilei, tao byuh. obliging, adj. chyhsa bao hoh. obligingly, adv. obligement, n. chyhsa hmotaopa khona."
+  },
+  {
+    "word": "oblique",
+    "definition": "(oblik), adj. âviah, âsia, âchanei, âdo vei, pah-lâ vei. obliquely, adv. obliqueness, n. âviahzie, âsiazie. obliquity, n. âviahna, âsiana."
+  },
+  {
+    "word": "obliterate",
+    "definition": "(oblitareit), v. âhnaopathai, hru, hrupathai, phiepathai, phiepakhlei. obliteration, n. apuapa hrupathaina, hniehnôh phiepakhleina."
+  },
+  {
+    "word": "oblivion",
+    "definition": "(oblivian), n. myhlana, pahno khao leina, âthei leina. oblivious, adj. myhla thai, pahno khao vei, âthei vei. obliviously, adv. obliviousness, n."
+  },
+  {
+    "word": "oblong",
+    "definition": "(oblong), adj. (hmo kipalihpa) tôh seih, atôh lâta seih. n. hmo kipalihpa a tôh lâta seihpa."
+  },
+  {
+    "word": "obloquy",
+    "definition": "(oblokuai), n. riethlana, nohpazaona, zyupalâna, mohpachhiena, zawpi hryta reipachhiena pasapa."
+  },
+  {
+    "word": "obnoxious",
+    "definition": "(obnokshias), adj. âhaochhih, khochhih vei, pualei, pasichhih, no-aichhih. obnoxiously, adv. obnoxiousness, n. âhaochhihzie, pasichhihzie, pualeizie."
+  },
+  {
+    "word": "oboe",
+    "definition": "(obou), n. tôphipa chikha."
+  },
+  {
+    "word": "obscene",
+    "definition": "(obsin), adj. (chhâpabie) reikah pualei, nôchâ pua, âtyuhpahru, nothlahpa pualei, nozachhih. obscenely, adv. obsceneness, n. (chhâpabie, nôchâ, nothlahpa) pualeizie. obscenity, n. chhâpabie pualeina, nothlahpa thluahruana."
+  },
+  {
+    "word": "obscure",
+    "definition": "(abskiuar), adj. siahlia vei, âlâpasia vei, sianônâ vei, ânyuthu, pahno zawrâpa châ vei, âchhoh, âthoh. v. pahli, pahlikhâh, pasiepanô. obscured, adj. sia vei, siahlia vei, ânyuthu. obscurity, n. ânyuthuna, âlâpasia leina."
+  },
+  {
+    "word": "obsecrate",
+    "definition": "(obsikreit), v. haw, hiah, ânaoh, thlahchhâ. obsecration, n. hiana, hawna, ânaohna, thlahchhâna."
+  },
+  {
+    "word": "obsequies",
+    "definition": "(obsikuiz), npl. athihpa ri pabuna nata âpakhyna."
+  },
+  {
+    "word": "obsequious",
+    "definition": "(obsikuais), adj. zakheichhih, chyhsa ry âdaoh, âreisitupâ, âpanawhtupâ. obsequiously, adv. obsequiousness, n."
+  },
+  {
+    "word": "observable",
+    "definition": "See observe."
+  },
+  {
+    "word": "P, p",
+    "definition": "(pi), n. English alphabet liata hawrawh hleicharuna."
+  },
+  {
+    "word": "pa",
+    "definition": "(pa), n. (colloq) paw awna, ei pâ."
+  },
+  {
+    "word": "pace",
+    "definition": "(peis), n. keihkha chakâ, keihkha, keihkha chakapâ pâhsizie, lâsie chatiliezte, hmahsiezie. v. chakâ, phei chakâ, sie laih. paced, adj. keihchakâ. pacy, adj. siecharâ, chatlie, keih rai charâ. set the pace, siechatliezie pamosa."
+  },
+  {
+    "word": "pachy-",
+    "definition": "(peiki-, prefix) chha, chhakatô, vo chha, tahna."
+  },
+  {
+    "word": "pachyderm",
+    "definition": "(peikidarm), n. râhsa vo chhapa, (masiah, kaorâ chi maih)."
+  },
+  {
+    "word": "pacific",
+    "definition": "(pasifik), adj. âthlih, âthloh, âchalih, dia, sidia, thlalôh âchhih, âryhna khoh. pacification, n. reiparyhna, chalihsana, thlalôh âchhihna. pacificate, v. reiparyh, bie padiasa."
+  },
+  {
+    "word": "pacifism",
+    "definition": "(pasifizm), n. âdyuhna pahlei khona. pacifist, n. âdyuhna pahlei khohpa chyhsa."
+  },
+  {
+    "word": "pacify",
+    "definition": "(pasifai), v. reipadyh, reiparyh, iekhyhna padiasa, padyhparyh. pacifiable, adj. reiparyh thei, iekhyhna padia thei. pacifier, n. reipadyhtuhpa, biechhie paryhtuhpa, reiparyhtuhpa."
+  },
+  {
+    "word": "pack1",
+    "definition": "(US) packet (pek, paket), n. hmo chatypa sô, byh, ty, tô. a pack of cigarettes, sikari pahlyna byh. a pack of hounds, râhkhieng isopazy. a pack of thieves, paruhmâhpa sahlao. package, n. asôta chatyna, atyta chatyna. packet, n. sôchyhpa, tychyhpa. packing, n. asôta chatyna, atyta chatyna. pack-horse, n. arâ hmophaona sykha. pack-ice, n. ti chô liata dâhhaw âpah-tlopa. packing case, n. pâhsaw byh, hmo khôna byh."
+  },
+  {
+    "word": "pack2",
+    "definition": "(pak), v. asôta chaty, atyta chaty, atôta chaty, thobyh liata khôpakhy, hnaohpakhy, thuabaoh liata theilâpa khôpabohsa."
+  },
+  {
+    "word": "pact",
+    "definition": "(pakt), n. âdyhna, âryhna, âparyhna, âryhna biehrai."
+  },
+  {
+    "word": "pad",
+    "definition": "(ped), v. padiakhâh, hmonaipata padiakhâh, (ngiatlâh) padia. n. hmo naipa nata chhapa, padiakhâhna hmonaipa, (âkhaihna) ngiahly pahlyna, sahroh pheipazah ry naipa. padding, n. hmonaipa padiakhâhna."
+  },
+  {
+    "word": "paddle",
+    "definition": "(pedl), n. balyh hiana sôh hmao phiapa. v. balyh hia, ti liata pheita sie, ngiahkâ liata pheita sie."
+  },
+  {
+    "word": "paddock",
+    "definition": "(pedok), n. arâ so pahmaohna mua chyhpa arâ or motor râpasua hlâta so pahmaohna su."
+  },
+  {
+    "word": "paddy1",
+    "definition": "(pedi), n. sâh, sâhhmô, sahho, sawphao, sâhkô. paddy field, n. sâh chheina su, sâhthih su."
+  },
+  {
+    "word": "paddy2",
+    "definition": "(pedi), n. (colloq) hiehâhpa, pathi-iapa, pathichhhiepa."
+  },
+  {
+    "word": "paddy3",
+    "definition": "(pedi), n. Irish chapaw awna moh."
+  },
+  {
+    "word": "padlock",
+    "definition": "(pedlok), n. ochhi hraina tâlâ phiapa chi."
+  },
+  {
+    "word": "padre",
+    "definition": "(pedrei), n. pheisaih pastor."
+  },
+  {
+    "word": "paean",
+    "definition": "(pian), n. tiahna rônahpa âlyna hla, reithaina hla, âlyna hla."
+  },
+  {
+    "word": "paed-, paedo-",
+    "definition": "(peid, -do, prefix) chapaw hawti, tahna."
+  },
+  {
+    "word": "paederasty",
+    "definition": "(piderasti), n. chapaw hawti parâna. paederast, n. chapaw hawti parâpa, chyhsa parâpa."
+  },
+  {
+    "word": "paediatrics",
+    "definition": "(pidiatriks), n. hawtipa pasana kyh âchuna. paediatrician, n. hawtipa pasana athaipa dawhty."
+  },
+  {
+    "word": "paedophilia",
+    "definition": "(pidofilia), n. hawti âphei-khei khona."
+  },
+  {
+    "word": "quadrinomial",
+    "definition": "(kwadrinomial), adj. daihiti eipalih taо, eipalih liata pachhaih."
+  },
+  {
+    "word": "quadruped",
+    "definition": "(kwadrupid), n. râhsa pheipâlih hneipa."
+  },
+  {
+    "word": "quadruple",
+    "definition": "(kwadrupl), adj. aliepalih, bo nanopa sâpalih hnei, liepalihta hluh. n. nawhbaw liepalihta hluhpa. v. sâpalihta papôhsa."
+  },
+  {
+    "word": "quadruplet",
+    "definition": "(kwadruplit), n. taw sâpalih hry liata sâkha, papalih kiatheipa thuârâ."
+  },
+  {
+    "word": "quadruplicate",
+    "definition": "(kwadruplikeit), adj. copy sâpalihta chhuhpapua. n. copy sâpalihna. v. copy sâpalih chhuhpapua."
+  },
+  {
+    "word": "quadruplicity",
+    "definition": "n."
+  },
+  {
+    "word": "quaestor",
+    "definition": "(kwaestar), n. hlâno Rome sawkhâ baohsâpa."
+  },
+  {
+    "word": "quaff",
+    "definition": "(kwaf), v. kawhkhata ti hluhpi doh, kawhkhata charua."
+  },
+  {
+    "word": "quagmire",
+    "definition": "(kwagmaiar), n. chiatlao âneihna su, chiatlao su."
+  },
+  {
+    "word": "quail",
+    "definition": "(kweil), n. mamo, vanô chi. v. nopahko, china hmia phaoh, âhro, âhroda."
+  },
+  {
+    "word": "quaint",
+    "definition": "(kweint), adj. mo la, mopha, mokhochhih. quaintly, adv. quaintness, n. mophazie."
+  },
+  {
+    "word": "quake",
+    "definition": "(kweik), v. alosih, alei âchatho. n. (collog) alosihpa."
+  },
+  {
+    "word": "Quaker",
+    "definition": "(kweikar), n. Krizyhpa py (Society of Friends) George Fox paduapa (kô 1624-1691)."
+  },
+  {
+    "word": "qualifiable",
+    "definition": "adj. patlohsa thei."
+  },
+  {
+    "word": "qualification",
+    "definition": "(kwalifik eishan), n. thaina, tlohna, tlohphana, tlâhchâna, châthaina. (Previous teaching experience is a necessary qualification for the post)."
+  },
+  {
+    "word": "qualified",
+    "definition": "adj. tloh, thai, pha, tlophha, tlâhchâ."
+  },
+  {
+    "word": "qualifier",
+    "definition": "n. atlâhchâpa, tlohtuhpa."
+  },
+  {
+    "word": "qualify",
+    "definition": "(kwalifai), v. tloh, thai, pha, tlophha, tlâhchâ, patlohsa. (The training course will qualify you for a better job)."
+  },
+  {
+    "word": "qualifying",
+    "definition": "n. tlohna, tlohphana."
+  },
+  {
+    "word": "qualitative",
+    "definition": "(kwaliteitiv), adj. tlohna kyh, châna hmo dy. qualitatively, adv."
+  },
+  {
+    "word": "quality",
+    "definition": "(kwaliti), n. phazie, phanadâh, phazie thliena, nôchâphana, zie. (this paper is very good quality)."
+  },
+  {
+    "word": "qualm",
+    "definition": "(kwalm), n. pachâphâ leina, pachâchhiena, âlôh ngâh leina, palôh ngiaryh leina, palôhsasina, pasa patohna."
+  },
+  {
+    "word": "quandang",
+    "definition": "See quandong."
+  },
+  {
+    "word": "quandary",
+    "definition": "(kwandari), n. pachâna pahno thai leina, noraihna, duahmo noraih chhihna."
+  },
+  {
+    "word": "quandong",
+    "definition": "(kwandong), n. Australia râh tho chikha moh."
+  },
+  {
+    "word": "quango",
+    "definition": "(kwango), n. zawpi ryureina sawkhâ (py chyhsa deita rai piepa)."
+  },
+  {
+    "word": "quant",
+    "definition": "(kwant), n. arâ chô tawhta â-khaihna sôh, ratlyhzawna liata hmâpa ratlyh."
+  },
+  {
+    "word": "quanta",
+    "definition": "pl. of quantum."
+  },
+  {
+    "word": "quantify",
+    "definition": "(kwantifai), v. hluhzie liata reih."
+  },
+  {
+    "word": "quantitative",
+    "definition": "(kwantiteitiv), adj. hluh-nazie chôchâh. quantitatively, adv."
+  },
+  {
+    "word": "quantity",
+    "definition": "(kwantiti), n. hluhzie, hluhna. (his reputation as a writer is based more on quantity than on quality)."
+  },
+  {
+    "word": "quantum",
+    "definition": "(kwantam), n. khohluhna zie, ângiah hluhna zie. quanta, pl."
+  },
+  {
+    "word": "quarantine",
+    "definition": "(kwarantin), n. balyh or chyhsa su dânthlohpa liata patâhsa theinadâh pasana hri âpaka theipa âvaihna châta, (noh 40 chhôh patâhpa)."
+  },
+  {
+    "word": "quark",
+    "definition": "(kweirk), n. (Physics) hmo dikaripa tlawh leilô âvaw paduana thabypa hawhta pachâpa."
+  },
+  {
+    "word": "radio-telegraphy",
+    "definition": "(reidio-telegrafi), n. radio-ta thuari bie paphaopa."
+  },
+  {
+    "word": "radio-telephony",
+    "definition": "(reidio-telefoni), n. radio ta telephone biechhona."
+  },
+  {
+    "word": "radio-theraphy",
+    "definition": "(reidio-therapi), n. x-ray nata radiation hmâpata pasana mohôh dân. radio-therapist, n. radio-theraphy athaipa chyhsa."
+  },
+  {
+    "word": "radioactive",
+    "definition": "(reidioaktiv), adj. atom zôh papua thei, hmo dikaripa electric raihria taopapua thei. radioactivity, n."
+  },
+  {
+    "word": "radiogram",
+    "definition": "(reidiogram), n. py chhôh nothlahpa lana khaw, x-ray nothlahpa, radio nata dawhhlasana pakaohpa."
+  },
+  {
+    "word": "radiograph",
+    "definition": "(reidiograf), n. x-ray nothlah lana. radiography, n. x-ray nothlahpa lapa taopapuana. radiographer, n. x-ray nothlah latuhpa."
+  },
+  {
+    "word": "radiology",
+    "definition": "(reidioladzi), n. x-ray nata radiation lâchhâh hmo âchuna. radiologist, n. x-ray rai athaipa chyhsa. radiological, adj. radiologically, adv."
+  },
+  {
+    "word": "radioscopy",
+    "definition": "(reidioskopi), n. x-ray-ta mohpasiana. radioscopic, adj."
+  },
+  {
+    "word": "radish",
+    "definition": "(radish), n. âhrâ thabia saihpa."
+  },
+  {
+    "word": "radium",
+    "definition": "(reidiam), n. atom zôh papua theipa thua, radio-active hneipa thua kawna cancer pasapa mohôhna."
+  },
+  {
+    "word": "radius",
+    "definition": "(reidias), n. hmo roh pahhlôpa lialiah tawhta hreipakhâhpa seihnalâ âraoh khaipa, (thuarâ phei liata thuari hreipakhâhpa), radius pahlyna rakha. radii, pl."
+  },
+  {
+    "word": "radix",
+    "definition": "(reidiks), n. zôh, bie thabypa, ngiana nothlahpa hmo thabypa hawhta hmâpa. radices, pl."
+  },
+  {
+    "word": "radome",
+    "definition": "(reidoum), n. radar khuhlôh vei pabohsana."
+  },
+  {
+    "word": "radon",
+    "definition": "(reidon), n. atom zôh papuasapa ziza, tîhu rohchhiepa."
+  },
+  {
+    "word": "RAF",
+    "definition": "abbrev. Royal Air Force."
+  },
+  {
+    "word": "raffia",
+    "definition": "(rafia), n. sarisâ, bakô hyh liata sarisâ."
+  },
+  {
+    "word": "raffish",
+    "definition": "(rafish), adj. angâpa hmia phaoh, zachhih vei, âhrâhpata chyhsa palôh-la tlôh. raffishly, adv. raffishness, n."
+  },
+  {
+    "word": "raffle",
+    "definition": "(rafl), n. lottery hmâpata hmo zuana, phusâ hnawh châta lottery zuana. v. lottery hmâpata hmo zuah."
+  },
+  {
+    "word": "raft",
+    "definition": "(raft), n. apâ, thoty chatypa apâ. raftsman, n. apâhiatuhpa."
+  },
+  {
+    "word": "rafter",
+    "definition": "(raftar), n. opasu, seihhâh, (keipai, chahri). v. opasu haih."
+  },
+  {
+    "word": "rag",
+    "definition": "(reg), n. pohchypa, pohchychhiepa, pohpai-âna. rags, npl. chysia chypa, viahkao chypa, (derog) thâthitbu."
+  },
+  {
+    "word": "rag",
+    "definition": "(reg), n. chieh-leipazy baona phusâ hmôna hnawh âchuhaipazy taopa, College/University thokha liata chyhsa hmiathiehpa taosalana. ragging, n. taosalana. ragged school, n. (reih parohpa) rietheipa sahlao siku."
+  },
+  {
+    "word": "ragamuffin",
+    "definition": "(ragamafin), n. chysia chypa nata puapata atobipa chyhsa."
+  },
+  {
+    "word": "rage",
+    "definition": "(reidz), n. hiehâh pasapa, pathi-ia kawna, byuhna pasapa. v. hiehâhpasa, pathi-ia ngâsâ. raging, adj."
+  },
+  {
+    "word": "ragged",
+    "definition": "(ragid), adj. chysia chypa nata pualeipa, dakidakôh, chahrâh, mih vei. raggedly, adv. raggedness, n."
+  },
+  {
+    "word": "ragged",
+    "definition": "adj. dakidakôh, chysia chy, pohchy. rag doll, n. poh maitanô."
+  },
+  {
+    "word": "raglan",
+    "definition": "(raglan), n. viahkao rao lâchhâhta abâh typa."
+  },
+  {
+    "word": "ragout",
+    "definition": "(ragu), n. sa nata âhna chhôpa."
+  },
+  {
+    "word": "ragtime",
+    "definition": "(ragtaim), n. jazz lâna hawhpa hla nata music."
+  },
+  {
+    "word": "raid",
+    "definition": "(reid), n. chariah chhona, âpâchyh vêi nota chyhsa o hraona, eikhapita beina. v. chariah chho, eikhapita chariah bei. raider, n. chariah chhotuhpa chyhsa."
+  },
+  {
+    "word": "rail",
+    "definition": "(reil), n. bâhkhâh, ngiathliah dôhna."
+  },
+  {
+    "word": "sleepy",
+    "definition": "See sleep."
+  },
+  {
+    "word": "sleepy",
+    "definition": "adj. moku. sleepily, adv. sleepiness, n. mokuna, mokuzie. sleeper, n. tlâhbalyh âmôna rakhô. go to sleep, v. âmô, âzia. sleepless, adj. âmô vei, mokuhsaih. sleep­lessly, adv. light-sleep, adj. mokuhpasôh. over-sleep, adj. âmôkua. deep-sleep, adj. mokuhthu, mokuhpahâh. sleep-walk, v. thyuchamaoh. put to sleep, v. pamô, pazia. sleeping-bag, n. âmôna sykhao. sleeping-pill, n. âmôna thohna."
+  },
+  {
+    "word": "sleet",
+    "definition": "(slit), n. dâhhaw tlapa, vâsua nata pareih tlapa. v. suah."
+  },
+  {
+    "word": "sleeve",
+    "definition": "(sliv), n. viahkao bâh. sleeveless, adj. viahkao bâh hnei vei."
+  },
+  {
+    "word": "sleigh",
+    "definition": "(slaei), n. tawlailih dâhhaw chô liata arâta âdaophiapa. v. chahawhpa tawlailih kiah."
+  },
+  {
+    "word": "sleight",
+    "definition": "(slait), n. ku papie chatliepata molie or dôvei thaina."
+  },
+  {
+    "word": "slender",
+    "definition": "(slendar), adj. chhieh-rualuah, chhieh, thlyhri, zaoh, zaohkizaohkâ, bâhta, hluh vei. slenderly, adv. slenderness, n. thlyhrizie. slenderize, v. pachhiehsa."
+  },
+  {
+    "word": "slept",
+    "definition": "pt., pp. of sleep."
+  },
+  {
+    "word": "sleuth",
+    "definition": "(sluth), n. moleipa mohpathli laihtuhpa police. sleuth-hound, n. isopa rohpatluah thaipa."
+  },
+  {
+    "word": "slew",
+    "definition": "(slu), v. pahieh, suhrolâ pahei. n. suhrolâ paheisana."
+  },
+  {
+    "word": "slew",
+    "definition": "pt. of slay."
+  },
+  {
+    "word": "slice",
+    "definition": "(slais), n. viahchhâ tlâ, viahchhâ kâ. v. viahchhâ rieh/cha-â. slicing, n."
+  },
+  {
+    "word": "slick",
+    "definition": "(slik), adj. (collog) mih, mihtlaoh, pahhnia, reikâh pahhnia, âsaomâ, piehpie thai, sopiehpie. v. pamih, pamihpatlaoh. n. (ti sathaw) chabeipa. slickly, adv. slickness, n."
+  },
+  {
+    "word": "slid",
+    "definition": "pt., pp. of slide."
+  },
+  {
+    "word": "slide",
+    "definition": "(slaid), v. (slid, pt. pp) âkhao, âkhaopahri, pakhaosa, tlypahri, (leizaih) lia. n. âkhaona, âchhakhaona, leizaih liapa, dâhhaw âkhaopa, baisakaw papuapa, molaitheina thlâlâphia. land-slide, n. chano liapa, chamo chopa. sliding, n. âkhaona, âchhakhaona."
+  },
+  {
+    "word": "slight",
+    "definition": "(slait), adj. didua, dadieh, chhieh, vivâh, bâhta, phiephu. v. âpâpeisa vei, tiana, noma, mohnao. n. nomana."
+  },
+  {
+    "word": "slily",
+    "definition": "See sly."
+  },
+  {
+    "word": "slim",
+    "definition": "(slim), adj. chhieh, chhieh-rualuah, chhieh-rolo, thlyhri, zaoh, sopiehpie. v. pachhiehsa, (office raihriapazy) pachyh via. slimly, adv. slimness, n. chhiehzie, chhieh-rolozie."
+  },
+  {
+    "word": "slime",
+    "definition": "(slaim), n. chahnieh-ie, chiatlao âkiapa, tihniehnupa. slimy, adj. âkia, tihniehnu, âneih. sliminess, n. âkiazie."
+  },
+  {
+    "word": "slimy",
+    "definition": "See slime."
+  },
+  {
+    "word": "sling",
+    "definition": "(sling), n. khairie or savo cheisiah, hmobaina ri charipa, (ku pasapa â-âona) pohthladi. v. siah, (ku pasapa) â-ao."
+  },
+  {
+    "word": "slink",
+    "definition": "(slingk), v. (slunk, pt., pp) noza vâta azyhtata sie, arunga lâta sie. slinky, adj. (chanô chysia) âcha-ie."
+  },
+  {
+    "word": "slip",
+    "definition": "(slip), v. âtai, âchhakhao, pao, ârâparu, (meithei) patlamaw. n. tao tlamawpa, âchhakhaopa. slip of tongue, biereih chhei. land-slip, n. chanoliapa. slippy, slippery, adjs. pahhnia, mih, chatlie. slipperiness, n. pahhniazie, mihzie."
+  },
+  {
+    "word": "slip",
+    "definition": "(slip), n. châhna phia liata achyuta châropa."
+  },
+  {
+    "word": "slippage",
+    "definition": "(slipeidz), n. âchhuahna tlohpha leina, hmo mâ tlapahnaina."
+  },
+  {
+    "word": "slipper",
+    "definition": "(slipar), n. pheiky ri âchapiepa."
+  },
+  {
+    "word": "slippery",
+    "definition": "See slip."
+  },
+  {
+    "word": "slippy",
+    "definition": "See slip."
+  },
+  {
+    "word": "slipshod",
+    "definition": "(slipshod), adj. duathlâ, âtobi diathlâ, taochakhyh."
+  },
+  {
+    "word": "slit",
+    "definition": "(slit), n. aseihpi âcharohpa, âchahripa."
+  },
+  {
+    "word": "throne",
+    "definition": "(thron), n. beidyuchhai. the throne, n. bei ryureina, bei biehneina, âbeina. come to the throne, v. âbei, beita âtyuh."
+  },
+  {
+    "word": "throng",
+    "definition": "(throng), n. zawpi, zawpisâhpi, zawpi pôhpak h. v. zawpi pôhpak h y."
+  },
+  {
+    "word": "throstle",
+    "definition": "(throsl), n. pavaw sâreih ângiapa (same as thrush)."
+  },
+  {
+    "word": "throttle",
+    "definition": "(throtl), n. raoriepa, engine lâ petrol ângiana khaoh pamaina, tîhu zâna khaoh pamaina. v. raorie, hu chaohsa, khaohpamai. throttle down, petrol achyh via papuasa."
+  },
+  {
+    "word": "through",
+    "definition": "(thru), prep., adv. siepakhô, siepahlie, pahlie, puapahlie, chhityu, pyu, pyu-pahlie, (daihti) tlykha."
+  },
+  {
+    "word": "throughout",
+    "definition": "(thru-aut), prep., adv. (lâ-thlôh) tlykha, tlaitlâ duata, chhôh zyd ua, thaby tawhta chhâna taih, râkhalâ tawhta râkhalâ chhâna taih, zâcho chhôh zyd ua, khataih liata rai."
+  },
+  {
+    "word": "throve",
+    "definition": "pt. of thrive."
+  },
+  {
+    "word": "throw",
+    "definition": "(thraw), v. (threw, pt. thrown, pp), thy, vawh, pazaw, pathluah, (chhaoh-lô) dei, (arâ ky chô tawhta) chatho pathlah. throw a party, (sl) pati nie pahmaohna tao. throw about, thy chakhyh. throw away, v. thy syulyu, âpâhleipahlô chakhyh."
+  },
+  {
+    "word": "thrum",
+    "definition": "(thram), v. (totâ) chapie chakhyh, tô chakhyh. n. (totâ) tô chakhyhpa, tô chakhyhpa pyu."
+  },
+  {
+    "word": "thrush",
+    "definition": "(thrash), n. pavaw chyhpa sâreih ângiapa, hawasâih paleih phawhpa nata rao pasana."
+  },
+  {
+    "word": "thrust",
+    "definition": "(thrast), v. (khaoh, byhchhôh) chapao, charao, chahraoh, saoh, dy, vieh, chhô, nâ, nâpâ, chahâthlu, patâhsa raruah. n. thapita viehna, (hmiahaopa, châriah) tôhpasysana. thrust oneself in, chahraochatôh, âchhaohdaolaoh. thrust away, chatipakhu. thrust upon, papyhsa rarauh, nâpâ."
+  },
+  {
+    "word": "thud",
+    "definition": "(thad), n. (hmo naipa) chheipa pyu, (hmo âhripa) paopa pyu, rawbuh pheiky tlypa pyu. v. chahawhta pyu paro."
+  },
+  {
+    "word": "thug",
+    "definition": "(thag), n. phihhmâhpa, chyhsa hrao hmâhpa, paru hmâhpa, chyhsa thie âpâpiesa leipa. thuggery, n. phihhmâhna, hrao hmâhna, paru hmâhna."
+  },
+  {
+    "word": "thuggee",
+    "definition": "n. India râh phihhmâhpa sahlao raihria."
+  },
+  {
+    "word": "thumb",
+    "definition": "(tham), n. kupi. v. kupi chaluah chie, kupi chahnao thlu. thumb print, n. kupi chahnaopa hnie âhnopa."
+  },
+  {
+    "word": "thump",
+    "definition": "(thamp), v. thapita âchô, âchô-khy. n. thapita âchôpa, âchôpa pyu. thumping, adj. laikatô, pahreih ngâsâ. adv. notalei."
+  },
+  {
+    "word": "thunder",
+    "definition": "(thander), n. tôkalôhpa, tôkalôh âthuapa. v. tôkalôhpa âthua, thata daih."
+  },
+  {
+    "word": "thunder-storm",
+    "definition": "n. thlih/vâsua pachie nata pareih chhaopa."
+  },
+  {
+    "word": "thunderbolt",
+    "definition": "n. pachie, pachie tlapa, (fig) hmo rarôh-ypa rakhuh vaw tlôpa."
+  },
+  {
+    "word": "thunderclap",
+    "definition": "n. tôkalôhpa âthuapa."
+  },
+  {
+    "word": "thundering",
+    "definition": "(thandaring), adj. laikatôh, rônah ngaita."
+  },
+  {
+    "word": "thunderous",
+    "definition": "adj. tôkalôhpa thata âthua, pyuru. thunderously, adv."
+  },
+  {
+    "word": "thunderous",
+    "definition": "See thunder."
+  },
+  {
+    "word": "thunderstruck",
+    "definition": "adj. no-âh tah kaw."
+  },
+  {
+    "word": "thurible",
+    "definition": "(thiuribl), n. chhyna-o liata rohpahâhpa raona beih."
+  },
+  {
+    "word": "Thurs.",
+    "definition": "abbrev. Thursday."
+  },
+  {
+    "word": "Thursday",
+    "definition": "(tharzdi), n. Pohbieh Nôh."
+  },
+  {
+    "word": "thus",
+    "definition": "(dhas), adv. chahawhta, hehawhta, chachatana cha. thus far, heuiâhpârâh, chatichasâ."
+  },
+  {
+    "word": "thwack",
+    "definition": "(thwak), v. sôsita chhei, sômahsi si ta pazei. n. sôsi ta pazeipa, sômahsi si ta pazeipa pyu."
+  },
+  {
+    "word": "ult.",
+    "definition": "abbrev. ultimo."
+  },
+  {
+    "word": "ulterior",
+    "definition": "(altiariar), adj. khôtho lâ, khô lâ pachâpa khô lâ. ulteriorly, adv."
+  },
+  {
+    "word": "ultimate",
+    "definition": "(altimeit), adj. chhâpachiena lia, chhâchâina lia, a hnoh lâsâta, thabychai, chai. ultimately, adv. ultimacy, n. chhâpachiena."
+  },
+  {
+    "word": "ultimatum",
+    "definition": "(altimeitam), n. bie chhâna, biechhie chhâna reipa. ultimata, pl."
+  },
+  {
+    "word": "ultimo",
+    "definition": "(altimo), adv. thla parohpa or thla hmiatuapa liata."
+  },
+  {
+    "word": "ultra-",
+    "definition": "(prefix), âdaihna khua pahno vei, tahtupa, laothao, alaikhôpata, tahna."
+  },
+  {
+    "word": "ultramarine",
+    "definition": "(altramarin), n., adj. rôh nohpa pasôh kaw."
+  },
+  {
+    "word": "ultramontane",
+    "definition": "(altramontein), adj. ngiâpâna kyh liata Pope biehneina pasâhsa or âpyh."
+  },
+  {
+    "word": "ultrasonic",
+    "definition": "(altrasonik), adj. pyu nahta theiphana hlâta chatlie via, thei hmâ leipa."
+  },
+  {
+    "word": "ultrasound",
+    "definition": "(altrasaund), n. nahta thei hmâ leipa pyu."
+  },
+  {
+    "word": "ultraviolet",
+    "definition": "(altravâialit), adj. motâkâdipa hmo, hmô thei leipa hmo, noh thlaraw pa khôlâ hmo. ultraviolet rays, noh thlaraw hmô thei leipa, vo liata hmo taotheina hneipa."
+  },
+  {
+    "word": "ultravires",
+    "definition": "(altravairez), adj. (Lat) hmo taotheina khôlâ."
+  },
+  {
+    "word": "ululate",
+    "definition": "(iululeit), v. i pawwawh, thapita â-aoh, thata cha, chasâh, awhsâh. ululation, n. thapita sâna/chana."
+  },
+  {
+    "word": "um",
+    "definition": "(am), interj. biereipa bâhta cha-ohpa chi."
+  },
+  {
+    "word": "umbel",
+    "definition": "(ambal), n. pawpi âpâchhaohpa chi. umbellate, adj. pawpi âpâchhaoh."
+  },
+  {
+    "word": "umber",
+    "definition": "(ambar), n. rôh asaihyhpa. burnt umber, saihpa-uh. umbery, adj. asaihyhpa hmo."
+  },
+  {
+    "word": "umbilical",
+    "definition": "(ambilikal), adj. paliah or paliah ri hmo. umbilical cord, n."
+  },
+  {
+    "word": "umbles",
+    "definition": "(amblz), npl. sâkhih nata sas u chhôrih. umble-pie/humble pie, n. viahchhâ sâkhih pathi pahlaopa."
+  },
+  {
+    "word": "umbra",
+    "definition": "(ambra), n. noh nata thlâpî aopalâpa noh pahlipa. umbral, adj. aopalâpa nohpahlipa hmo. umbrae, umbras, pls."
+  },
+  {
+    "word": "umbrage",
+    "definition": "(ambridz), n. nawh tawna âpasâsana, chhyhthai leina, chyhsa pe-reina."
+  },
+  {
+    "word": "umbral",
+    "definition": "See umbra."
+  },
+  {
+    "word": "umbrella",
+    "definition": "(ambrela), n. nohthy."
+  },
+  {
+    "word": "umpire",
+    "definition": "(ampaiar), n. rifari tôtuhpa, âkhaihna mohpadotuhpa, bieliah reihtuhpa."
+  },
+  {
+    "word": "umpteen/umpty",
+    "definition": "(amptin,-ti), adjs. (sl) hluh, hluhpi, reitiah-lei. umpteen, n., adj. chhâpachiena, reitiah leina."
+  },
+  {
+    "word": "un-",
+    "definition": "(prefix), vei, châ vei, âdo vei, y vei, thei vei, lei, tahna."
+  },
+  {
+    "word": "UN.",
+    "definition": "abbrev. United Nations."
+  },
+  {
+    "word": "unabashed",
+    "definition": "(anabasht), adj. noza vei, thlazoh vei, chihuh vei, palôhdua vei."
+  },
+  {
+    "word": "unabashedly",
+    "definition": "adv."
+  },
+  {
+    "word": "unabated",
+    "definition": "(anabeitid), adj. (thlihpipa) zie-y via hlei vei, pasa thlâh pûy."
+  },
+  {
+    "word": "unable",
+    "definition": "(aneibl), adj. (unable to) thei vei, taothei vei. inability, n. theileina."
+  },
+  {
+    "word": "unabridged",
+    "definition": "(anabridzd), adj. thâthî pachhôh via hlei vei."
+  },
+  {
+    "word": "unacceptable",
+    "definition": "(anakseptabl), adj. âpyh theipa châ vei, âpyh tlâhchâ vei. unacceptably, adv."
+  },
+  {
+    "word": "unaccompanied",
+    "definition": "(anakampanid), adj. kaolôh hnei vei, sielâh hnei vei."
+  },
+  {
+    "word": "unaccountable",
+    "definition": "(anakauntabl), adj. reih theipa châ vei, reihpasia theipa châ vei. unaccountably, adv."
+  },
+  {
+    "word": "unaccounted",
+    "definition": "adj. reihpasia pa châ vei."
+  },
+  {
+    "word": "unaccustomed",
+    "definition": "(anakastamd), adj. â-paoh vei, âpaoli mâhvei, rythypata hnei..."
+  },
+  {
+    "word": "vacillate",
+    "definition": "(vasileit), v. âchalyu, âchalyuchali, áhuary, palôh thlaparie, palôh lâlao, palôh riari. vacillation, n. âchalyuna, áhuaryna, palôh riarina. vacillator, n. pachâdâh pananotuhpa."
+  },
+  {
+    "word": "vacuity",
+    "definition": "(vakuiti), n. aruana, ruarâna, palôh hnei leina, so leina. vacuous, adj. rua, palôh hnei vei, so vei. vacuously, adv. vacuousness, n."
+  },
+  {
+    "word": "vacuum",
+    "definition": "(vakium), n. ziza ruana su."
+  },
+  {
+    "word": "vacuum cleaner",
+    "definition": "(vacuum cleaner), n. dodâhpa ziza pasysana electric hmobaoh. vacuum flask, n. thlalâ titheih ti lalôhpa ryna."
+  },
+  {
+    "word": "vade mecum",
+    "definition": "(vadi-mekam), n. hmo yzie pahmóna châbu."
+  },
+  {
+    "word": "vagabond",
+    "definition": "(vagabond), adj. lilalei, viavi, pahrâna hnei vei, yna su sôlóhpa hnei vei. n. chyhsa lilaleipa, pahrâna sôlóhpa hnei leipa, chyhsa viavipa."
+  },
+  {
+    "word": "vagary",
+    "definition": "(veigari), n. ziezâh pahnothai rupa, ânanopa, ânano pariepa, palôh riaripa. vagaries, pl."
+  },
+  {
+    "word": "vagina",
+    "definition": "(vadzaina), n. chhuhkhaoh. vaginae, vaginas, pls. vaginal, adj. chhukhaoh hmo."
+  },
+  {
+    "word": "vagrant",
+    "definition": "(vegrant), adj. viavi, pakhie, pakhiepakhâ, pheiseih. n. chyhsa viavipa, chyhsa pakhiepa. vagrancy, n. viavina, pakhiena, pakhiepakhâna."
+  },
+  {
+    "word": "vague",
+    "definition": "(veig), adj. yzie sia vei, siahlia vei, sianónâ vei, reihpasia vei, âlâpasia vei. vaguely, adv. vivâhta. vagueness, n."
+  },
+  {
+    "word": "vain",
+    "definition": "(vein), adj. hmohraolei, hraohrâlei, khapa hraolei, lilalei, phahnai lei, âpalai, âpasâhsa. in vain, thlathli, zawrâ, lilalei, áthydyh. vainly, adv. lilaleipata."
+  },
+  {
+    "word": "vainglorious",
+    "definition": "(veinglorias), adj. âpalai, âkhotlâh, âpasâhsa, khapa hraolei."
+  },
+  {
+    "word": "vainglory",
+    "definition": "(vainglory), n. âkhotlâhna, âpalaina, khâpahrao leina. vainglorious, adv."
+  },
+  {
+    "word": "valance, valence",
+    "definition": "(veilans), n. tlâhkhai kiah lâta pohpai pathliahpa, pohpai sihchahdaopata pathliahpa."
+  },
+  {
+    "word": "vale",
+    "definition": "(veil), n. asai, saikah, saikao bypa, râh pakaopa bypi."
+  },
+  {
+    "word": "valediction",
+    "definition": "(validikshan), n. âpathliena, ápathliena biereipa, atlâhpa bie reina."
+  },
+  {
+    "word": "valedictory",
+    "definition": "(valedictory), adj. atlâhpabie reina kyh, ápathliena hmo."
+  },
+  {
+    "word": "valence",
+    "definition": "(veilans), n. atom thatlóna âhlaopa. valency, n. atom thatlóna, atom thatlózie thliena."
+  },
+  {
+    "word": "valence",
+    "definition": "(valence), variety of valance."
+  },
+  {
+    "word": "valentine",
+    "definition": "(valantain), n. St.Valentine noh áhmâpa, (Feb 14), he noh liata satlia-laihsa khopa chapaphaona, kyhpachâpa átyhna noh."
+  },
+  {
+    "word": "valerian",
+    "definition": "(valerian), n. pawpi rahvo."
+  },
+  {
+    "word": "valet",
+    "definition": "(valit), n. zibeipa chysia mohóh-tuhpa seichapaw, hotel liata chysia pasutuhpa nata áhnaotuhpa. v. chysia mohóh."
+  },
+  {
+    "word": "valetudinarian",
+    "definition": "(valitiudinerian), adj. chieh-leina hmo, chiehleina vâta hryuhna kyh. n. chahawhta ápahryuhpa chyhsa."
+  },
+  {
+    "word": "valhalla",
+    "definition": "(valhala), n. pahsaipha pahrâna su athih khih."
+  },
+  {
+    "word": "valiant",
+    "definition": "(valiant), adj. riahpha, chhyu. valiantly, adv."
+  },
+  {
+    "word": "valid",
+    "definition": "(valid), adj. dâhdopa châ, bietaina hroh, dâhta ápyhkhei. validity, n. validly, adv."
+  },
+  {
+    "word": "validate",
+    "definition": "(valideit), v. dâhdopata tao, daihti pahrohsa. validation, n. daihti pahrohsana."
+  },
+  {
+    "word": "valise",
+    "definition": "(valiz), n. savo sahria, chysia khóna savo thobyh."
+  },
+  {
+    "word": "valley",
+    "definition": "(veli), n. asai, saikah, saikao by kawhpa, râh pakaopa, chavahkao. valleys, pl."
+  },
+  {
+    "word": "wafer",
+    "definition": "(weifar), n. Abeipa zâpahti viahchha raraohpa nata âpakariepa. wafer-thin, âpakarie. wafery, adj."
+  },
+  {
+    "word": "waffle",
+    "definition": "(wofl), n. yzie hneileipata biereipa/châuropa. v. yzie hneileipata biereih."
+  },
+  {
+    "word": "waffle",
+    "definition": "(wefl), n. viahchha raraipa. waffle-iron, n. viahchha pararaina thua beih."
+  },
+  {
+    "word": "waft",
+    "definition": "(waft), v. ti chô liata âpapho/âpahai, ziza chô liata (roh) charao, ziza ta phaoh. The scent of the flowers was wafted along by the breeze. n. âpaphona, âpahaina, ziza liata rohpahâhpa charaopa."
+  },
+  {
+    "word": "wag-tail",
+    "definition": "See wag1."
+  },
+  {
+    "word": "wag1",
+    "definition": "(wag), v. (chaolahmei) vai, hie, hiesaw, pakhopakhâ. n. chaolahmei hiepa."
+  },
+  {
+    "word": "wag2",
+    "definition": "(wag), n. chyhsa saiso khohpa, sai-so thaipa. waggish, adj. saisopa hmo, saiso thai. waggishly, adv. waggery, n. saisona, pahneisaiso papuana."
+  },
+  {
+    "word": "wage earner",
+    "definition": "(wage earner), n. hlaopapuatuhpa, hlao hneipata raihriatuhpa."
+  },
+  {
+    "word": "wage1",
+    "definition": "(weidz), n. hlao, raihriana hlao."
+  },
+  {
+    "word": "wage2",
+    "definition": "(weidz), v. âdyuhna papua, âdyuh awpata hria, âdyuhna liata âhmâh."
+  },
+  {
+    "word": "wager",
+    "definition": "(weidzar), v. phusâ âpacheisa, vânoh-âzua. n. chei ngâhna zie."
+  },
+  {
+    "word": "waggle",
+    "definition": "(wagl), v. (chaolahmei) hie, vai, pakhopakhâ."
+  },
+  {
+    "word": "wagon/waggon",
+    "definition": "(wagon), n. tawlailih pheipalihpa hmo phaona, tlâhbalyh chhôpadâpha chôkhu leipa hmo phaona. wagoner/waggoner, n. hmo phaona tawlailih haohtuhpa. wagon-lit, n. (Fr) tlâhbalyh âmô theina chhôpadâpa."
+  },
+  {
+    "word": "wagtail",
+    "definition": "(wagtail), n. pavaw chaolahmei pakhopakhâ thaipa, sôdi, laichawdi."
+  },
+  {
+    "word": "waif",
+    "definition": "(weif), n. hawti o hnei leipa, chyhsa viavipa, sahroh hneituhpa y leipa."
+  },
+  {
+    "word": "wail",
+    "definition": "(weil), n. chana ao, âhrópa, árôhpa."
+  },
+  {
+    "word": "wain",
+    "definition": "(wein), n. (arch) tawlailih hmophaona."
+  },
+  {
+    "word": "wainscot",
+    "definition": "(weinskar), n. chhôpadáhpa pahchhó pathona thophia."
+  },
+  {
+    "word": "waist",
+    "definition": "(weist), n. chai, chaopasypa chai, viahkao patlypa chai chhiehna. waist-coat, n. viahkaochôry."
+  },
+  {
+    "word": "wait",
+    "definition": "(weit), v. hâ, hâ thlâchhy, (nawh)hâ, ypâ, mokhâh, âbyh, âbyhkhâh. Tell him i can't see him now, he'll have to wait. n. hâna, mokhâhna, chariah âbyhna. waiting, n., adj. waiting-list, raihria mokhâhtuhpa moh rona."
+  },
+  {
+    "word": "wait a minute",
+    "definition": "(wait a minute), adv. tamáhtua khâ."
+  },
+  {
+    "word": "waitingroom",
+    "definition": "(waitingroom), n. hâpakhyna chhôpadâhipa. waiter, n. hotel raihriatuhpa. waitress, n. hotel raihriatuhpa chanó."
+  },
+  {
+    "word": "waive",
+    "definition": "(weiv), v. pasaipa-i vei, áhnawti vei, tahraruah vei, kohpachyu vei."
+  },
+  {
+    "word": "waiver",
+    "definition": "(waiver), n. (dâh lâta) âdona, áhnaw leina châ, tah-raruah leina châ."
+  },
+  {
+    "word": "wake",
+    "definition": "(weik), v. (woke, pt. waked, pp), âhra, palôh âhra, thyu, âmôpa pathyu, pahra. waking, adj. âhra bawlaw."
+  },
+  {
+    "word": "wakeful",
+    "definition": "(wakeful), adj. mokuhsaih, mokuh chhie, mokuh pasoh. wakefully, adv. wakefulness, n."
+  },
+  {
+    "word": "waken",
+    "definition": "(waken), v. pahra, pathyu. in the wake of, khai tawhta, chavāna chata, pa vâta."
+  },
+  {
+    "word": "wale",
+    "definition": "(weil), n. vo áhreihpa, balyh kiah tho-phia pazaithlupa."
+  },
+  {
+    "word": "walk",
+    "definition": "(walk), n. pheita sie. The baby is learning to walk. n. pheita siepa, lâsiepa. walk away from, (âtaopa-suana) pahnie, tiah. walk on, chôta sie, âhli. walker, n. pheita sietuhpa. walk-ing, n. pheita siena. go walking, pheita âkhiehlaipa. walk-about, âkhiehlaipa. walks of life, rai, raihriana. walk-out,"
+  },
+  {
+    "word": "X",
+    "definition": "(eks), n. âdo leipa ngiana, nawhbaw 10-na, (châpaphaopa chhâna liata) hmaosypa pamosana, (eg. Love from Patty XXX), âtlyhna liata vote piepa pamosana (write X beside the candidate of your choice)."
+  },
+  {
+    "word": "X'mas",
+    "definition": "(eksmas), n. Christmas, Krisma. (a merry X'mas to all readers)."
+  },
+  {
+    "word": "X, x",
+    "definition": "(eks), n. English alphabet liata hawrawh syno nata sâpalihna. X-chromosome, n. (biol) chanó sawsa theina chi liata chanó saw lâta álie theina chi. Y-chromosome sâkha nata ápahlao khia cha chapaw saw lâta a pua aw. X-rated, adj. nothlahchâpa thokha cha hawti kó tloh leipazy châta moh awpa-ta áryh/âsu thai vei, (chahawhpa hmo y-eihpa thliena bi sâkha)."
+  },
+  {
+    "word": "X-ray",
+    "definition": "(eksrei), n. chhôh-lâ nothlahpa lana, (pasapa mona). v. chhôhlâ pasana nothlahpa la, mohpasia, ezâh. (X-rays are commonly used by doctors to examine bones and organs inside the body)."
+  },
+  {
+    "word": "xenon",
+    "definition": "(zenon), n. ziza rohchhiepa chikha."
+  },
+  {
+    "word": "xenophile",
+    "definition": "(zenofail), n. râh hropa chyhsa tlaichhaina, râh hropa hmo pasâhsana, khichhai âlypa."
+  },
+  {
+    "word": "xenophobia",
+    "definition": "(zenofobia), n. râh hropa chyhsa âhaona, reihkhiapa mokhoh leina, khichhai china nata kho leina. (Excessive patriotism can lead to xenophobia). xenophobic, adj. khichhai china nata âhaona kyh. xeno-phobe, n. khichhai âhaopa chyhsa."
+  },
+  {
+    "word": "xer-, xero-",
+    "definition": "(prefix), ziza rohchhiepa chi, tahna. xerasia, n. ziza pha leipa, lalóh uluhpa, ziza pathaih leipa. xeroderma, n. ziza vâta vo pakâhpa hri."
+  },
+  {
+    "word": "Xerox",
+    "definition": "(ziaroks), n. châropa nothlahpa lana khaw, châropa patlypa copy, châropa nothlahpa. v. châropa nothlahpa."
+  },
+  {
+    "word": "xi",
+    "definition": "(ksai, ksi), n. Grik hawrawh K, k. X'ian, n. Christian, Krizyhpa, tahna. -xion. (Suffix) Same as ion."
+  },
+  {
+    "word": "XL",
+    "definition": "abbrev. extra large, (chysia lai pahchaipa)."
+  },
+  {
+    "word": "xyl-,xylo-",
+    "definition": "(prefix), tho, tahna. xylography, n. tho seipa nothlahpata taodâh. xylographic,-cal, adjs. xylographer, n. nothlahpa tho seipata taotuhpa. xylology, n. tho pilâzie áchuna."
+  },
+  {
+    "word": "xylophone",
+    "definition": "(zailafon), n. totâ chikha chakhyhpata tôpa chi."
+  },
+  {
+    "word": "xyster",
+    "definition": "(zistar), n. dawhty chhaichhi chikha ru hao pathaina."
+  },
+  {
+    "word": "Y",
+    "definition": "(Y, y) (wai), n. English alphabet liata hawrawh syno nata sâpangawhna."
+  },
+  {
+    "word": "yacht",
+    "definition": "(iacht), n. balyh poh paraipa, meibalyh chhyhpa, (charei-palaona). v. meibalyhta khitlyh árapasua. yacht-ing, n. meibalyh ta chareina. meibalyh haohna. yachts-man/yachtwoman, n. meibalyh chyhsa chapaw/chanó, meibalyh haohpa chyhsa. yachter, n. meibalyh haohtuhpa."
+  },
+  {
+    "word": "yack",
+    "definition": "(iak), v. (sl) ápasapita âhrahhnao."
+  },
+  {
+    "word": "yah",
+    "definition": "(iah), interj. (pahneisaona) e he!"
+  },
+  {
+    "word": "yah",
+    "definition": "(iah), interj. Same as yea! yh!"
+  },
+  {
+    "word": "yahoo",
+    "definition": "(iahu), n. nóchhiepa. yahoos, pl."
+  },
+  {
+    "word": "Yahweh",
+    "definition": "(iahu, iahua), n. Zelensky (Jehovah)."
+  },
+  {
+    "word": "yak",
+    "definition": "(iak), n. Tibet viahchao hmiseihpa."
+  },
+  {
+    "word": "yale",
+    "definition": "(ieil), n. ochhi hrai pahieh theipa."
+  },
+  {
+    "word": "yam",
+    "definition": "(iam), n. bia, baluh."
+  },
+  {
+    "word": "yammer",
+    "definition": "(iamer), v. (derog) no-aichhih kawpata reichie, paphóh rialia, reihpasipasua rialia. They kept yammering on about how expensive everything was."
+  },
+  {
+    "word": "Yank",
+    "definition": "(iangk), n. Same as Yankee."
+  },
+  {
+    "word": "yank",
+    "definition": "(iangk), v. chhaokhy, thuakhy."
+  },
+  {
+    "word": "Yankee",
+    "definition": "(iangki), n. (Yank) USA râh chyhsa, America khitlâh buana (civil war) pheisaih. Yankee Doodle, n. Yankee chyhsa hla."
+  },
+  {
+    "word": "yap",
+    "definition": "(iap), v. (itaw) thata nga, palopasah kawpata biereih. yappy, adj."
+  },
+  {
+    "word": "yard1",
+    "definition": "(iard), n. laihmia bypa, (church-yard, farm-yard, etc)."
+  },
+  {
+    "word": "yard2",
+    "definition": "(iard), n. áhlazie thliena, seihzie thliena bi, (ft. 3 tlu)."
+  },
+  {
+    "word": "yarn",
+    "definition": "(ian), n. palabâ, sahmi palabâ, (colloq) phôhpa."
+  },
+  {
+    "word": "yarrow",
+    "definition": "(iarou), n. sibie paw râhpa nata rohpahnâpa chi."
+  },
+  {
+    "word": "yashmak",
+    "definition": "(iashmak), n. Muslim chanó hmia khuna poh."
+  },
+  {
+    "word": "yaw",
+    "definition": "(iaw), v. (balyh, zawtheina) lâpi dopa tawhta pahkosa."
+  },
+  {
+    "word": "yawl",
+    "definition": "(iawl), n. balyh pohparaina tóh sâno hneipa a chaolâ tóh chyu viapa."
+  },
+  {
+    "word": "yawn",
+    "definition": "(iawn), v. pahâ, pahâpahâ, (no-ai váta) pahâ. n. pahâpa, no-aina."
+  },
+  {
+    "word": "yaws",
+    "definition": "(iawz), n. râh palopa hri vo sathpa vo pathapa hri."
+  },
+  {
+    "word": "yd.",
+    "definition": "abbrev. yard."
+  },
+  {
+    "word": "ye",
+    "definition": "(i), pron. (arch) náma, námo, námo sahlao."
+  },
+  {
+    "word": "yea",
+    "definition": "(ia), interj. (arch) yh, a chá bao na,"
+  },
+  {
+    "word": "Z, z",
+    "definition": "(zed), n. English alphabet liata hawrawh syno nata sâcharuna."
+  },
+  {
+    "word": "zabaglione",
+    "definition": "(zabaglioni), n. (Ita) awhtih bubalôhpa nata sâhpiti pahlaopa."
+  },
+  {
+    "word": "zany",
+    "definition": "(zeini), adj. (-nier, iest), ydâh/yzie ychâhla kawpata pahnei pachhisa, chyhsa palysathei, hruthiethu. n. nothlahchâ-pa liata saisotuhpa, saisothaipa, chyhsa hruthiethupa. zaniness, n. saisózie, hruthiethuzie."
+  },
+  {
+    "word": "zap",
+    "definition": "(zap), v. tu, phy, thie, parao, parao-parâ, Tv papuapa thla, computer liata âlâpa phiepahlei, eikhata hmo pahlei khai."
+  },
+  {
+    "word": "zeal",
+    "definition": "(zil), n. chahrana, thachahrana, tiamana, phahnaingiahna. He works with great zeal, phahnaingiah kawpata raihria. zealous, adj. chahra, tiama, pha-hnaingiah. zealously, adv."
+  },
+  {
+    "word": "zealot",
+    "definition": "(zelot), n. Zu zyhna liata-phahnai-ngiahpa, zyhna nata py kyh liata phahnaingiahpa chyhsa. zealotry, n. phahnaingiahna."
+  },
+  {
+    "word": "zebra",
+    "definition": "(zibra), n. râhsa cheichapaipa arâ lyupa. zebra-crossing, n. lâpi sie cha-kâna su cheichapaipa."
+  },
+  {
+    "word": "zebu",
+    "definition": "(zibu), n. râhsa kythlôh thlupa viahchao lyupa."
+  },
+  {
+    "word": "Zeitgeist",
+    "definition": "(zaitgaist), n. (German) ngiapâna hmo pachâ via no daihti."
+  },
+  {
+    "word": "Zen",
+    "definition": "(zen), n. Japanese Buddha âchhiyna dâh palôh chalihsana."
+  },
+  {
+    "word": "zenana",
+    "definition": "(zinana), n. India beipa lahpizy yna chhôpadâhpa."
+  },
+  {
+    "word": "zenith",
+    "definition": "(zenith), n. luhchô dady avâ, laki, âsâhchainsa su, hmotao thei lichih no. (At its zenith the Roman empire covered almost the whole of Europe)."
+  },
+  {
+    "word": "zephyr",
+    "definition": "(zefar), n. ziza naizualuapa, ziza chakua silipa, thlihhuanó."
+  },
+  {
+    "word": "Zeppelin",
+    "definition": "(zepalin), n. German zawtheina laipa chi âdyuhpi nota hmâpa."
+  },
+  {
+    "word": "zero",
+    "definition": "(ziaro), n. bia, hló, zirô, (0), khâpahmah, lalóhna áhnaichaipa bi (zero degree). 1. The thermometer fell to zero last night. 2. My interest in politics is zero. zero hour, n. hmotao pathaona daihti sikhuapa. Zero hour is axactly 4 am."
+  },
+  {
+    "word": "zest",
+    "definition": "(zest), n. pakah paháhsazie, paphasazie, palysazie, thapathyuzie, thapawhzie, isah hyhkuapa (âhmie paháh-sana). (He entered into our plans with terrific zest). zestful, adj. thathyu kaw."
+  },
+  {
+    "word": "zigzag",
+    "definition": "(zigzag), n. âpahkopahkâpa. adj. (lâpi) âpahkopahkâ. v. pahkopahkâsa. (The narrow path zigzags up the cliff)."
+  },
+  {
+    "word": "zilch",
+    "definition": "(zilch), n. âpahhlôpa, bia, (0), khâ-pahmah châ leipa."
+  },
+  {
+    "word": "zillion",
+    "definition": "(zillian), n. reitiah-lei, nawhbaw hluhpi."
+  },
+  {
+    "word": "zinc",
+    "definition": "(zingk), n. thuaheipa, râhvâ/kâto thuanaipa chi."
+  },
+  {
+    "word": "zing",
+    "definition": "(zing), n. tha, thatlôna, chatliena, theisâlô chatliepa py. v. chatlie. (The juice adds zing to drinks and desserts)."
+  },
+  {
+    "word": "zinnia",
+    "definition": "(zinia), n. pawpi maihpa."
+  },
+  {
+    "word": "Zion",
+    "definition": "(zaion), n. Zai-o, Jerusalem khih liata tlâh sâkha, (fig) vârâh."
+  },
+  {
+    "word": "Zionism",
+    "definition": "(zaionizm), n. Zunawh kho-talaina akhohpa political py. Zionist, n. khotalaina akhohpa py chyhsa."
+  },
+  {
+    "word": "zip",
+    "definition": "(zip), n. (zipper) hraipabiehna, thei-sâlô âzawpa pyu, thatlôna, thachahrana."
   }
 ]
